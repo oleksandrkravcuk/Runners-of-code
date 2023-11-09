@@ -1,13 +1,46 @@
 .header {
-  padding: 20px 0;
+ font-family: DM Sans, sans-serif;
+  
+}
+
+.header-container {
+  display: flex;
+  margin: 0 auto;
+    padding: 18px 20px;
+    justify-content: center;   
+}
+
+.nav {
+  display: flex;
+margin-right: 14px;
+align-items: center;
+}
+
+.wrapper-logo {
+  display: flex;
+}
+
+.container-logo{
+  margin-right: 144px;
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  display: none;
 }
+
+@media only screen and (min-width: 768px) {
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-right: 87px;
+
+  }
+}
+
+
+
 
 .nav-link {
   font-weight: 500;
@@ -18,4 +51,100 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+}
+
+.header-button-home {
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 36px;
+  background: #EAC645;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-shopping {
+  display: flex;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+
+.header-switch {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #4F2EE8;
+  border-radius: 50px;
+}
+
+.header-switch-input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.header-switch-slider {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  transition: .3s;
+}
+
+.header-switch-slider::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  cursor: pointer;
+  /* top: 2px; */
+  left: 1px;
+  /* bottom: 2px; */
+  right: 2px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+margin-bottom: 1px;
+transition: .3s;
+}
+
+.header-switch-input:checked,
+.header-switch-slider {
+  background-color: #4F2EE8;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+}
+
+.header-switch-input:checked+.header-switch-slider::before {
+ transform: translateX(20px);
+ -webkit-transform: translateX(20px);
+ -ms-transform: translateX(20px);
+}
+
+
+
+
+
+
+
+.burger-menu {
+display: flex;
+background-color: transparent;
+border: none;
+}
+
+.header-burger {
+  fill: #111111;
+  background-color: #F6F6F6;
 }
