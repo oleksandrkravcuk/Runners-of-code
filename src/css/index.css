@@ -8,6 +8,7 @@
 @import url('./shopping.css');
 
 @import url('./header.css');
+@import url('./home.css');
 
 :root {
   .light-theme {
