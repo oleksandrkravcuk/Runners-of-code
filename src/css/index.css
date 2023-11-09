@@ -4,10 +4,12 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
 @import url('./shopping.css');
 
 @import url('./header.css');
+@import url('./support.css');
 
 :root {
   .light-theme {
@@ -15,6 +17,7 @@
     --second-color: #ffffff;
     --third-color: #4f2ee8;
     --fourth-color: #eac645;
+    --sixth-color: #b1a5ef;
     --text-color-main: #b4afaf;
     --text-color-second: #111111;
     --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -24,6 +27,7 @@
     --second-color: #111111;
     --third-color: #4f2ee8;
     --fourth-color: #eac645;
+    --sixth-color: #b1a5ef;
     --text-color-main: #b4afaf;
     --text-color-second: #ffffff;
     --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
