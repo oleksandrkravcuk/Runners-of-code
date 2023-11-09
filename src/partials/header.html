@@ -1,13 +1,40 @@
 <header class="header">
+  <div class="header-container">
   <nav class="nav">
+    <div class="wrapper-logo">
+      <div class="container-logo">
+      <a class="logo-header-link" href="../index.html">
+        <svg class="header-svg-logo" width="109" height="28"><use href ="../img/symbol-defs.svg#icon-logo"></use>
+        </svg>
+        <!-- <span class="logo-header-text">Bookshelf</span> -->
+      </a>
+    </div>
+    </div>
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+        <button class="header-button-home" type="button">
+          <a href="../index.html" class="nav-link">home</a>
+        </button>
+        
       </li>
 
       <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+        <a href="../shopping.html" class="nav-link header-shopping">shopping list 
+          <svg class="header-svg-bag" width="20" height="20">
+          <use href="../img/symbol-defs.svg#icon-bag"></use>
+          </svg>
+        </a>
       </li>
     </ul>
+    <label class="header-switch">
+      <input class="header-switch-input" type="checkbox">
+      <span class="header-switch-slider"></span>
+    </label>
   </nav>
+  <button class="burger-menu">
+    <svg class="header-burger" width="28" height="28">
+      <use href="../img/symbol-defs.svg#icon-burger"></use>
+    </svg>
+  </button>
+  </div>
 </header>
