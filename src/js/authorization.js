@@ -19,7 +19,7 @@ function saveData(event) {
     clearFormFields();
     console.log('User registered successfully!');
 setTimeout(function () {
-    window.location.href = 'https://oleksandrkravcuk.github.io/project-group-V/';
+    window.location.href = 'https://github.com/oleksandrkravcuk/Runners-of-code/';
 }, 3000);
 }
 function login(event) {
@@ -33,7 +33,7 @@ function login(event) {
         if (loginEmail === userData.email && loginPassword === userData.password) {
             console.log('User logged in successfully!');
             setTimeout(function () {
-                window.location.href = 'https://oleksandrkravcuk.github.io/project-group-V/';
+                window.location.href = 'https://github.com/oleksandrkravcuk/Runners-of-code/';
             }, 3000);
         } else {
             console.error('Invalid email or password. Try again.');
