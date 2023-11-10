@@ -170,5 +170,5 @@ border: none;
 }
 
 .sign-up-arrow{
-  fill: rgba(234, 198, 69, 1);
+  stroke: rgba(234, 198, 69, 1);
 }
