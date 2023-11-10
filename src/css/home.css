@@ -8,7 +8,7 @@ body {
      font-size: 14px;
      font-style: normal;
      font-weight: 400;
-     line-height: 18px; /* 128.571% */
+     line-height: 18px; 
      letter-spacing: 0.42px;
      text-transform: uppercase;
  
@@ -38,7 +38,8 @@ body {
    @media screen and (min-width: 1200px) {
      .thomb-book-section {
          width: 996px;
- 
+         margin-left: auto;
+         margin-right: 24px;
      }
    }
  
@@ -65,7 +66,13 @@ body {
  .book-card {
      display: none;
      margin-bottom: 8px;
+     transition: box-shadow 250ms linear, transform 250ms ease-in-out;
+     border-radius: 8px;
  }
+ .book-card:hover {
+
+  box-shadow: 0 20px 16px -16px rgba(0,0,0,0.6);
+}
  .book-card:nth-child(2) {
      display: block;
      width: 335px;
@@ -116,18 +123,33 @@ body {
      margin-left: auto;
      margin-bottom: 40px;
  
- padding: 14px 28px;
+     padding: 14px 28px;
+     background-color: rgba(0, 0, 0, 0);
  
- gap: 10px;
- border-radius: 40px;
- border: 2px solid #4F2EE8;
- color: #111;
+     gap: 10px;
+     border-radius: 40px;
+     border: 2px solid #4F2EE8;
+     color: #111;
  
- font-family: DM Sans;
- font-size: 14px;
- font-style: normal;
- font-weight: 700;
- line-height: 18px; /* 128.571% */
- letter-spacing: -0.14px;
- text-transform: uppercase;
+     font-family: DM Sans;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 18px; 
+     letter-spacing: -0.14px;
+     text-transform: uppercase;
  }
+
+
+ .section-book-btn:hover {
+  color: #FFFFFF;
+  background-color: #4F2EE8;
+ }
+
+ .section-book-btn:focus {
+  color: #FFFFFF;
+  background-color: #4F2EE8;
+ }
+
+
+
