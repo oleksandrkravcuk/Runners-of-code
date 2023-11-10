@@ -1,0 +1,67 @@
+.button {
+  all: unset;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #4F2EE8;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus-visible {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.icon {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  fill: currentColor;
+}
+
+/* write your code here */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.page--back-to-top {
+  position: fixed;
+  z-index: 100;
+  right: 64px;
+  bottom: 64px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  animation-name: bounce;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.page--back-to-top_visible {
+  opacity: 1;
+  visibility: visible;
+}
