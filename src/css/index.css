@@ -13,6 +13,7 @@
 @import url('./home.css');
 @import url('./reset.css');
 @import url('./shopping.css');
+@import url('./loader-buks.css');
 
 :root {
   --main-color: #d0d0d0;
