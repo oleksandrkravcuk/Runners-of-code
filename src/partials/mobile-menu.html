@@ -1,0 +1,62 @@
+<div class="menu-container js-menu-container" id="mobile-menu">
+<button class="modal-button js-close-menu">
+    <svg class="modal-icon" viewBox="0 0 20 20" width="28" height="28">
+        <use href="../img/symbol-defs.svg#icon-close"></use>
+    </svg>
+</button>
+
+<div class="mobile-header"> <nav class="nav">
+    <div class="wrapper-logo">
+        <div class="mobile-container-logo">
+            <a class="logo-header-link" href="./index.html">
+                <svg class="header-svg-logo" width="109" height="28">
+                    <use href="./img/symbol-defs.svg#icon-logo"></use>
+                </svg>
+              
+            </a>
+        </div>
+    </div>
+<label class="header-switch">
+    <input class="header-switch-input" type="checkbox">
+    <span class="header-switch-slider"></span>
+</label>
+</nav>
+</div>
+
+<ul class="mobile-nav-list">
+    <li class="mobile-nav-item">
+        <button class="mobile-header-button-home" type="button">
+            <a href="./index.html" class="header-nav-link">home</a>
+        </button>
+
+    </li>
+
+    <li class="mobile-nav-item">
+        <a href="../shopping.html" class="nav-link header-shopping">shopping list
+            <svg class="header-svg-bag" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-bag"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
+
+<button class="mobile-button-logOut" type="button">
+    <a href="" class="mobile-button-link">Log out
+    <svg class="mobile-arrow-icon" width="20" height="20">
+        <use href="../img/symbol-defs.svg#icon-arrow_right"></use>
+    </svg>
+</a></button>
+<div class="mobile-thumb-img">
+    <img srcset="../img/mobile-menu/Group 6.png 1x, ../img/mobile-menu/Group 6@2x.png 2x "
+        src="../img/mobile-menu/Group 6.png" alt="background-books"
+        width="450" height="440">
+</div>
+</div>
+
+
+<!-- Mobile menu script -->
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="../js/mobile-menu.js"></script>
