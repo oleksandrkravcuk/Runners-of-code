@@ -6,4 +6,5 @@ import './js/shopping';
 import './js/scrollUp';
 import './js/categories';
 import './js/donates';
+import './js/redirectOnAuthorization';
 
