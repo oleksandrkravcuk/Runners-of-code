@@ -15,22 +15,29 @@
 @import url('./shopping.css');
 
 :root {
-  .light-theme {
-    --main-color: #d0d0d0;
-    --second-color: #ffffff;
-    --third-color: #4f2ee8;
-    --fourth-color: #eac645;
-    --text-color-main: #b4afaf;
-    --text-color-second: #111111;
-    --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
-  }
-  .dark-theme {
-    --main-color: #202024;
-    --second-color: #111111;
-    --third-color: #4f2ee8;
-    --fourth-color: #eac645;
-    --text-color-main: #b4afaf;
-    --text-color-second: #ffffff;
-    --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
-  }
+  --main-color: #d0d0d0;
+  --second-color: #ffffff;
+  --third-color: #4f2ee8;
+  --fourth-color: #eac645;
+  --text-color-main: #b4afaf;
+  --text-color-second: #111111;
+  --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.light-theme {
+  --main-color: #d0d0d0;
+  --second-color: #ffffff;
+  --third-color: #4f2ee8;
+  --fourth-color: #eac645;
+  --text-color-main: #b4afaf;
+  --text-color-second: #111111;
+  --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.dark-theme {
+  --main-color: #202024;
+  --second-color: #111111;
+  --third-color: #4f2ee8;
+  --fourth-color: #eac645;
+  --text-color-main: #b4afaf;
+  --text-color-second: #ffffff;
+  --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
 }
