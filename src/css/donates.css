@@ -9,8 +9,10 @@
   border-radius: 16px;
   padding: 24px 40px;
 }
+
 /* .support {
   } */
+
 .support-first-wrapper {
   display: flex;
   padding-bottom: 35px;
@@ -84,7 +86,7 @@
   fill: var(--third-color);
 }
 
-/*--------------------------------------*/
+/*--------------- Hovers -----------------*/
 
 .support-link:hover,
 .support-link:focus,

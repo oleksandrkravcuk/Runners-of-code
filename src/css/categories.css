@@ -1,5 +1,45 @@
-.nav-link {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
+.wrapper-categories {
+  margin-top: 40px;
+  padding: 24px;
+  max-height: 470px;
+  overflow-y: scroll;
+  width: 335px;
+}
+
+/* .categories {
+} */
+
+.categories-list {
+  font-family: 'DM Sans';
+  color: var(--text-color-second);
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -2%;
+  line-height: 24px;
+}
+.categories-item:not(:first-child) {
+  padding-top: 32px;
+}
+/*--------------- Hovers -----------------*/
+
+.categories-item:hover,
+.categories-item:focus,
+.categories-item:active {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--third-color);
+  opacity: 0.99;
+}
+
+/*----------- Castom scroll --------------*/
+
+#categories::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+#categories::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--text-color-main);
 }
