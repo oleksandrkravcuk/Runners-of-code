@@ -1,5 +1,106 @@
-.nav-link {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
+.wrapper-support {
+  width: 280px;
+  max-width: 460px;
+  background: linear-gradient(
+    180deg,
+    var(--third-color) 0%,
+    var(--fifth-color) 100%
+  );
+  border-radius: 16px;
+  padding: 24px 40px;
+}
+/* .support {
+  } */
+.support-first-wrapper {
+  display: flex;
+  padding-bottom: 35px;
+}
+.support-second-wrapper {
+  max-height: 320px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+
+  /* для прокрутки */
+  /* justify-content: end; */
+}
+
+.support-title {
+  color: var(--second-color);
+  font-family: 'DM Sans';
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -4%;
+  line-height: 28px;
+  padding-left: 10px;
+}
+.support-herb {
+  display: block;
+  margin-left: 12px;
+  fill: var(--second-color);
+}
+/* .support-list {
+  }
+  .support-item {
+  } */
+.support-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.support-number {
+  color: var(--second-color);
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -4%;
+  line-height: 18px;
+  padding-right: 16px;
+}
+.support-logo {
+  height: 33px;
+  width: auto;
+}
+
+.support-more {
+  content: '';
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.support-arrow {
+  fill: var(--third-color);
+}
+
+/*--------------------------------------*/
+
+.support-link:hover,
+.support-link:focus,
+.support-link:active {
+  background-color: #502ee86f;
+  border-radius: 12px;
+}
+
+.support-more:hover,
+.support-more:focus,
+.support-more:active {
+  background-color: var(--third-color);
+}
+
+.support-more:hover .support-arrow,
+.support-more:focus .support-arrow,
+.support-more:active .support-arrow {
+  fill: (--second-color);
 }
