@@ -1,20 +1,22 @@
 .button {
   all: unset;
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   box-sizing: border-box;
-  padding: 8px;
-  border-radius: 16px;
-  background-color: #4F2EE8;
+  border-radius: 50%;
+  background-color: var(--third-color);
+  border: 5px solid var(--fifth-color);
   color: #fff;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
+  opacity: 0.8;
 }
 
 .button:hover,
 .button:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
+  border: none;
 }
 
 .button:active {
@@ -22,10 +24,11 @@
 }
 
 .icon {
-  display: inline-block;
-  height: 100%;
-  vertical-align: top;
+  display: block;
+  height: 24px;
+  width: 24px;
   fill: currentColor;
+  margin: 0 auto;
 }
 
 /* write your code here */
@@ -50,12 +53,11 @@
 .page--back-to-top {
   position: fixed;
   z-index: 100;
-  right: 64px;
+  right: 40px;
   bottom: 64px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
   animation-name: bounce;
   animation-duration: 6s;
   animation-iteration-count: infinite;
