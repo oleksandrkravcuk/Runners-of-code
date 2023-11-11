@@ -1,25 +1,22 @@
-<section>
-    <div class="form-container">
-        <form id="registrationForm" onsubmit="saveData(event)">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <button type="submit">Sign up</button>
-            <div class="links" id="links">
-                <a href="#" class="active">Sign Up</a>
-                <a href="#" class="sign-in" onclick="showLoginForm()">Sign In</a>
-            </div>
+<div class="form-container">
+        <form id="registrationForm">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <button type="submit" id="signupButton">Sign up</button>
+          <div class="links" id="links">
+            <a href="#" class="active" data-form="registrationForm">Sign Up</a>
+            <a href="#" class="sign-in" data-form="loginForm">Sign In</a>
+          </div>
         </form>
-
-        <form id="loginForm" style="display: none;" onsubmit="login(event)">
-            <input type="email" id="loginEmail" name="email" placeholder="Email" required>
-            <input type="password" id="loginPassword" name="password" placeholder="Password" required>
-            <button type="submit">Sign In</button>
-            <div class="links" id="links">
-                <a href="#" class="sign-in" onclick="showRegistrationForm()">Sign Up</a>
-                <a href="#" class="active" >Sign In</a>
-            </div>
+    
+        <form id="loginForm" style="display: none;">
+          <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+          <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+          <button type="submit" id="loginButton">Sign In</button>
+          <div class="links" id="links">
+            <a href="#" class="sign-in" data-form="registrationForm">Sign Up</a>
+            <a href="#" class="active" data-form="loginForm">Sign In</a>
+          </div>
         </form>
-    </div>
-</section>
-
+    </div>  
