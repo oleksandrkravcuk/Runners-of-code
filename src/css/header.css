@@ -148,3 +148,27 @@ border: none;
   fill: #111111;
   background-color: #F6F6F6;
 }
+
+
+.sign-up-button{
+  background-color: rgba(79, 46, 232, 1);
+  border: 1.5px solid rgba(17, 17, 17, 1);
+  border-radius: 18px;
+  color: white;
+  padding: 14px 15px;
+  gap: 90px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.5s, color 0.5s;
+  display: flex;
+}
+
+.sign-up-button:hover {
+  background-color: rgba(17, 17, 17, 1);
+  color: rgba(79, 46, 232, 1);
+}
+
+.sign-up-arrow{
+  stroke: rgba(234, 198, 69, 1);
+}
