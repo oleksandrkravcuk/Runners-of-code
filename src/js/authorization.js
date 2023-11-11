@@ -1,3 +1,4 @@
+import Notiflix from "notiflix";
 function saveData(event) {
     event.preventDefault();
     let name = document.getElementById('name').value;
@@ -5,7 +6,7 @@ function saveData(event) {
     let password = document.getElementById('password').value;
 
     if (name === '' || email === '' || password === '') {
-        console.error('Please fill in all fields.');
+        Notiflix.Notify.failure('Please fill in all fields.');
         return;
     }
 
@@ -17,7 +18,7 @@ function saveData(event) {
     console.log(dataObject);
     localStorage.setItem('userData', JSON.stringify(dataObject));
     clearFormFields();
-    console.log('User registered successfully!');
+   Notiflix.Notify.success('User registered successfully!');
 setTimeout(function () {
     window.location.href = '../index.html';
 }, 3000);
@@ -31,12 +32,12 @@ function login(event) {
         let userData = JSON.parse(storedData);
 
         if (loginEmail === userData.email && loginPassword === userData.password) {
-            console.log('User logged in successfully!');
+            Notiflix.Notify.success('User logged in successfully!');
             setTimeout(function () {
                 window.location.href = '../index.html';
             }, 3000);
         } else {
-            console.error('Invalid email or password. Try again.');
+            Notiflix.Notify.info('Invalid email or password. Try again.');
         }
     }
 }
