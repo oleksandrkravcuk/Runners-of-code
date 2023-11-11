@@ -1,10 +1,6 @@
-
-
-
-
 .title{
     margin: 0;
-    padding: 40px 162px 40px 20px;
+    padding: 40px 0 40px 20px;
     color: #111;
     font-family: DM Sans;
     font-size: 32px;
@@ -17,6 +13,10 @@
 .title__accent{
     color: #4F2EE8;
 
+}
+
+body{
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -41,3 +41,296 @@
     font-size: 48px;
   }
 }
+
+
+
+.books-card{
+  margin: 20px;
+  width: 335px;
+  height: 170px;
+  border-radius: 16px;
+  border: 2px solid rgba(79, 46, 232, 0.40);
+  background: #FFF;
+  align-items: flex-start; 
+}
+
+@media only screen and (min-width: 768px) {
+  .books-card{
+   width: 704px;
+   height: 213px;
+}
+ 
+}
+
+@media only screen and (min-width: 1392px) {
+  .books-card{
+  
+   width: 996px;
+   height: 213px;
+}
+ 
+}
+
+
+.wrrap{
+  display: flex;
+}
+
+
+
+
+
+
+
+.book-img{
+  max-width: 95px;
+  border-radius: 22px;
+  padding: 14px;
+  margin: 0;
+  width: 100px;
+height: 142px;
+}
+
+@media only screen and (min-width: 768px) {
+  .book-img{
+  max-width: 100px;
+  width: 116px;
+  height: 165px;
+  padding: 24px;
+  margin: 0;
+  border-radius: 36px;
+}
+}
+
+
+
+.text-container{
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+ } 
+
+ @media only screen and (min-width: 768px) {
+  .text-container{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  
+ } 
+  
+}
+
+.book-name{
+ overflow: hidden;
+color: #111;
+width: 144px;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 112.5% */
+letter-spacing: -0.64px;
+text-transform: uppercase;
+}
+ @media only screen and (min-width: 768px) {
+  .book-name{
+  overflow: visible;
+  width: 166px;
+}
+  
+}
+
+.list-name{
+  color: #B4AFAF;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.36px;
+  width: 165px;
+  padding-bottom: 8px;
+}
+
+ @media only screen and (min-width: 768px) {
+  .list-name{
+  width: 211px;
+}
+  
+}
+
+
+
+ .description-container{
+  width: 193px;
+  max-height: 68px;
+  padding-bottom: 12px;
+  overflow: hidden;  
+  color: #111;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px; 
+} 
+
+
+ @media only screen and (min-width: 768px) {
+  .description-container{
+    width: 508px;
+    height: 53px;
+    overflow: hidden;  
+    
+}
+  
+}
+
+ @media only screen and (min-width: 1392px) {
+  .description-container{
+    width: 808px;
+    height: 53px;
+    overflow: hidden;  
+    
+}
+  
+}
+
+.author{
+  color: #B4AFAF;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.48px;
+  margin-top: 8px;
+}
+ @media only screen and (min-width: 768px) {
+  .author{
+    margin-top: 45px;
+    
+}
+  
+}
+
+.link-wrap{
+  display: flex;
+}
+
+.icon-trash{
+  stroke: white;
+  fill: #4F2EE8;
+
+}
+
+.btn-container{
+  position: absolute;
+  margin-left: 286px;
+  margin-top: 14px;
+  
+}
+
+
+ @media only screen and (min-width: 768px) {
+  .btn-container{
+    margin-left: 638px;
+    margin-top: 24px;
+    
+}
+  
+}
+
+
+ @media only screen and (min-width: 1392px) {
+  .btn-container{
+    margin-left: 924px;
+     margin-top: 24px;
+    
+}
+
+
+  
+}
+  .btn{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border:#4F2EE8;
+    background-color: #4F2EE8;
+
+  }
+
+   @media only screen and (min-width: 768px) {
+  .btn{
+    width: 34px;
+    height: 34px;
+    
+}
+  
+}
+
+
+  .link-container{
+    display: flex;
+    margin-left: 40px;
+    gap: 8px;
+    margin-top: 8px;
+
+  }
+   @media only screen and (min-width: 768px) {
+  .link-container{
+    margin-left: 344px;
+     margin-top: 40px;
+}
+  
+}
+
+
+ @media only screen and (min-width: 1392px) {
+  .link-container{
+    margin-left: 630px;
+    
+}
+
+
+  
+}
+
+  .link-amazon{
+    width: 32px;
+    height: 11px;
+    margin-top: 4px;
+   
+  }
+
+   @media only screen and (min-width: 768px) {
+  .link-amazon{
+    width: 48px;
+    height: 15px;
+    margin-top: 8px;
+   
+  }
+  
+}
+
+.link-book{
+  width: 16px;
+height: 16px;
+  
+}
+@media only screen and (min-width: 768px) {
+ .link-book{
+  width: 28px;
+height: 27px;
+  
+}
+  
+}
+
+
+  .amazon-item{
+     margin-bottom: 14px;
+  }
