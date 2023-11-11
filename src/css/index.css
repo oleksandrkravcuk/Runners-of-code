@@ -17,6 +17,7 @@
 @import url('./scrollUp.css');
 @import url('./categories.css');
 @import url('./donates.css');
+@import url('./pop-up.css');
 
 :root {
   --main-color: #d0d0d0;

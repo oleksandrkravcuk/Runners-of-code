@@ -15,7 +15,7 @@ export async function categoryList() {
   }
 }
 // Код що нижче, не використовуємо, це просто перевірка запиту!
-categoryList().then(data => console.log('categoryList:', data));
+// categoryList().then(data => console.log('categoryList:', data));
 //<------------------------------------------------------------
 // Цей запит повертає топ 5 книг для кожної категорії!
 export async function topBooks() {
@@ -30,7 +30,7 @@ export async function topBooks() {
   }
 }
 // Код що нижче, не використовуємо, це просто перевірка запиту!
-topBooks().then(data => console.log('topBooks:', data));
+// topBooks().then(data => console.log('topBooks:', data));
 //<------------------------------------------------------------
 // Цей запит повертає 20 книг з вибраної категорії!
 export async function fetchCategory(category) {
@@ -50,7 +50,7 @@ async function fetchCategoryTest() {
   category = 'Advice%20How-To%20and%20Miscellaneous';
   try {
     const responce = await fetchCategory(category);
-    console.log('fetchCategory', responce);
+    // console.log('fetchCategory', responce);
     return responce;
   } catch (error) {
     Notiflix.Notify.failure('Щось пішло не так в "fetchCategoryTest"');
@@ -76,7 +76,7 @@ async function fetchIdBookTest1() {
   id = '643282b1e85766588626a0b2';
   try {
     const resBookId = await fetchIdBook(id);
-    console.log('fetchIdBook', resBookId);
+    // console.log('fetchIdBook', resBookId);
     return resBookId;
   } catch (error) {
     Notiflix.Notify.failure('Щось пішло не так в "fetchIdBookTest1"');
