@@ -1,3 +1,3 @@
 function redirectToForm() {
-    window.location.href = 'partials/authorization.html';
+    window.location.href = './authorization.html';
 }
