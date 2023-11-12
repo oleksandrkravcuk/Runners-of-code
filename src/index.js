@@ -4,5 +4,4 @@ import './js/header';
 import './js/home';
 import './js/categories';
 import './js/donates';
-import './js/request-categories';
 import './js/scrollUp';
