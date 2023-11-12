@@ -2,9 +2,7 @@ import {topBooks} from './fetch-api'
 
 const product = document.querySelector('.section-product')
 
-
 toDoMarkup()
-
 
 export async function toDoMarkup() {
     const response = await topBooks()
@@ -24,7 +22,9 @@ for (let i = 0; i < response.length; i += 1) {
        </div>`
     }).join(" ")
 
-product.innerHTML = mp
+product.innerHTML =  `<h2 class="title">Best Sellers 
+<span class="title__accent">Books</span>
+</h2> ${mp}`
 }
   
 }
@@ -48,6 +48,3 @@ return `<div class="book-card">
 
     return markup 
 }
-
-
-
