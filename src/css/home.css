@@ -1,10 +1,5 @@
-body {
-    background-color: #F6F6F6;
- 
- }
- 
- .section-product {
-     color: #B4AFAF;
+.section-product {
+     color: var(--text-color-main);
      font-size: 14px;
      font-style: normal;
      font-weight: 400;
@@ -101,7 +96,7 @@ body {
      border-radius: 8px;
  }
  .book-card-title {
-     color: #111;
+     color: var(--text-color-second);
      font-size: 16px;
      font-weight: 700;
      letter-spacing: -0.64px;
@@ -121,8 +116,8 @@ body {
  
      gap: 10px;
      border-radius: 40px;
-     border: 2px solid #4F2EE8;
-     color: #111;
+     border: 2px solid var(--third-color);
+     color: var(--text-color-second);
  
      font-family: DM Sans;
      font-size: 14px;
@@ -131,17 +126,19 @@ body {
      line-height: 18px; 
      letter-spacing: -0.14px;
      text-transform: uppercase;
+     transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
  }
 
 
  .section-book-btn:hover {
-  color: #FFFFFF;
-  background-color: #4F2EE8;
+  color: var(--second-color);
+  background-color: var(--third-color);
  }
 
  .section-book-btn:focus {
-  color: #FFFFFF;
-  background-color: #4F2EE8;
+  color: var(--second-color);
+  background-color: var(--third-color);
  }
  
 
@@ -154,39 +151,88 @@ body {
   overflow: hidden;
 }
 
-.card__thumb::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 33%;
-  background-color: #EAC645;
-  opacity: 0;
-  transform: translate(0, 100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .card__thumb::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-color: var(--fourth-color);
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .link:hover .card__thumb::before {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+  .card-text {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    color: var(--text-color-second);
+    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .link:hover .card-text {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
-.link:hover .card__thumb::before {
-  opacity: 1;
-  transform: translate(0, 0);
+
+/* стилі для обраної категорії */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .js-choose-category{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+  } 
 }
 
-.card-text {
-  position: absolute;
-  top: 80%;
-  left: 25%;
-  color: #111111;
-  opacity: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover .card-text {
-  opacity: 1;
-  transform: translate(0, 0);
+@media screen and (min-width: 1200px) {
+  .js-choose-category {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 24px;
+  }
 }
 
 
+.js-choose-category .book-card:nth-child(-n+20) {
+  display: block;
+  width: 335px;
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .js-choose-category .book-card {
+      margin-bottom: 20px;
+  } 
+} 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .js-choose-category .book-card:nth-child(-n+20) {
+      display: block;
+      width: 218px;
+  }  
+} 
+@media screen and (min-width: 1200px) {
+  .js-choose-category .book-card {
+      margin-bottom: 32px;
+
+  }
+}
+@media screen and (min-width: 1200px) {
+  .js-choose-category .book-card:nth-child(-n+20) {
+      display: block;
+      width: 180px;
+  }
+  
+} 
 
 
