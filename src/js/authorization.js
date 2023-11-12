@@ -89,3 +89,11 @@ function clearFormFields() {
       }
     });
   }
+
+
+  
+  const closeIcon = document.querySelector('.close-icon');
+  closeIcon.addEventListener('click', function() {
+      const newPageURL = './header.html';
+      window.location.href = newPageURL;
+  });

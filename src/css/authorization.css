@@ -75,7 +75,7 @@ body {
     opacity: 0.8;
   }
         form{
-            margin-top: 60px;
+            margin-top: 30px;
             margin-bottom: 40px;
             margin-left: 40px;
             margin-right: 40px;
@@ -121,4 +121,17 @@ body {
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
+        }
+
+
+        .close-icon{
+            stroke: rgba(17, 17, 17, 1);
+            display: flex;
+            margin-left: 95%;
+            margin-top: 1%;
+            cursor: pointer;
+          }
+          .close-icon:hover {
+            stroke: #6900e1;
+            transition: stroke 0.3s ease; 
         }
