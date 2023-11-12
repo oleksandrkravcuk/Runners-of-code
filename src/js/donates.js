@@ -1,16 +1,18 @@
+import save from './../img/support/save_children.png';
+
 const fonds = [
   {
     id: '01',
     title: 'Save the Children',
     url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
-    img: './img/support/save_children.png',
+    img: save,
     minimg: './img/support/save_children_min.png',
   },
   {
     id: '02',
     title: 'Project HOPE',
     url: 'https://www.projecthope.org/country/ukraine/',
-    img: './img/support/hope.png',
+    img: 'https://github.com/oleksandrkravcuk/Runners-of-code/blob/main/src/img/support/hope.png?raw=true',
     minimg: './img/support/hope.png_min.png',
   },
   {
@@ -76,9 +78,11 @@ export default function markupDonates(fonds) {
     console.error('Element with class "support-list" not found.');
     return;
   }
+
   // Створює всі li
   const itemsDonates = fonds
     .map(({ id, title, url, img, minimg }) => {
+      console.log('img:', img);
       return `<li class="support-item">
       <a class="support-link" href="${url}" 
         rel="noopener noreferrer">
