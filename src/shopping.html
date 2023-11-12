@@ -12,6 +12,54 @@
     <title>Shopping List</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <div class="wrapper-logo">
+            <div class="container-logo">
+              <a class="logo-header-link" href="./index.html">
+                <svg class="header-svg-logo" width="109" height="28">
+                  <use href="./img/symbol-defs.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <button class="header-button-home active-button" type="button">
+                <a href="./index.html" class="nav-link">home</a>
+              </button>
+    
+            </li>
+    
+            <li class="nav-item">
+              <a href="./shopping.html" class="nav-link header-shopping not-active-button">shopping list
+                <svg class="header-svg-bag" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <label class="header-switch">
+            <input class="header-switch-input" type="checkbox">
+            <span class="header-switch-slider"></span>
+          </label>
+        </nav>
+        <button class="burger-menu">
+          <svg class="header-burger" width="28" height="28">
+            <use href="./img/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+    
+        <button class="sign-up-button" onclick="redirectToForm()">
+          <p>Sign up</p>
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
        <h2 class="title">Shopping
           <span class="title__accent">List</span>
       </h2>
