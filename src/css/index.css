@@ -65,7 +65,9 @@ body {
   background-color: var(--background-color);
   background-color: var(--main-color);
 }
-
+.color-body-teme{
+  background-color: var(--background-color);
+}
 @media screen and (min-width: 1200px) {
   .content-contaiter-box {
     max-width: 1392px;
@@ -98,7 +100,7 @@ body {
 
 .content-contaiter-box {
   margin: 0 auto;
-  background-color: var(--main-color);
+  background-color: var(--background-color);
 }
 
 .partial-container {
