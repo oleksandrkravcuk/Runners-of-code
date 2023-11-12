@@ -1,26 +1,27 @@
+/*-------------- Categories  --------------*/
+
 .wrapper-categories {
-  margin-top: 40px;
-  padding: 24px;
-  max-height: 470px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  max-height: 220px;
   overflow-y: scroll;
   width: 335px;
 }
-
-/* .categories {
-} */
 
 .categories-list {
   font-family: 'DM Sans';
   color: var(--text-color-second);
   opacity: 0.6;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -2%;
-  line-height: 24px;
+  line-height: 18px;
 }
 .categories-item:not(:first-child) {
-  padding-top: 32px;
+  padding-top: 24px;
 }
+
 /*--------------- Hovers -----------------*/
 
 .categories-item:hover,
@@ -42,4 +43,26 @@
 #categories::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--text-color-main);
+}
+
+/*--------------- Мedia ------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper-categories {
+    margin-top: 40px;
+    padding: 24px;
+    max-height: 486px;
+    overflow-y: scroll;
+    width: 335px;
+  }
+
+  .categories-list {
+    font-family: 'DM Sans';
+    color: var(--text-color-second);
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -2%;
+    line-height: 24px;
+  }
 }

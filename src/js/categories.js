@@ -1,31 +1,25 @@
 import { categoryList } from './fetch-api';
-console.log(4);
+import Notiflix from 'notiflix';
+
+// ul in categories.html
+const categoriesList = document.querySelector('.categories-list');
+
+// Функція дозволяє відображати список категорій у списку All categories на веб-сайті, щоб користувачі могли обрати стиль книги, за якою вони бажають отримати інформацію.
+
 async function markupCategories() {
-  const data = await categoryList().then(data =>
-    console.log('categoryListOlya:', data)
-  );
   try {
-    // const bookCard = `
-    // // <div class = "img-container">
-    // //   <img class = "book-img" src="${data.book_image}" alt="${data.title}">
-    // // </div>
-    // // <div class = "text-container">
-    // //   <h3 class = "book-name">${data.title}</h3>
-    // //   <p>${data.list_name}</p>
-    // //   <p>${data.description}</p>
-    // //   <p>${data.author}</p>
-    // //   <ul class = "link-container">
-    // //     <li><a href="${data.amazon_product_url}"></a></li>
-    // //     <li><a href="${data.book_uri}"></a></li>
-    // //   </ul>
-    // //   <div>
-    // //     <button>svg</button>
-    // //   </div>
-    // // </div>`;
-    // card.insertAdjacentHTML('beforeend', bookCard);
+    const data = await categoryList();
+    const items = data
+      .map(({ list_name }) => {
+        return `<li class="categories-item">${list_name}</li>`;
+      })
+      .join('');
+
+    //вставляю розмітку перед кінцем, бо зверху ще в самому html є All Categories
+    categoriesList.insertAdjacentHTML('beforeend', items);
   } catch (error) {
-    console.error(error);
+    Notiflix.Notify.failure('Щось пішло не так в "markupCategories"');
   }
 }
 
-markup();
+markupCategories();

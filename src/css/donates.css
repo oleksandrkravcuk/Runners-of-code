@@ -1,6 +1,8 @@
+/*-------------- Support Ukraine --------------*/
+
 .wrapper-support {
   width: 280px;
-  max-width: 460px;
+  max-width: 335px;
   background: linear-gradient(
     180deg,
     var(--third-color) 0%,
@@ -8,44 +10,42 @@
   );
   border-radius: 16px;
   padding: 24px 40px;
+  margin-bottom: 30px;
 }
-
-/* .support {
-  } */
 
 .support-first-wrapper {
   display: flex;
   padding-bottom: 35px;
 }
+
 .support-second-wrapper {
   max-height: 320px;
   overflow: hidden;
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+}
 
-  /* для прокрутки */
-  /* justify-content: end; */
+.support-arrow {
+  fill: var(--third-color);
 }
 
 .support-title {
   color: var(--second-color);
   font-family: 'DM Sans';
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: -4%;
-  line-height: 28px;
+  line-height: 24px;
   padding-left: 10px;
 }
+
 .support-herb {
   display: block;
   margin-left: 12px;
   fill: var(--second-color);
 }
-/* .support-list {
-  }
-  .support-item {
-  } */
+
 .support-link {
   display: flex;
   align-items: center;
@@ -62,6 +62,7 @@
   line-height: 18px;
   padding-right: 16px;
 }
+
 .support-logo {
   height: 33px;
   width: auto;
@@ -82,8 +83,13 @@
   transition: all 0.3s ease 0s;
 }
 
-.support-arrow {
-  fill: var(--third-color);
+/*------------- для прокрутки ------------*/
+
+.open {
+  justify-content: end;
+}
+.isopen {
+  transform: rotate(180deg);
 }
 
 /*--------------- Hovers -----------------*/
@@ -98,11 +104,36 @@
 .support-more:hover,
 .support-more:focus,
 .support-more:active {
-  background-color: var(--third-color);
+  border: var(--third-color) 2px solid;
 }
 
 .support-more:hover .support-arrow,
 .support-more:focus .support-arrow,
 .support-more:active .support-arrow {
-  fill: (--second-color);
+  fill: var(--third-color);
+}
+
+/*--------------- Мedia -----------------*/
+
+@media screen and (min-width: 1200px) {
+  .wrapper-support {
+    max-width: 356px;
+  }
+
+  .support-title {
+    color: var(--second-color);
+    font-family: 'DM Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .support-number {
+    color: var(--second-color);
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 16px;
+  }
 }
