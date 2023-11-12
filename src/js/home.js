@@ -32,12 +32,15 @@ function makeCard(cards) {
 
   const markup = cards.books.map(({ book_image, title, author }) => {
 return `<div class="book-card">
-<a href="#">
+<a class="link" href="#">
+    <div class="card__thumb">
     <img class="book-card-photo" src="${book_image}" alt="" loading="lazy">
+    <p class="card-text">quick view.</p>
+    </div>
 
     <h3 class="book-card-title" >${title}</h3>
     <h4>${author}</h4>
-    
+     
 </a>
     
 </div>`
@@ -45,3 +48,6 @@ return `<div class="book-card">
 
     return markup 
 }
+
+
+
