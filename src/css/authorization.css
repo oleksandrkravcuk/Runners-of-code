@@ -135,3 +135,20 @@ body {
             stroke: #6900e1;
             transition: stroke 0.3s ease; 
         }
+
+        .input-container{
+            position: relative;
+        }
+
+        .input-icon{
+            position: absolute;
+            left: 375px;
+            top: 14px;
+            stroke: #111111;
+            fill: transparent;
+        }
+
+
+        #togglePassword{
+            cursor: pointer;
+        }
