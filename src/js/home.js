@@ -6,9 +6,9 @@ const product = document.querySelector('.section-product')
 toDoMarkup()
 
 
-async function toDoMarkup() {
+export async function toDoMarkup() {
     const response = await topBooks()
-console.log("resp", response);
+
 
 for (let i = 0; i < response.length; i += 1) {
 
@@ -17,10 +17,10 @@ for (let i = 0; i < response.length; i += 1) {
        <h2 class="sections-title">${e.list_name}</h2>
        <div class="section-book">
        
-       ${makeCard(e)}
+       ${makeCard(e.books)}
        
        </div>
-       <button class="section-book-btn">see more</button>
+       <button class="section-book-btn" data-id="${e.list_name}">see more</button>
        </div>`
     }).join(" ")
 
@@ -28,9 +28,9 @@ product.innerHTML = mp
 }
   
 }
-function makeCard(cards) {
+export function makeCard(cards) {
 
-  const markup = cards.books.map(({ book_image, title, author }) => {
+ const markup = cards.map(({ book_image, title, author }) => {
 return `<div class="book-card">
 <a class="link" href="#">
     <div class="card__thumb">
