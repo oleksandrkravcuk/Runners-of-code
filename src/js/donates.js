@@ -12,7 +12,7 @@ const fonds = [
     id: '02',
     title: 'Project HOPE',
     url: 'https://www.projecthope.org/country/ukraine/',
-    img: 'https://github.com/oleksandrkravcuk/Runners-of-code/blob/main/src/img/support/hope.png?raw=true',
+    img: './../img/support/hope.png',
     minimg: './img/support/hope.png_min.png',
   },
   {
