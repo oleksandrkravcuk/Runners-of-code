@@ -16,8 +16,18 @@
 </svg>
         <form id="registrationForm">
           <input type="text" id="name" name="name" placeholder="Name" required>
+          <div class="input-container">
           <input type="email" id="email" name="email" placeholder="Email" required>
+          <svg class="input-icon" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          </div>
+          <div class="input-container">
           <input type="password" id="password" name="password" placeholder="Password" required>
+          <svg class="input-icon" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-lock-02"></use>
+          </svg>
+        </div>
           <button type="submit" id="signupButton">Sign up</button>
           <div class="links" id="links">
             <a href="#" class="active" data-form="registrationForm">Sign Up</a>
