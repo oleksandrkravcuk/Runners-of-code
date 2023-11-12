@@ -18,7 +18,7 @@
           <input type="text" id="name" name="name" placeholder="Name" required>
           <div class="input-container">
           <input type="email" id="email" name="email" placeholder="Email" required>
-          <svg class="input-icon" width="20" height="20">
+          <svg class="input-icon" width="20" height="20" id="emailIcon">
             <use href="./img/symbol-defs.svg#icon-mail"></use>
           </svg>
           </div>
@@ -36,8 +36,18 @@
         </form>
     
         <form id="loginForm" style="display: none;">
+          <div class="input-container">
           <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+          <svg class="input-icon" width="20" height="20" id="loginEmailIcon">
+            <use href="./img/symbol-defs.svg#icon-mail"></use>
+          </svg>
+        </div>
+        <div class="input-container">
           <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+          <svg class="input-icon" width="20" height="20" id="togglePasswordLogin">
+            <use href="./img/symbol-defs.svg#icon-lock-02"></use>
+          </svg>
+        </div>
           <button type="submit" id="loginButton">Sign In</button>
           <div class="links" id="links">
             <a href="#" class="sign-in" data-form="registrationForm">Sign Up</a>
