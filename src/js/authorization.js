@@ -91,9 +91,9 @@ function clearFormFields() {
   }
 
 
-  
+
   const closeIcon = document.querySelector('.close-icon');
   closeIcon.addEventListener('click', function() {
-      const newPageURL = './header.html';
+      const newPageURL = '../index.html';
       window.location.href = newPageURL;
   });
