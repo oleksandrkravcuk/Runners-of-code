@@ -6,7 +6,6 @@
 */
 @import url('./reset.css');
 
-
 @import url('./header.css');
 @import url('./home.css');
 @import url('./reset.css');
@@ -15,6 +14,7 @@
 @import url('./scrollUp.css');
 @import url('./categories.css');
 @import url('./donates.css');
+@import url('./pop_up.css');
 
 :root {
   --main-color: #d0d0d0;
@@ -52,10 +52,9 @@ body {
   max-width: 1440px;
 }
 
-
-@media screen and (min-width: 1200px){
-  .content-contaiter-box{
-      max-width: 1392px;
+@media screen and (min-width: 1200px) {
+  .content-contaiter-box {
+    max-width: 1392px;
   }
   .partial-header {
   }
@@ -63,13 +62,12 @@ body {
     display: flex;
     gap: 40px;
   }
-  .partial-categori-container{
+  .partial-categori-container {
     max-width: 356px;
   }
 }
 
-.content-contaiter-box{
-
+.content-contaiter-box {
 }
 .partial-header {
 }
