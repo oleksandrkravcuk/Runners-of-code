@@ -260,17 +260,22 @@
 
 
 .sign-up-button {
-  background-color: rgba(79, 46, 232, 1);
-  border: 1.5px solid rgba(17, 17, 17, 1);
-  border-radius: 18px;
-  color: white;
-  padding: 14px 15px;
-  gap: 90px;
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 14px;
-  transition: background-color 0.5s, color 0.5s;
-  display: flex;
+    width: 184px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 18px;
+      border: 1.5px solid var(--text-color-second);
+      background: var(--third-color);
+      color: var(--second-color);
+      font-family: DM Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+    
+      letter-spacing: -0.56px;
+    
+      transition: background-color 0.5s, color 0.5s;
 }
 
 .sign-up-button:hover {
