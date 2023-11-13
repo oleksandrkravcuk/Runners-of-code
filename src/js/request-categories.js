@@ -9,7 +9,7 @@ const categoriesList = document.querySelector(".categories")
 
 
 
-
+// //////////////////////////////
 
 topBookCategories.addEventListener('click' ,async (e) => {
 
@@ -27,14 +27,7 @@ topBookCategories.innerHTML = makeCard(response);
 }
 )
 
-
-
-
-
-
-
-
-
+// //////////////////////////////////
 
 categoriesList.addEventListener('click', async (e)=>{
     if(e.target.tagName !== "LI"){
@@ -55,39 +48,3 @@ topBookCategories.classList.add('js-choose-category')
 
 topBookCategories.innerHTML = makeCard(response);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // return console.log(textElement);
-
-// for (let i = 0; i < words.length; i++) {
-//     const wordElement = document.createElement("span");
-//     wordElement.textContent = words[i];
-//     if (words[i] === lastWord) {
-//         wordElement.classList.add('title__accent'); 
-//     }
-//   plasefortitle.appendChild(wordElement);
-
-//     if (i < words.length - 1) {
-//         plasefortitle.appendChild(document.createTextNode(" "));
-//     }
-// }
-}
-
-
-
-
