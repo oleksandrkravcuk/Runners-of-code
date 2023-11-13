@@ -99,7 +99,6 @@ export default function markupDonates(fonds) {
   // Створює всі li
   const itemsDonates = fonds
     .map(({ id, title, url, img, minimg }) => {
-      console.log('img:', img);
       return `<li class="support-item">
       <a class="support-link" href="${url}" 
         rel="noopener noreferrer">

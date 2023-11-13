@@ -1,3 +1,92 @@
-.team {
+.footer {
   background-color: var(--third-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.team-first-wrapper {
+  text-align: center;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.team-pic {
+  width: 25px;
+  height: 25px;
+  background-color: var(--third-color);
+  padding: 5px;
+  padding-bottom: 55px;
+}
+.team-title {
+  color: #fff;
+  font-family: 'DM Sans';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  display: block;
+  background-color: var(--third-color);
+  padding-bottom: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.team-list {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 55px;
+  padding: 0 100px;
+  background-color: var(--third-color);
+}
+.team-item {
+  display: flex;
+  padding-bottom: 20px;
+}
+.git-ico {
+  fill: #fff;
+  opacity: 0.6;
+  padding-right: 5px;
+  transition: all 0.3s ease 0s;
+}
+.in-ico {
+  fill: #fff;
+  opacity: 0.6;
+  transition: all 0.3s ease 0s;
+}
+.team-name {
+  color: #fff;
+  opacity: 0.6;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+/*--------------- Hovers -----------------*/
+
+.team-first-wrapper:hover .team-title,
+.team-first-wrapper:focus .team-title,
+.team-first-wrapper:active .team-title {
+  color: #ffee00;
+}
+
+.team-name:hover,
+.team-name:focus,
+.team-name:active {
+  color: #fff;
+  opacity: 1;
+}
+
+.git-ico:hover,
+.git-ico:focus,
+.git-ico:active,
+.in-ico:hover,
+.in-ico:focus,
+.in-ico:active {
+  fill: #fff;
+  opacity: 1;
 }
