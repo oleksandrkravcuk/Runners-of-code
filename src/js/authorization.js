@@ -1,5 +1,24 @@
 // import Notiflix from "notiflix";
 
+// Firebase
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAxn0yKjSusco_l-oihq9eHcj84Uh_Sbu8",
+//   authDomain: "project-ec93f.firebaseapp.com",
+//   projectId: "project-ec93f",
+//   storageBucket: "project-ec93f.appspot.com",
+//   messagingSenderId: "30851493431",
+//   appId: "1:30851493431:web:afec4c2dd36f5e79e4d9b2",
+//   measurementId: "G-CPTMDRZ288"
+// };
+
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const formContainer = document.querySelector('.form-container');
 
