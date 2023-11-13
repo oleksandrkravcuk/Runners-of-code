@@ -339,9 +339,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   transition: background-color 0.5s, color 0.5s;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .user-button:hover {
   background-color: rgba(17, 17, 17, 1);
