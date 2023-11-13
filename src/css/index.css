@@ -99,13 +99,15 @@ body {
   background-color: var(--background-color);
 }
 
-.partial-container {
-  margin: 0 auto;
-}
-.partial-categori-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .partial-categori-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .partial-container {
+    margin: 0 auto;
+  }
 }
