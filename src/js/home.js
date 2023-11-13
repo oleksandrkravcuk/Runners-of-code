@@ -1,10 +1,12 @@
 import {topBooks} from './fetch-api'
 
 const product = document.querySelector('.section-product')
+const mask = document.querySelector('.mask')
 
 toDoMarkup()
 
 export async function toDoMarkup() {
+    mask.classList.remove('none')
     const response = await topBooks()
 
 
@@ -21,7 +23,7 @@ for (let i = 0; i < response.length; i += 1) {
        <button class="section-book-btn" data-id="${e.list_name}">see more</button>
        </div>`
     }).join(" ")
-
+    mask.classList.add('none')
 product.innerHTML =  `<h2 class="title">Best Sellers 
 <span class="title__accent">Books</span>
 </h2> ${mp}`

@@ -18,6 +18,8 @@
 @import url('./authorization.css');
 @import url('./team.css');
 
+@import url('./reqvest-whis-loader.css');
+
 :root {
   --main-color: #d0d0d0;
   --second-color: #ffffff;
