@@ -34,8 +34,8 @@ window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
 });
 
 buttonSignUp.addEventListener('click', () => {
-  buttonSignUp.style.display = 'none';
-  buttonLogOut.style.display = 'block';
-  linkShopList.style.display = 'block';
-  buttonHome.style.display = 'block';
+  buttonSignUp.classList.add('hidden');
+  //   buttonLogOut.style.display = 'block';
+  //   linkShopList.style.display = 'block';
+  //   buttonHome.style.display = 'block';
 });
