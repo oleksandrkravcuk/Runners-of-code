@@ -299,3 +299,41 @@
   stroke: #6900e1;
   transition: stroke 0.3s ease;
 }
+
+
+
+
+.user-button{
+  background-color: #4F2EE8;
+  border: none;
+  border-radius: 36px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.5s, color 0.5s;
+  color: white;
+}
+.user-button:hover {
+  background-color: rgba(17, 17, 17, 1);
+  color: rgba(79, 46, 232, 1);
+}
+.ellipse{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-icon{
+  fill: #4F2EE8;
+}
+
+.down-icon{
+  fill: #FFFFFF;
+}
