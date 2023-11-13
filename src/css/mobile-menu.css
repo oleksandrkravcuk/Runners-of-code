@@ -1,22 +1,4 @@
 /* Mobile menu modal */
-.burger-menu {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 0;
-
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    transition-property: border, background-color, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .hidden {
     display: none;
@@ -207,7 +189,7 @@
     display: inline-flex;
     justify-content: baseline;
     align-items: center;
-    gap: 4px;
+    
     color: var(--text-color-second);
     font-family: DM Sans;
     font-size: 14px;
@@ -222,7 +204,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 85px;
+    gap: 90px;
 }
 
 .mobile-thumb-img {
@@ -266,13 +248,18 @@
 
     margin-top: 40px;
     margin-left: 20px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .mobile-button-signUp:hover {
-    border: 2px solid var(--text-color-second);
-    font-size: 15px;
+background-color: rgba(17, 17, 17, 1);
+    color: rgba(79, 46, 232, 1);
 }
-
+@media only screen and (max-width: 768px) {
+    .sign-up-button {
+        display: none;
+    }
+}
 .container-button-signUp {}
 
 .mobile-arrow-icon-signUp {
