@@ -5,7 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-
 @import url('./header.css');
 @import url('./home.css');
 @import url('./reset.css');
@@ -57,9 +56,6 @@
   --switch-color: linear-gradient(180deg, #4F2EE8 0%, #686868 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
 }
-/* .header-switch-slider:before {
-  margin-right: 20px;
-} */
 
 body {
   min-width: 1440px;
@@ -74,8 +70,7 @@ body {
     max-width: 1392px;
     margin: 0 auto;
   }
-  .partial-header {
-  }
+  
   .partial-container {
     margin-top: 40px;
     display: flex;
