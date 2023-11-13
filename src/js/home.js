@@ -35,7 +35,7 @@ return `<div class="book-card">
 <a class="link" href="#">
     <div class="card__thumb">
     <img class="book-card-photo" data-id="${_id}" src="${book_image}" alt="" loading="lazy">
-    <p class="card-text">quick view.</p>
+    <p class="card-text">quick view</p>
     </div>
 
     <h3 class="book-card-title">${title}</h3>

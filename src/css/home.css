@@ -1,4 +1,5 @@
 .section-product {
+  font-family: DM Sans;
      color: var(--text-color-main);
      font-size: 14px;
      font-style: normal;
@@ -9,11 +10,32 @@
     }
 
     .section-product h4 {
-      text-transform: none;
+        width: 335px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      .section-product h4 {
+        width: 218px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .section-product h4 {
+        width: 180px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+      }
+    }
+
 
  .title{
   text-transform: none;
+  color: var(--text-color-second);
  }
 
   
@@ -73,11 +95,13 @@
      display: block;
      width: 335px;
  }
+
  @media screen and (min-width: 768px) and (max-width: 1199px) {
      .book-card {
          margin-bottom: 20px;
      } 
    } 
+
    @media screen and (min-width: 768px) and (max-width: 1199px) {
      .book-card:nth-child(-n+3) {
          display: block;
@@ -117,6 +141,12 @@
 
 
  .book-card-title {
+     width: 335px; 
+     white-space: nowrap; 
+     overflow: hidden; 
+     text-overflow: ellipsis;
+
+
      color: var(--text-color-second);
      font-size: 16px;
      font-weight: 700;
@@ -126,8 +156,26 @@
  
  }
 
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .book-card-title {
+    width: 218px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .book-card-title {
+    width: 180px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+}
+
  /* .author {
-  text-transform: none;
+  overflow: hidden;
+  height: 18px;
  } */
  
  .section-book-btn {
@@ -174,12 +222,18 @@
 .card__thumb {
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-text {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
   .card__thumb::before {
     position: absolute;
     content: "";
+    pointer-events: none;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -196,7 +250,10 @@
   }
   
   .card-text {
+    pointer-events: none;
+    display: block;
     position: absolute;
+    font-weight: 500;
     top: 80%;
     left: 25%;
     color: var(--text-color-second);
@@ -237,7 +294,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .js-choose-category .book-card {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
   } 
 } 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -263,4 +320,16 @@
 
 /* .c-title {
   width: 996px;
+} */
+
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .book-card {
+      margin-bottom: 40px;
+  } 
+} 
+
+@media screen and (min-width: 1200px) {
+  .book-card {
+      margin-bottom: 100px;
+  }
 } */
