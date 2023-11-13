@@ -6,7 +6,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 38px; /* 118.75% */
+    line-height: 38px; 
     letter-spacing: -1.28px;
 }
 
@@ -105,84 +105,99 @@ height: 142px;
 
 
 .text-container{
-  margin-top: 14px;
-  margin-bottom: 14px;
+  width: 193px;
+  position: relative;
   display: flex;
   flex-direction: column;
  } 
 
  @media only screen and (min-width: 768px) {
   .text-container{
-  margin-top: 24px;
-  margin-bottom: 24px;
+     width: 508px;  
+ } 
+  
+}
+
+@media only screen and (min-width: 1392px) {
+  .text-container{
+     width: 808px;
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
   
  } 
   
 }
 
 .book-name{
- overflow: hidden;
-color: #111;
-width: 144px;
-text-overflow: ellipsis;
-white-space: nowrap;
-font-family: DM Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 18px; /* 112.5% */
-letter-spacing: -0.64px;
-text-transform: uppercase;
+  margin-top: 14px;
+  height: 18px;
+  overflow: hidden;
+  color: #111;
+  width: 144px;
+  text-overflow: ellipsis;
+  font-family: DM Sans;
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
 }
  @media only screen and (min-width: 768px) {
   .book-name{
   overflow: visible;
-  width: 166px;
+  width: 168px;
+  margin-top: 24px;
+  
 }
   
 }
 
 .list-name{
+  position: absolute;
+  top: 36px;
   color: #B4AFAF;
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px; /* 116.667% */
+  height: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   letter-spacing: 0.36px;
-  width: 165px;
-  padding-bottom: 8px;
+ 
 }
 
  @media only screen and (min-width: 768px) {
   .list-name{
   width: 211px;
+  top: 46px
 }
   
 }
-
-
-
  .description-container{
-  width: 193px;
-  max-height: 68px;
-  padding-bottom: 12px;
+  position: absolute;
+  bottom: 44px;
+  display: -webkit-box;
+  height: 68px;
+  max-width: 193px;
+  margin-top: 8px;
   overflow: hidden;  
   color: #111;
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 21px; /* 128.571% */
   letter-spacing: -0.56px; 
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 } 
 
 
  @media only screen and (min-width: 768px) {
   .description-container{
-    width: 508px;
-    height: 53px;
-    overflow: hidden;  
+    max-width: 508px;
+    bottom: 74px;
+    
+  
     
 }
   
@@ -190,7 +205,7 @@ text-transform: uppercase;
 
  @media only screen and (min-width: 1392px) {
   .description-container{
-    width: 808px;
+    max-width: 808px;
     height: 53px;
     overflow: hidden;  
     
@@ -199,6 +214,8 @@ text-transform: uppercase;
 }
 
 .author{
+  position: absolute;
+  bottom: 14px;
   color: #B4AFAF;
   font-family: DM Sans;
   font-size: 12px;
@@ -206,11 +223,10 @@ text-transform: uppercase;
   font-weight: 400;
   line-height: 14px; /* 116.667% */
   letter-spacing: -0.48px;
-  margin-top: 8px;
 }
  @media only screen and (min-width: 768px) {
   .author{
-    margin-top: 45px;
+     bottom: 24px;
     
 }
   
@@ -250,8 +266,6 @@ text-transform: uppercase;
      margin-top: 24px;
     
 }
-
-
   
 }
   .btn{
@@ -275,15 +289,19 @@ text-transform: uppercase;
 
   .link-container{
     display: flex;
-    margin-left: 40px;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
     gap: 8px;
-    margin-top: 8px;
+    right:  0px;
+    bottom: 0;
+    
 
   }
    @media only screen and (min-width: 768px) {
   .link-container{
-    margin-left: 344px;
-     margin-top: 40px;
+   right: -14px;
+   bottom: 7px;
 }
   
 }
@@ -291,7 +309,8 @@ text-transform: uppercase;
 
  @media only screen and (min-width: 1392px) {
   .link-container{
-    margin-left: 630px;
+    right: 0px;
+   bottom: 8px;
     
 }
 
@@ -303,6 +322,7 @@ text-transform: uppercase;
     width: 32px;
     height: 11px;
     margin-top: 4px;
+    background-image: url(../img/png/amazon.png);
    
   }
 
@@ -333,4 +353,10 @@ height: 27px;
 
   .amazon-item{
      margin-bottom: 14px;
+  }
+
+  .link-amazon:hover
+  .link-amazon:focus{
+    background-image: url(./img/png/amazon_shadow.png);
+    
   }
