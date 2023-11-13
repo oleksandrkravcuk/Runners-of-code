@@ -8,3 +8,4 @@ import './js/scrollUp';
 import './js/pop_up';
 import './js/pop_up_markup';
 import './js/request-categories';
+import './js/mobile-menu';

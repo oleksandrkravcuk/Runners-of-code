@@ -15,6 +15,7 @@
 @import url('./categories.css');
 @import url('./donates.css');
 @import url('./pop_up.css');
+@import url('./mobile-menu.css');
 
 :root {
   --main-color: #d0d0d0;
