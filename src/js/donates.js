@@ -1,3 +1,4 @@
+// імпорт логотипів фондів donates.html
 import save from './../img/support/save_children.png';
 import savemin from './../img/support/save_children_min.png';
 import hope from './../img/support/hope.png';
@@ -17,6 +18,7 @@ import worldmin from './../img/support/world_vision_min.png';
 import prytula from './../img/support/prytula.png';
 import prytulamin from './../img/support/prytula_min.png';
 
+// масив фондів donates.html
 const fonds = [
   {
     id: '01',
@@ -99,7 +101,6 @@ export default function markupDonates(fonds) {
   // Створює всі li
   const itemsDonates = fonds
     .map(({ id, title, url, img, minimg }) => {
-      console.log('img:', img);
       return `<li class="support-item">
       <a class="support-link" href="${url}" 
         rel="noopener noreferrer">

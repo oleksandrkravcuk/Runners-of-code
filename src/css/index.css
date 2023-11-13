@@ -16,6 +16,7 @@
 @import url('./donates.css');
 @import url('./pop_up.css');
 @import url('./mobile-menu.css');
+@import url('./team.css');
 
 :root {
   --main-color: #d0d0d0;
@@ -27,12 +28,12 @@
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --fifth-color: #b1a5ef;
   --thumb-color: #e0e0e0;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #DCDCDC 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
 }
 .light-theme {
-  --background-color: #F6F6F6;
+  --background-color: #f6f6f6;
   --main-color: #d0d0d0;
   --second-color: #ffffff;
   --third-color: #4f2ee8;
@@ -41,8 +42,8 @@
   --text-color-second: #111111;
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --thumb-color: #e0e0e0;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #DCDCDC 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
 }
 .dark-theme {
   --main-color: #202024;
@@ -54,8 +55,8 @@
   --text-color-second: #ffffff;
   --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
   --thumb-color: #171719;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #686868 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
 }
 /* .header-switch-slider:before {
   margin-right: 20px;
@@ -66,7 +67,7 @@ body {
   background-color: var(--background-color);
   background-color: var(--main-color);
 }
-.color-body-teme{
+.color-body-teme {
   background-color: var(--background-color);
 }
 @media screen and (min-width: 1200px) {
@@ -74,8 +75,8 @@ body {
     max-width: 1392px;
     margin: 0 auto;
   }
-  .partial-header {
-  }
+  /* .partial-header {
+  } */
   .partial-container {
     margin-top: 40px;
     display: flex;

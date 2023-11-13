@@ -1,3 +1,57 @@
 .team {
   background-color: var(--third-color);
 }
+.team-first-wrapper {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  padding-bottom: 45px;
+  padding-top: 60px;
+  max-width: 1000px;
+}
+.team-title {
+  display: block;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: var(--second-color);
+  font-family: 'DM Sans';
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 3%;
+  line-height: 20px;
+  padding-left: 10px;
+  text-align: center;
+}
+.team-list {
+  padding-bottom: 40px;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 3px;
+}
+.team-item {
+  color: var(--second-color);
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -4%;
+  line-height: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  transition: all 0.3s ease 0s;
+}
+.team-name {
+  color: #fff;
+  margin-left: 8px;
+}
+.git-ico {
+  fill: #fff;
+}
+.in-ico {
+  fill: #fff;
+}

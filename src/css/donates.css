@@ -10,7 +10,9 @@
   );
   border-radius: 16px;
   padding: 24px 40px;
+  padding-bottom: 0;
   margin-bottom: 30px;
+  height: 470px;
 }
 
 .support-first-wrapper {

@@ -2,9 +2,12 @@
 <html class="light-theme" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/index.css" />
@@ -22,24 +25,24 @@
         </div>
       </div>
       <div class="content-contaiter-box">
-      <div class="partial-header">
-        <load ="partials/header.html" />
-        <load ="partials/modal.html" />
-        <load ="partials/mobile-menu.html" />
+        <div class="partial-header">
+          <load ="partials/header.html" />
+          <load ="partials/modal.html" />
+          <load ="partials/mobile-menu.html" />
+        </div>
+        <main class="partial-container">
+          <aside class="partial-categori-container">
+            <load ="partials/categories.html" />
+            <load ="partials/donates.html" />
+          </aside>
+          <load ="partials/home.html" />
+          <load ="partials/pop_up.html" />
+        </main>
       </div>
-    <main class="partial-container">
-      <aside class="partial-categori-container">
-        <load ="partials/categories.html" />
-        <load ="partials/donates.html" />
-      </aside>
-      <load ="partials/home.html" />
-      <load ="partials/pop_up.html" />
-    </main>
-  </div>
-  <footer><load ="partials/team.html" /></footer>
-    <load ="partials/scrollUp.html" />
-    <!-- <load ="partials/scrollUp.html" /> -->
-  </div>
+      <footer><load ="partials/team.html" /></footer>
+      <load ="partials/scrollUp.html" />
+      <!-- <load ="partials/scrollUp.html" /> -->
+    </div>
     <script type="module" src="/index.js"></script>
   </body>
 </html>
