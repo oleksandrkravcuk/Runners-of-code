@@ -15,7 +15,7 @@ async function markup() {
   try {
     const data = await fetchIdBook(id);
     console.log(data);
-
+    
        bookCard = `
      <div class = "wrrap">
         <div class = "img-container">
