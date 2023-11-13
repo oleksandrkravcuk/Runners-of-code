@@ -15,6 +15,7 @@
 @import url('./donates.css');
 @import url('./pop_up.css');
 @import url('./mobile-menu.css');
+/* @import url('./authorization.css'); */
 
 :root {
   --main-color: #d0d0d0;
@@ -58,20 +59,19 @@
 }
 
 body {
-  min-width: 1440px;
-  background-color: var(--background-color);
-  background-color: var(--main-color);
-}
-.color-body-teme{
   background-color: var(--background-color);
 }
+
 @media screen and (min-width: 1200px) {
   .content-contaiter-box {
-    max-width: 1392px;
+    max-width: 1440px;
     margin: 0 auto;
   }
   
   .partial-container {
+    max-width: 1392px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-top: 40px;
     display: flex;
     gap: 40px;
