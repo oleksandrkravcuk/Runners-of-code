@@ -27,13 +27,14 @@
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --fifth-color: #b1a5ef;
   --thumb-color: #e0e0e0;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #DCDCDC 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
+  --bgc-pop-up: rgba(17, 17, 17, 0.4);
 }
 .light-theme {
   --background-color-header: #ffffff;
-  --background-color: #F6F6F6;
+  --background-color: #f6f6f6;
   --main-color: #d0d0d0;
   --second-color: #ffffff;
   --third-color: #4f2ee8;
@@ -42,8 +43,8 @@
   --text-color-second: #111111;
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --thumb-color: #e0e0e0;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #DCDCDC 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
 }
 .dark-theme {
   --background-color-header: #111111;
@@ -57,8 +58,8 @@
   --text-color-second: #ffffff;
   --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
   --thumb-color: #171719;
-  --switch-color: linear-gradient(180deg, #4F2EE8 0%, #686868 100%);
-  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
+  --switch-color: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
+  --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
-  
+
   .partial-container {
     max-width: 1392px;
     padding-left: 24px;
