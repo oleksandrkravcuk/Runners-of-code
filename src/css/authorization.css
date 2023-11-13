@@ -176,3 +176,8 @@
             stroke: #00b0e1;
             transition: stroke 0.6s ease; 
         }
+
+
+        .modal-open {
+            overflow: hidden;
+          }

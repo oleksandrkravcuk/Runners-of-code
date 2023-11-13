@@ -1,4 +1,4 @@
-// import Notiflix from "notiflix";
+import Notiflix from "notiflix";
 
 // Firebase
 // import { initializeApp } from "firebase/app";
@@ -22,17 +22,17 @@
 document.addEventListener('DOMContentLoaded', function () {
   const openModalButton = document.getElementById('openModalButton');
   const modal = document.getElementById('modal');
-
+  const body = document.body;
   openModalButton.addEventListener('click', function () {
     modal.style.display = 'block';
+    body.classList.add('modal-open');
   });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+
   const closeModalButton = document.getElementById('closeModalButton');
-  const modal = document.getElementById('modal');
   closeModalButton.addEventListener('click', function () {
     modal.style.display = 'none';
+    body.classList.remove('modal-open');
   });
 });
 
@@ -75,7 +75,7 @@ function saveData(event) {
   let password = document.getElementById('password').value;
 
   if (name === '' || email === '' || password === '') {
-    // Notiflix.Notify.failure('Please fill in all fields.');
+    Notiflix.Notify.failure('Please fill in all fields.');
     return;
   }
 
@@ -86,11 +86,18 @@ function saveData(event) {
   };
   console.log(dataObject);
   localStorage.setItem('userData', JSON.stringify(dataObject));
+
+  const signUpButton = document.getElementById('signUpLink');
+  signUpButton.closest('.sign-up-button').style.display = 'none';
+
+  const userButton = document.querySelector('.user-button');
+  userButton.style.display = 'flex';
+  userButton.querySelector('p').textContent = name;
+
   clearFormFields();
-//   Notiflix.Notify.success('User registered successfully!');
-  setTimeout(function() {
-    window.location.href = './index.html';
-  }, 3000);
+  Notiflix.Notify.success('User registered successfully!');
+
+  
 }
 
 function login(event) {
@@ -102,15 +109,20 @@ function login(event) {
     let userData = JSON.parse(storedData);
 
     if (loginEmail === userData.email && loginPassword === userData.password) {
-    //   Notiflix.Notify.success('User logged in successfully!');
-      setTimeout(function() {
-        window.location.href = './index.html';
-      }, 3000);
+      const signUpButton = document.getElementById('signUpLink');
+      signUpButton.closest('.sign-up-button').style.display = 'none';
+
+      const userButton = document.querySelector('.user-button');
+      userButton.style.display = 'flex';
+      userButton.querySelector('p').textContent = userData.name;
+      Notiflix.Notify.success('User logged in successfully!');
+      
     } else {
-    //   Notiflix.Notify.info('Invalid email or password. Try again.');
+      Notiflix.Notify.info('Invalid email or password. Try again.');
     }
   }
 }
+
 
 function clearFormFields() {
     document.getElementById('name').value = '';
@@ -175,7 +187,7 @@ emailIcon.addEventListener('click', function () {
   if (userEmail && userEmail.includes('@')) {
     window.location.href = 'mailto:' + userEmail;
   } else {
-    // Notiflix.Notify.warning('Please enter a valid email address.');
+    Notiflix.Notify.warning('Please enter a valid email address.');
   }
 });
 
@@ -186,6 +198,6 @@ emailIconLogin.addEventListener('click', function () {
   if (userEmailLogin && userEmailLogin.includes('@')) {
     window.location.href = 'mailto:' + userEmailLogin;
   } else {
-     // Notiflix.Notify.warning('Please enter a valid email address.');
+     Notiflix.Notify.warning('Please enter a valid email address.');
   }
 });
