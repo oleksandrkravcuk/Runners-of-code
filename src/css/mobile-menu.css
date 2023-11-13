@@ -129,7 +129,7 @@
 
 .mobile-header-nav {
     display: flex;
-    justify-content: baseline;
+    
     align-items: center;
 
 }
@@ -187,7 +187,7 @@
 
 .mobile-button-link {
     display: inline-flex;
-    justify-content: baseline;
+    
     align-items: center;
     
     color: var(--text-color-second);
