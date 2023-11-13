@@ -240,6 +240,14 @@
   transition: .3s;
 }
 
+.header-switch-slider-dark {
+  margin-left: 20px;
+}
+
+.header-switch-slider-light {
+  margin-right: 20px;
+}
+
 .header-switch-input:checked,
 .header-switch-slider {
   background: var(--switch-color);
