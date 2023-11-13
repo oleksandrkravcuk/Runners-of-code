@@ -23,8 +23,9 @@
 
 @media only screen and (min-width: 1200px) {
   .header-container {
-    min-width: 1200px;
-    margin-left: auto;
+    width: 1440px;
+    margin: 0 auto;
+    /* margin-left: auto; */
     /* margin-right: 24px; */
     align-items: center;
   }

@@ -9,36 +9,17 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
-    <div class="color-body-teme">
-      <div class="mask">
-        <div class="book">
-          <div class="book__pg-shadow"></div>
-          <div class="book__pg"></div>
-          <div class="book__pg book__pg--2"></div>
-          <div class="book__pg book__pg--3"></div>
-          <div class="book__pg book__pg--4"></div>
-          <div class="book__pg book__pg--5"></div>
-        </div>
-      </div>
-      <div class="content-contaiter-box">
-      <div class="partial-header">
-        <load ="partials/header.html" />
-        <load ="partials/mobile-menu.html" />
-      </div>
-    <main class="partial-container">
-      <aside class="partial-categori-container">
-        <load ="partials/categories.html" />
-        <load ="partials/donates.html" />
-      </aside>
-      <load ="partials/home.html" />
-      <load ="partials/pop_up.html" />
-    </main>
-  </div>
-  <footer><load ="partials/team.html" /></footer>
-    <load ="partials/scrollUp.html" />
-    <!-- <load ="partials/scrollUp.html" /> -->
-  </div>
+  <body> 
+    <load src="partials/header.html" />
+    <load src="partials/main.html" />
+    <load src="partials/team.html" />
+    
+    <load src="partials/pop_up.html" />
+    <load src="partials/mobile-menu.html" />
+    <load src="partials/scrollUp.html" />
+    <load src="partials/loader.html" />
+
+
     <script type="module" src="/index.js"></script>
   </body>
 </html>
