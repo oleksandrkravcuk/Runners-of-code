@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const closeModalButton = document.getElementById('closeModalButton');
+  const modal = document.getElementById('modal');
+  closeModalButton.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
