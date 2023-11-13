@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const redirectButton = document.getElementById('redirectButton');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const redirectButton = document.getElementById('redirectButton');
 
-    if (redirectButton) {
-        redirectButton.addEventListener('click', redirectToForm);
-    }
-});
+//     if (redirectButton) {
+//         redirectButton.addEventListener('click', redirectToForm);
+//     }
+// });
 
-function redirectToForm() {
-    window.location.href = './authorization.html';
-}
+// function redirectToForm() {
+//     window.location.href = './authorization.html';
+// }
