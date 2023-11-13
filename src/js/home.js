@@ -30,11 +30,11 @@ product.innerHTML =  `<h2 class="title">Best Sellers
 }
 export function makeCard(cards) {
 
- const markup = cards.map(({ book_image, title, author }) => {
+ const markup = cards.map(({ book_image, title, author, _id }) => {
 return `<div class="book-card">
 <a class="link" href="#">
     <div class="card__thumb">
-    <img class="book-card-photo" src="${book_image}" alt="" loading="lazy">
+    <img class="book-card-photo" data-set="${_id}" src="${book_image}" alt="" loading="lazy">
     <p class="card-text">quick view.</p>
     </div>
 
