@@ -1,11 +1,8 @@
-.header {
-  font-family: DM Sans, sans-serif;
-}
-
 .header-container {
   display: flex;
+  font-family: DM Sans, sans-serif;
   /* margin: 0 auto; */
-  padding: 18px 20px;
+  padding: 13px 0px;
   position: relative;
   justify-content: center;
   align-items: flex-start;
@@ -88,7 +85,7 @@
 @media only screen and (min-width: 1200px) {
   .nav-list {
     gap: 24px;
-    margin-right: 537px;
+    margin-right: 745px;
   }
 }
 
@@ -262,7 +259,7 @@
 
 .sign-up-button {
     width: 184px;
-      height: 48px;
+      height: 45px;
       flex-shrink: 0;
       border-radius: 18px;
       border: 1.5px solid var(--text-color-second);
