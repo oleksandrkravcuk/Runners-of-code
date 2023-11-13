@@ -34,7 +34,7 @@ export function makeCard(cards) {
 return `<div class="book-card">
 <a class="link" href="#">
     <div class="card__thumb">
-    <img class="book-card-photo" data-set="${_id}" src="${book_image}" alt="" loading="lazy">
+    <img class="book-card-photo" data-id="${_id}" src="${book_image}" alt="" loading="lazy">
     <p class="card-text">quick view.</p>
     </div>
 
