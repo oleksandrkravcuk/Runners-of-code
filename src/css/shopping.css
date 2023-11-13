@@ -1,7 +1,7 @@
-.title{
+.title__shopping{
     margin: 0;
     padding: 40px 0 40px 20px;
-    color: #111;
+    color: var(--text-color-second);
     font-family: DM Sans;
     font-size: 32px;
     font-style: normal;
@@ -11,12 +11,13 @@
 }
 
 .title__accent{
-    color: #4F2EE8;
+    color: var(--third-color);
 
 }
 
-body{
+.shopping-body{
   margin: 0;
+  background-color: var(--background-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,7 +51,7 @@ body{
   height: 170px;
   border-radius: 16px;
   border: 2px solid rgba(79, 46, 232, 0.40);
-  background: #FFF;
+  background: var(--second-color);
   align-items: flex-start; 
 }
 
@@ -121,8 +122,6 @@ height: 142px;
 @media only screen and (min-width: 1392px) {
   .text-container{
      width: 808px;
-  /* margin-top: 24px;
-  margin-bottom: 24px; */
   
  } 
   
@@ -132,7 +131,7 @@ height: 142px;
   margin-top: 14px;
   height: 18px;
   overflow: hidden;
-  color: #111;
+  color: var(--text-color-second);
   width: 144px;
   text-overflow: ellipsis;
   font-family: DM Sans;
@@ -153,7 +152,7 @@ height: 142px;
 .list-name{
   position: absolute;
   top: 36px;
-  color: #B4AFAF;
+  color: var(--text-color-main);
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
@@ -180,7 +179,7 @@ height: 142px;
   max-width: 193px;
   margin-top: 8px;
   overflow: hidden;  
-  color: #111;
+  color: var(--text-color-second);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -216,7 +215,7 @@ height: 142px;
 .author{
   position: absolute;
   bottom: 14px;
-  color: #B4AFAF;
+  color: var(--text-color-main);
   font-family: DM Sans;
   font-size: 12px;
   font-style: italic;
@@ -237,8 +236,8 @@ height: 142px;
 }
 
 .icon-trash{
-  stroke: white;
-  fill: #4F2EE8;
+  stroke: var(--second-color);
+  fill: var(--third-color);
 
 }
 
@@ -272,8 +271,8 @@ height: 142px;
     width: 28px;
     height: 28px;
     border-radius: 50px;
-    border:#4F2EE8;
-    background-color: #4F2EE8;
+    border: var(--third-color);
+    background-color: var(--third-color);
 
   }
 
@@ -322,8 +321,7 @@ height: 142px;
     width: 32px;
     height: 11px;
     margin-top: 4px;
-    background-image: url(../img/png/amazon.png);
-   
+    
   }
 
    @media only screen and (min-width: 768px) {
@@ -349,14 +347,6 @@ height: 27px;
 }
   
 }
-
-
   .amazon-item{
      margin-bottom: 14px;
-  }
-
-  .link-amazon:hover
-  .link-amazon:focus{
-    background-image: url(./img/png/amazon_shadow.png);
-    
   }

@@ -1,9 +1,12 @@
 import { fetchIdBook } from './fetch-api'
 // import Notiflix from 'notiflix';
 // import amazon from './../img/png/amazon.png';
-// import book from './../img/png/book.png'; 
-// import book_shadow from './../img/png/book_shadow.png'; 
-// import amazon_shadow from './../img/png/amazon_shadow.png'; 
+// import book from './../img/png/book.png';
+// import book_shadow from './../img/png/book_shadow.png';
+// import amazon_shadow from './../img/png/amazon_shadow.png';
+
+import amazon from '../img/png/amazon.png';
+import book from '../img/png/book.png';
 
 const card = document.querySelector('.books-card');
 const btnDelete = document.querySelector('.btn');
@@ -31,17 +34,15 @@ async function markup() {
                 <p class = "author"> ${data.author}</p>
                 <ul class = "link-container">
                 <li class = "amazon-item"><a class = "link-amazon" href="${data.amazon_product_url}">
-                <img class = "link-amazon" src="./img/png/amazon.png" alt="" width="32" height="11">
+                <img class = "link-amazon" src="${amazon}" alt="" width="32" height="11">
                 </a></li>
-                <li class = "book-item"><a href="${data.buy_links}}">
-                <img class = "link-book" src="./img/png/book.png" alt="" width="16" height="16">
+                <li class = "book-item"><a href="${data.buy_links[1].url}}">
+                <img class = "link-book" src="${book}" alt="" width="16" height="16">
                 </a></li>
                 </ul>
             </div>
-            
         </div>
       </div>`;
-
     card.insertAdjacentHTML('beforeend', bookCard);
 
   } catch (error) {
