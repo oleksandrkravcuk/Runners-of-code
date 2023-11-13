@@ -4,7 +4,7 @@
 
 .header-container {
   display: flex;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 18px 20px;
   position: relative;
   justify-content: center;
