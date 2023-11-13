@@ -1,5 +1,8 @@
 import Notiflix from "notiflix";
 
+Notiflix.Notify.Init({
+  zindex: 10000, 
+});
 // Firebase
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
