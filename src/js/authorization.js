@@ -19,6 +19,23 @@
 // const analytics = getAnalytics(app);
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const openModalButton = document.getElementById('openModalButton');
+  const modal = document.getElementById('modal');
+
+  openModalButton.addEventListener('click', function () {
+    modal.style.display = 'block';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const closeModalButton = document.getElementById('closeModalButton');
+  const modal = document.getElementById('modal');
+  closeModalButton.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const formContainer = document.querySelector('.form-container');
@@ -47,6 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
 
 function saveData(event) {
   event.preventDefault();
@@ -96,6 +116,8 @@ function clearFormFields() {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('password').value = '';
+    document.getElementById('loginEmail').value='';
+    document.getElementById('loginPassword').value='';
   }
   
   function switchForm(targetFormId) {
@@ -112,11 +134,11 @@ function clearFormFields() {
 
 
 
-  const closeIcon = document.querySelector('.close-icon');
-  closeIcon.addEventListener('click', function() {
-      const newPageURL = './index.html';
-      window.location.href = newPageURL;
-  });
+  // const closeIcon = document.querySelector('.close-icon');
+  // closeIcon.addEventListener('click', function() {
+  //     const newPageURL = './index.html';
+  //     window.location.href = newPageURL;
+  // });
 
 
 
