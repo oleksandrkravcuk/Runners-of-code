@@ -51,14 +51,11 @@
   display: block;
   width: 499px;
   height: auto;
-  /* padding: 20px 100px; */
+  padding: 20px 90px;
   border-radius: 40px;
   border: 2px solid var(--third-color);
-}
-.pop_up__body-btn-text {
-  display: block;
-  text-align: center;
-  margin: 20px;
+  background: var(--second-color);
+
   color: var(--text-color-second);
   font-family: DM Sans;
   font-size: 18px;
@@ -67,22 +64,15 @@
   letter-spacing: -0.18px;
   text-transform: uppercase;
 }
+.pop_up__body-btn-status:hover {
+  background-color: var(--third-color);
+  color: #fff;
+}
+
 .pop_up__data-text-all {
   display: flex;
   text-align: left;
   flex-direction: column;
-}
-.pop_up__data-btn-text {
-  display: block;
-  color: var(--text-color-second);
-  font-family: DM Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.18px;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .pop_up__data-img {
@@ -103,6 +93,7 @@
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.96px;
+  width: 280px;
 }
 .pop_up__data-author {
   color: var(--text-color-main);
@@ -143,4 +134,7 @@
 }
 .pop_up__data-amazon-book:hover {
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.modal-open {
+  overflow: hidden;
 }
