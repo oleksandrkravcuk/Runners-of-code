@@ -17,13 +17,15 @@ if(e.target.tagName !== "BUTTON"){
     return
 }
 placeForTitle.innerHTML = ""
+
 console.dir(e.target.parentElement.firstElementChild.textContent);
 const categoriesId = e.target.parentElement.firstElementChild.textContent
-
+// title(categoriesId)
 const response = await fetchCategory(categoriesId)
 topBookCategories.classList.add('js-choose-category')
 
 topBookCategories.innerHTML = makeCard(response);
+title(categoriesId)
 }
 )
 
@@ -41,10 +43,32 @@ categoriesList.addEventListener('click', async (e)=>{
     }
 
     placeForTitle.innerHTML = ""
+    
 const categoriesId = e.target.textContent
-
 const response = await fetchCategory(categoriesId)
 topBookCategories.classList.add('js-choose-category')
 
 topBookCategories.innerHTML = makeCard(response);
+title(categoriesId)
 })
+
+
+function title(e) {
+    
+    const name = e;
+    
+    const words = name.split(" ");
+    
+    const lastWord = words[words.length - 1];
+    
+    const textElement = document.createElement("h2");
+    textElement.classList.add('title')
+    // const sectionTitle = name
+    textElement.textContent = name;
+  
+    textElement.innerHTML = textElement.innerHTML.replace(lastWord, '<span class="title__accent">' + lastWord + '</span>');
+    textElement.classList.add('c-title')
+        console.log(textElement);
+        placeForTitle.prepend(textElement);
+            // topBookCategories.insertAdjacentHTML("afterbegin", textElement);
+}

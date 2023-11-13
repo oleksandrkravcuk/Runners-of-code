@@ -95,6 +95,19 @@
      width: 100%;
      border-radius: 8px;
  }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .book-card-photo {
+    height: 316px;
+  }
+ }
+ @media screen and (min-width: 1199px) {
+  .book-card-photo {
+    height: 256px;
+  }
+ }
+
+
  .book-card-title {
      color: var(--text-color-second);
      font-size: 16px;
@@ -236,3 +249,6 @@
 } 
 
 
+/* .c-title {
+  width: 996px;
+} */
