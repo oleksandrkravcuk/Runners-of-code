@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/authorization.css">
-</head>
-<body>
-<div class="form-container">
-  <svg class="close-icon" width="20" height="20">
-    <use href="./img/symbol-defs.svg#icon-close"></use>
-</svg>
-        <form id="registrationForm">
-          <input type="text" id="name" name="name" placeholder="Name" required>
-          <div class="input-container">
-          <input type="email" id="email" name="email" placeholder="Email" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/authorization.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <svg class="close-icon" width="20" height="20">
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+      <form id="registrationForm">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <div class="input-container">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
           <svg class="input-icon" width="20" height="20" id="emailIcon">
             <use href="./img/symbol-defs.svg#icon-mail"></use>
           </svg>
-          </div>
-          <div class="input-container">
-          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="input-container">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
           <svg class="input-icon" width="20" height="20" id="togglePassword">
             <use href="./img/symbol-defs.svg#icon-lock-02"></use>
           </svg>
         </div>
-          <button type="submit" id="signupButton">Sign up</button>
-          <div class="links" id="links">
-            <a href="#" class="active" data-form="registrationForm">Sign Up</a>
-            <a href="#" class="sign-in" data-form="loginForm">Sign In</a>
-          </div>
-        </form>
-    
-        <form id="loginForm" style="display: none;">
-          <div class="input-container">
-          <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+        <button type="submit" id="signupButton">Sign up</button>
+        <div class="links" id="links">
+          <a href="#" class="active" data-form="registrationForm">Sign Up</a>
+          <a href="#" class="sign-in" data-form="loginForm">Sign In</a>
+        </div>
+      </form>
+
+      <form id="loginForm" style="display: none">
+        <div class="input-container">
+          <input
+            type="email"
+            id="loginEmail"
+            name="email"
+            placeholder="Email"
+            required
+          />
           <svg class="input-icon" width="20" height="20" id="loginEmailIcon">
             <use href="./img/symbol-defs.svg#icon-mail"></use>
           </svg>
         </div>
         <div class="input-container">
-          <input type="password" id="loginPassword" name="password" placeholder="Password" required>
-          <svg class="input-icon" width="20" height="20" id="togglePasswordLogin">
+          <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <svg
+            class="input-icon"
+            width="20"
+            height="20"
+            id="togglePasswordLogin"
+          >
             <use href="./img/symbol-defs.svg#icon-lock-02"></use>
           </svg>
         </div>
-          <button type="submit" id="loginButton">Sign In</button>
-          <div class="links" id="links">
-            <a href="#" class="sign-in" data-form="registrationForm">Sign Up</a>
-            <a href="#" class="active" data-form="loginForm">Sign In</a>
-          </div>
-        </form>
-    </div>  
+        <button type="submit" id="loginButton">Sign In</button>
+        <div class="links" id="link">
+          <a href="#" class="sign-in" data-form="registrationForm">Sign Up</a>
+          <a href="#" class="active" data-form="loginForm">Sign In</a>
+        </div>
+      </form>
+    </div>
     <script type="module" src="./js/authorization.js"></script>
   </body>
-  </html>
+</html>

@@ -6,7 +6,7 @@ import book from '../img/png/book.png';
 async function createMarkup(id) {
   try {
     const data = await fetchIdBook(id);
-    console.log('resp', data);
+    console.log('Denys resp', data);
     const resData = `
       
       <div class="pop_up__data">

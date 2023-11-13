@@ -1,40 +1,41 @@
-import {topBooks} from './fetch-api'
+import { topBooks } from './fetch-api';
 
-const product = document.querySelector('.section-product')
+const product = document.querySelector('.section-product');
 
-toDoMarkup()
+toDoMarkup();
 
 export async function toDoMarkup() {
-    const response = await topBooks()
+  const response = await topBooks();
 
-
-for (let i = 0; i < response.length; i += 1) {
-
-   const mp = response.map((e)=>{
-       return `<div class="thomb-book-section">
+  for (let i = 0; i < response.length; i += 1) {
+    const mp = response
+      .map(e => {
+        return `<div class="thomb-book-section">
        <h2 class="sections-title">${e.list_name}</h2>
        <div class="section-book">
        
        ${makeCard(e.books)}
        
        </div>
-       <button class="section-book-btn" data-id="${e.list_name}">see more</button>
-       </div>`
-    }).join(" ")
+       <button class="section-book-btn" data-id="${
+         e.list_name
+       }">see more</button>
+       </div>`;
+      })
+      .join(' ');
 
-product.innerHTML =  `<h2 class="title">Best Sellers 
+    product.innerHTML = `<h2 class="title">Best Sellers 
 <span class="title__accent">Books</span>
-</h2> ${mp}`
-}
-  
+</h2> ${mp}`;
+  }
 }
 export function makeCard(cards) {
-
- const markup = cards.map(({ book_image, title, author }) => {
-return `<div class="book-card">
+  const markup = cards
+    .map(({ book_image, title, author }) => {
+      return `<div class="book-card">
 <a class="link" href="#">
     <div class="card__thumb">
-    <img class="book-card-photo" src="${book_image}" alt="" loading="lazy">
+    <img class="book-card-photo"  src="${book_image}" alt="" loading="lazy">
     <p class="card-text">quick view.</p>
     </div>
 
@@ -43,8 +44,9 @@ return `<div class="book-card">
      
 </a>
     
-</div>`
-    }).join(" ")
+</div>`;
+    })
+    .join(' ');
 
-    return markup 
+  return markup;
 }

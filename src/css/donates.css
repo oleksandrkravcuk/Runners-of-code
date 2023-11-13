@@ -35,7 +35,7 @@
   font-family: 'DM Sans';
   font-weight: 600;
   font-size: 22px;
-  letter-spacing: -4%;
+  letter-spacing: -4px;
   line-height: 24px;
   padding-left: 10px;
 }
@@ -58,7 +58,7 @@
   font-family: 'DM Sans';
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: -4%;
+  letter-spacing: -4px;
   line-height: 18px;
   padding-right: 16px;
 }

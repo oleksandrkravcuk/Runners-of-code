@@ -1,7 +1,5 @@
-
 const color = document.querySelector('.header-switch');
 color.addEventListener('click', onClickBtnTheme);
-
 
 function initialState(themeName) {
   localStorage.setItem('theme', themeName);
@@ -18,6 +16,6 @@ function toggleTheme() {
 }
 
 function onClickBtnTheme(e) {
-    e.preventDefault();
-    toggleTheme();
+  e.preventDefault();
+  toggleTheme();
 }

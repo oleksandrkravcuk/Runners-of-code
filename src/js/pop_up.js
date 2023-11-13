@@ -4,9 +4,10 @@ const refs = {
   popUpOpen: document.querySelector('.pop_up'),
   btnClose: document.querySelector('.pop_up__body-close'),
   imgs: document.querySelector('.section-product'),
-  popUpBody: document.querySelector('.pop_up__body'),
+  // popUpBody: document.querySelector('.pop_up__body'),
   textBtn: document.querySelector('.pop_up__body-btn-text'),
   btnToChangeStatusOfBook: document.querySelector('.pop_up__body-btn-status'),
+  popUpDate: document.querySelector('.pop_up__content'),
 };
 // ---------------------------------------------------------------------------->
 refs.imgs.addEventListener('click', openModal);
@@ -25,7 +26,7 @@ function openModal(e) {
   } else {
     let id = e.target.dataset.id;
     refs.popUpOpen.classList.add('hiden');
-
+    console.log('Denys', id);
     createMarkup(id);
     OBJ_KEYS.push(id);
     onCheckStorge();

@@ -76,7 +76,7 @@ async function fetchIdBookTest1() {
   id = '643282b1e85766588626a0b2';
   try {
     const resBookId = await fetchIdBook(id);
-    console.log('fetchIdBook', resBookId);
+    console.log('Denys fetchIdBook', resBookId);
     return resBookId;
   } catch (error) {
     Notiflix.Notify.failure('Щось пішло не так в "fetchIdBookTest1"');
