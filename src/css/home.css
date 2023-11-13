@@ -6,7 +6,14 @@
      line-height: 18px; 
      letter-spacing: 0.42px;
      text-transform: uppercase;
- 
+    }
+
+    .section-product h4 {
+      text-transform: none;
+    }
+
+ .title{
+  text-transform: none;
  }
  
  .sections-title {
@@ -117,6 +124,10 @@
      margin-bottom: 4px;
  
  }
+
+ /* .author {
+  text-transform: none;
+ } */
  
  .section-book-btn {
      display: block;

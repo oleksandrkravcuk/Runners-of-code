@@ -38,7 +38,7 @@ return `<div class="book-card">
     <p class="card-text">quick view.</p>
     </div>
 
-    <h3 class="book-card-title" >${title}</h3>
+    <h3 class="book-card-title">${title}</h3>
     <h4>${author}</h4>
      
 </a>
