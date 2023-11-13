@@ -32,6 +32,7 @@
   --static-color: #111111;
 }
 .light-theme {
+  --background-color-header: #ffffff;
   --background-color: #F6F6F6;
   --main-color: #d0d0d0;
   --second-color: #ffffff;
@@ -45,6 +46,8 @@
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.10) inset;
 }
 .dark-theme {
+  --background-color-header: #111111;
+  --background-color: #202024;
   --main-color: #202024;
   --second-color: #111111;
   --third-color: #4f2ee8;
@@ -60,6 +63,10 @@
 
 body {
   background-color: var(--background-color);
+}
+
+.header-container {
+  background-color: var(--background-color-header);
 }
 
 @media screen and (min-width: 1200px) {
