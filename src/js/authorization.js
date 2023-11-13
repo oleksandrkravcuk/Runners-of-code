@@ -29,13 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-const refs = {
-  closeModal: document.getElementById('closeModal')
-};
-function clearModalBody() {
-  refs.closeModal.innerHTML = ''; 
-  modal.style.display = 'none';
-}
 
 document.addEventListener('DOMContentLoaded', function() {
   const formContainer = document.querySelector('.form-container');
