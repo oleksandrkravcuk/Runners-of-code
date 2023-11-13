@@ -34,6 +34,7 @@
 
 
  .title{
+  font-family: DM Sans;
   text-transform: none;
   color: var(--text-color-second);
  }
@@ -83,7 +84,7 @@
          gap: 24px;
      }
    }
- 
+ /* стилізація картки...................................................... */
  .book-card {
      display: none;
      margin-bottom: 8px;
@@ -138,7 +139,7 @@
     height: 256px;
   }
  }
-
+/* стилізація заголовку картки .............................. */
 
  .book-card-title {
      width: 335px; 
@@ -177,7 +178,7 @@
   overflow: hidden;
   height: 18px;
  } */
- 
+ /* стилізація кнопки під секцією............................. */
  .section-book-btn {
      display: block;
  
@@ -269,6 +270,13 @@
 
 
 /* стилі для обраної категорії */
+
+
+
+.js-choose-category .book-card{
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .js-choose-category{
     display: grid;

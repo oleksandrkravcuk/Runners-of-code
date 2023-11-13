@@ -16,6 +16,7 @@
 @import url('./pop_up.css');
 @import url('./mobile-menu.css');
 @import url('./authorization.css');
+@import url('./reqvest-whis-loader.css');
 
 :root {
   --main-color: #d0d0d0;
