@@ -62,12 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-let users = []; 
-
-function generateRandomId() {
-  return Math.random().toString(36).substring(2, 10);
-}
-
 function saveData(event) {
   event.preventDefault();
   let name = document.getElementById('name').value;
@@ -79,26 +73,13 @@ function saveData(event) {
     return;
   }
   clearFormFields();
-
-  const userId = generateRandomId();
-
-
-  const storedData = localStorage.getItem('userData');
-  users = storedData ? JSON.parse(storedData) : [];
-
-  if (users.some(user => user.email === email)) {
-    Notiflix.Notify.failure('Email is already registered. Please use a different email.');
-    return;
-  }
   const dataObject = {
-    userId,
     name,
     email,
     password,
   };
-  users.push(dataObject);
   console.log(dataObject);
-  localStorage.setItem('userData', JSON.stringify(users));
+  localStorage.setItem('userData', JSON.stringify(dataObject));
 
   const signUpButton = document.getElementById('signUpLink');
   signUpButton.closest('.sign-up-button').style.display = 'none';
@@ -164,10 +145,7 @@ function login(event) {
   if (storedData) {
     let userData = JSON.parse(storedData);
 
-    let foundUser = users.find(user => user.email === loginEmail && user.password === loginPassword);
-
-
-    if (foundUser) {
+    if (loginEmail === userData.email && loginPassword === userData.password) {
       clearFormFields();
       const signUpButton = document.getElementById('signUpLink');
       signUpButton.closest('.sign-up-button').style.display = 'none';
