@@ -382,12 +382,13 @@
 
 #logOutButton {
   position: absolute;
-  top: 80%;
-  right: 15px;
+  top: calc(69% + 10px);
+  right: calc(0 + 10px);
   opacity: 0;
   display: none;
   transition: opacity 0.5s ease;
 }
+
 
 #logOutButton.fadeIn {
   opacity: 1;
