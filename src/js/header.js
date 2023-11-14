@@ -1,8 +1,7 @@
 const contLogo = document.querySelector('.container-logo');
 const headerSvg = document.querySelector('.header-svg-logo');
+const headerBagSvg = document.querySelector('.header-svg-bag');
 const color = document.querySelector('.header-switch');
-const slider = document.querySelector('.header-switch-slider');
-console.log(localStorage);
 
 color.addEventListener('click', onClickBtnTheme);
 
@@ -27,8 +26,10 @@ function toggleTheme() {
               <use href="./img/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>`;
+
     slider.classList.add("header-switch-slider-light");
     slider.classList.remove("header-switch-slider-dark");
+
   } else {
     initialState('dark-theme');
        contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">

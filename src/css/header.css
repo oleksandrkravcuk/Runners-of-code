@@ -8,7 +8,7 @@
   align-items: flex-start;
   border-radius: 0px 0px 8px 8px;
   border: 1.5px solid var(--text-color-second);
-  width: 375px;
+  /* width: 375px; */
   align-items: center;
 }
 
@@ -247,6 +247,7 @@
 .header-switch-slider-light {
   margin-right: 20px;
 }
+
 
 .header-switch-input:checked,
 .header-switch-slider {
