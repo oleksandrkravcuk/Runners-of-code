@@ -1,4 +1,7 @@
 /*-------------- Categories  --------------*/
+aside {
+  display: block;
+}
 
 .wrapper-categories {
   padding-left: 24px;
@@ -6,9 +9,7 @@
   padding-bottom: 24px;
   max-height: 220px;
   overflow-y: scroll;
-  width: 335px;
-  display: flex;
-  justify-content: center;
+  max-width: 335px;
 }
 
 .categories-list {
@@ -51,7 +52,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper-categories {
-    margin-top: 40px;
     padding: 24px;
     max-height: 486px;
     overflow-y: scroll;
@@ -66,5 +66,10 @@
     font-size: 18px;
     letter-spacing: -2%;
     line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper-categories {
+    margin-bottom: 40px;
   }
 }
