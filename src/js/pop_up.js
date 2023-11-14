@@ -5,7 +5,6 @@ const refs = {
   btnClose: document.querySelector('.pop_up__body-close'),
   imgs: document.querySelector('.section-product'),
   btnToChangeStatusOfBook: document.querySelector('.pop_up__body-btn-status'),
-  cardThumb: document.querySelector('.card__thumb'),
   apiContent: document.querySelector('.pop_up__content'),
   congratulation: document.querySelector('.pop_up__congratulation'),
 };
