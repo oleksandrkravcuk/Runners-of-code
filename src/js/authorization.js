@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   logOutButton.addEventListener('click', function () {
-    localStorage.removeItem('userData');
+    // localStorage.removeItem('userData');
 
     logOutButton.classList.remove('fadeIn');
     setTimeout(() => {
@@ -232,3 +232,23 @@ emailIconLogin.addEventListener('click', function () {
     Notiflix.Notify.warning('Please enter a valid email address.');
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  restoreUserData();
+});
+
+function restoreUserData() {
+  const storedData = localStorage.getItem('userData');
+
+  if (storedData) {
+    const userData = JSON.parse(storedData);
+
+    const signUpButton = document.getElementById('signUpLink');
+    signUpButton.closest('.sign-up-button').style.display = 'none';
+
+    const userButton = document.querySelector('.user-button');
+    userButton.style.display = 'flex';
+    userButton.querySelector('p').textContent = userData.name;
+  }
+}
