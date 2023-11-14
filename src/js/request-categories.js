@@ -7,7 +7,7 @@ const placeForTitle = document.querySelector('.title-thumb')
 const topBookCategories = document.querySelector(".section-product")
 const categoriesList = document.querySelector(".categories")
 const mask = document.querySelector('.mask')
-mask.classList.add('none')
+// mask.classList.add('none')
 
 
 
@@ -18,7 +18,7 @@ topBookCategories.addEventListener('click' ,async (e) => {
 if(e.target.tagName !== "BUTTON"){
     return
 }
-mask.classList.remove('none')
+// mask.classList.remove('none')
 placeForTitle.innerHTML = ""
 
 console.dir(e.target.parentElement.firstElementChild.textContent);
@@ -26,7 +26,7 @@ const categoriesId = e.target.parentElement.firstElementChild.textContent
 // title(categoriesId)
 const response = await fetchCategory(categoriesId)
 topBookCategories.classList.add('js-choose-category')
-mask.classList.add('none')
+// mask.classList.add('none')
 topBookCategories.innerHTML = makeCard(response);
 title(categoriesId)
 }
@@ -44,13 +44,13 @@ categoriesList.addEventListener('click', async (e)=>{
         toDoMarkup()
         return
     }
-    mask.classList.remove('none')
+    // mask.classList.remove('none')
     placeForTitle.innerHTML = ""
     
 const categoriesId = e.target.textContent
 const response = await fetchCategory(categoriesId)
 topBookCategories.classList.add('js-choose-category')
-mask.classList.add('none')
+// mask.classList.add('none')
 topBookCategories.innerHTML = makeCard(response);
 title(categoriesId)
 })
