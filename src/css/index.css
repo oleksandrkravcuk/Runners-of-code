@@ -66,6 +66,7 @@
 
 body {
   background-color: var(--background-color);
+  margin: 0;
 }
 
 .header-container {
@@ -93,7 +94,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content-contaiter-box {
-    /* max-width: 704px; */
+    max-width: 704px;
     margin: 0 auto;
   }
   .partial-categori-container {
@@ -111,6 +112,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .partial-categori-container {
+    max-width: 375px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -119,5 +121,12 @@ body {
   }
   .partial-container {
     margin: 0 auto;
+  }
+  .content-contaiter-box{
+    max-width: 287px;
+    margin: 0 auto;
+  }
+  body {
+    margin: 0;
   }
 }
