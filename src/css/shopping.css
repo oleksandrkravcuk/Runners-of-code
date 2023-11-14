@@ -1,6 +1,36 @@
+/* стилізація нових сонтейнерів */
+.thumb-shopping {
+  max-width: 1392px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (min-width: 1200px){
+  .thumb-shopping {
+    margin-top: 40px;
+  }
+} 
+
+.aside-shopping {
+  display: none;
+}
+
+@media screen and (min-width: 1200px){
+  .aside-shopping {
+    display: block;
+  }
+} 
+
+/* .............................................. */
+
 .title__shopping{
-    margin: 0;
-    padding: 40px 0 20px 20px;
+   margin-left: auto;
+margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* padding: 40px 0 20px 20px; */
     color: var(--text-color-second);
     font-family: DM Sans;
     font-size: 32px;
@@ -22,27 +52,33 @@
 
 @media only screen and (min-width: 768px) {
   .title__shopping {
-    margin: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 32px;
+
+    margin-bottom: 40px;
     line-height: 52px;
     font-size: 48px;
     
   }
 }
 
-@media only screen and (min-width: 1392px) {
+@media only screen and (min-width: 1200px) {
   .title__shopping {
-    margin: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
     line-height: 52px;
     font-size: 48px;
   }
 }
 
+
+ 
+/* .partial-categori-container {
+  display: none;
+}
+@media screen and (min-width: 1392px){
+  .partial-categori-container {
+    display: block;
+  }
+} */
 
 /* 
 .books-card{ */
@@ -74,7 +110,7 @@
 
 
 .wrrap{
-   margin: 20px;
+   margin-bottom: 20px;
   width: 335px;
   height: 170px;
   border-radius: 16px;
@@ -92,7 +128,7 @@
  
 }
 
-@media only screen and (min-width: 1392px) {
+@media only screen and (min-width: 1200px) {
   .wrrap{
   
    width: 996px;
@@ -142,7 +178,7 @@ height: 142px;
   
 }
 
-@media only screen and (min-width: 1392px) {
+@media only screen and (min-width: 1200px) {
   .text-container{
      width: 808px;
   
@@ -225,7 +261,7 @@ height: 142px;
   
 }
 
- @media only screen and (min-width: 1392px) {
+ @media only screen and (min-width: 1200px) {
   .description-container{
     max-width: 808px;
     height: 53px;
@@ -282,7 +318,7 @@ height: 142px;
 }
 
 
- @media only screen and (min-width: 1392px) {
+ @media only screen and (min-width: 1200px) {
   .btn-container{
     margin-left: 774px;
      margin-top: 24px;
@@ -335,9 +371,9 @@ height: 142px;
 }
 
 
- @media only screen and (min-width: 1392px) {
+ @media only screen and (min-width: 1200px) {
   .link-container{
-    right: 0px;
+    /* right: 0px; */
    bottom: 8px;
     
 }
