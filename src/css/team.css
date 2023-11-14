@@ -36,9 +36,13 @@
 .team-list {
   background-color: transparent;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   column-gap: 55px;
-  padding: 0 100px;
+  padding: 0 50px;
   background-color: var(--third-color);
 }
 .team-item {
@@ -60,6 +64,8 @@
 /*--------------- Icons -----------------*/
 
 .git-ico {
+  width: 32px;
+  height: 32px;
   fill: #fff;
   opacity: 0.6;
   padding-right: 5px;
@@ -97,23 +103,24 @@
 }
 
 /*--------------- Мedia -----------------*/
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 768px) {
   .team-title {
     font-family: 'DM Sans';
-    font-size: 22px;
+    font-size: 24px;
     line-height: 24px;
     padding-bottom: 50px;
   }
   .team-list {
-    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 55px;
     padding: 0 100px;
-    background-color: var(--third-color);
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
