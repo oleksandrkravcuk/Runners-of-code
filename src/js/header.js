@@ -1,7 +1,7 @@
 const contLogo = document.querySelector('.container-logo');
 const headerSvg = document.querySelector('.header-svg-logo');
-const headerBagSvg = document.querySelector('.header-svg-bag');
 const color = document.querySelector('.header-switch');
+const slider = document.querySelector('.header-switch-slider');
 
 color.addEventListener('click', onClickBtnTheme);
 
