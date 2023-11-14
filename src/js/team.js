@@ -1,3 +1,4 @@
+
 // масив членів команди в алфавітному порядку
 const team = [
   {
@@ -68,7 +69,7 @@ export default function markupTeam(team) {
   }
 
   // Створює всі li в team
-  const itemsTeam = team
+   const itemsTeam = team
     .map(({ name, git, liin }) => {
       return `<li class="team-item">
       <a href="${git}" rel="noopener noreferrer">
