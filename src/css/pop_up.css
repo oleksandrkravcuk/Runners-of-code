@@ -70,6 +70,7 @@
     display: block;
     font-size: 28px;
     cursor: pointer;
+    z-index: 2;
   }
 }
 .pop_up__body-close:hover {
