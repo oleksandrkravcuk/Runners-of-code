@@ -16,7 +16,7 @@
 .pop_up__body {
   z-index: 1;
   width: auto;
-  height: 762px;
+  height: auto;
   background-color: var(--second-color);
   border-radius: 18px;
   border: 2px solid var(--text-color-second);
@@ -231,6 +231,10 @@
   line-height: 12px;
   letter-spacing: -0.4px;
 }
+.pop_up__local-container {
+  display: block;
+  margin-bottom: 40px;
+}
 @media screen and (min-width: 768px) {
   .pop_up__congratulation {
     margin: auto;
@@ -255,20 +259,7 @@
   align-items: center;
   gap: 20px;
 }
-.pop_up__data-amazon {
-  width: 62px;
-  height: 19px;
-}
-.pop_up__data-amazon:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
-}
-.pop_up__data-amazon-book {
-  width: 33px;
-  height: 32px;
-}
-.pop_up__data-amazon-book:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
-}
+
 .modal-open {
   overflow: hidden;
 }
