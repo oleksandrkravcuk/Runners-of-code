@@ -3,7 +3,7 @@ const openMenuBtn = document.querySelector('.js-open-menu');
 const closeMenuBtn = document.querySelector('.js-close-menu');
 
 const buttonSignUp = document.querySelector('.mobile-button-signUp');
-const buttonLogOut = document.querySelector('.mobile-button-logOut');
+const buttonLogOut = document.querySelector('.mobile-button-link');
 const linkShopList = document.querySelector('.mobile-header-shopping');
 const buttonHome = document.querySelector('.mobile-header-button-home');
 buttonLogOut.style.display = 'none';
@@ -38,4 +38,19 @@ buttonSignUp.addEventListener('click', () => {
   //   buttonLogOut.style.display = 'block';
   //   linkShopList.style.display = 'block';
   //   buttonHome.style.display = 'block';
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const openModalButton = document.getElementById('mobileOpenModalButton');
+  const modal = document.getElementById('modal');
+  const body = document.body;
+  openModalButton.addEventListener('click', function () {
+    modal.style.display = 'block';
+    body.classList.add('modal-open');
+  });
+
+  const closeModalButton = document.getElementById('closeModalButton');
+  closeModalButton.addEventListener('click', function () {
+    modal.style.display = 'none';
+    body.classList.remove('modal-open');
+  });
 });

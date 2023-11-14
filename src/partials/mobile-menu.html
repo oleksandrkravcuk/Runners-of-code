@@ -5,7 +5,7 @@
     <div class="mobile-header">
         <button class="modal-button js-close-menu">
             <svg class="modal-icon" viewBox="0 0 20 20" width="28" height="28">
-                <use href="../img/symbol-defs.svg#icon-close"></use>
+                <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
 
@@ -29,17 +29,15 @@
         </nav>
     </div>
 
-    <button class="mobile-button-signUp" type="button">
-        <a href="../authorization.html" class="signUp-link">Sign up<svg class="mobile-arrow-icon-signUp" width="20" height="20">
+    <button class="mobile-button-signUp" type="button" id='mobileOpenModalButton'>
+        <p class="signUp-link" id="signUpLink">Sign up 
+            <svg class="mobile-arrow-icon-signUp" width="20" height="20">
                 <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
-            </svg></a></button>
+            </svg></p></button>
 
     <ul class="mobile-nav-list">
         <li class="mobile-nav-item">
-            <button class="mobile-header-button-home" type="button">
-                <a href="./index.html" class="header-nav-link">home</a>
-            </button>
-
+                <a href="./index.html" class="header-nav-link mobile-header-button-home">home</a>
         </li>
 
         <li class="mobile-nav-item">
@@ -50,13 +48,14 @@
             </a>
         </li>
     </ul>
-
-    <button class="mobile-button-logOut" type="button">
+<!-- 
+    <button class="mobile-button-logOut" type="button"> -->
         <a href="" class="mobile-button-link">Log out
             <svg class="mobile-arrow-icon" width="20" height="20">
                 <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
             </svg>
-        </a></button>
+        </a>
+    <!-- </button> -->
     <div class="mobile-thumb-img">
         <img class="mobile-bckg-img" srcset="./img/mobile_menu/mobile_background@1x.png 1x, ./img/mobile_menu/mobile_background@2x.png 2x "
             src="./img/mobile_menu/mobile_background@1x.png" alt="background-books" width="768" height="440">
