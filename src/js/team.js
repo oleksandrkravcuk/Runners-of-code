@@ -1,7 +1,3 @@
-// import giticon from './img/symbol-defs.svg#icon-github';
-// import liicon from './../img/symbol-defs.svg#icon-linkedin';
-// console.log(giticon);
-
 // масив членів команди в алфавітному порядку
 const team = [
   {
