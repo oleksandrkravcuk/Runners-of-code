@@ -15,8 +15,8 @@ async function createMarkup(id) {
         <p class="pop_up__data-author">${data.author}</p></div>
         <p class="pop_up__data-description">${data.description}</p>
         <ul class="pop_up__data-list-amazon">
-          <li><a href="${data.amazon_product_url}"><img class="pop_up__data-amazon" src="${amazon}" alt=""></a></li>
-          <li><a href="${data.book_uri}"><img class="pop_up__data-amazon-book" src="${book}" alt=""></a></li>
+          <li><a href="${data.amazon_product_url}"><img class="data-amazon" src="${amazon}" alt=""></a></li>
+          <li><a href="${data.book_uri}"><img class="data-amazon-book" src="${book}" alt=""></a></li>
         </ul></div>
       
       </div>`;
