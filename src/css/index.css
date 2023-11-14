@@ -94,7 +94,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content-contaiter-box {
-    max-width: 704px;
+    width: 704px;
     margin: 0 auto;
   }
   .partial-categori-container {
@@ -112,18 +112,19 @@ body {
 
 @media screen and (max-width: 767px) {
   .partial-categori-container {
-    max-width: 375px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .partial-container {
+  .partial-container{
+    width: 100%;
     margin: 0 auto;
   }
-  .content-contaiter-box{
-    max-width: 287px;
+  .content-contaiter-box {
+    width: 335px;
     margin: 0 auto;
   }
   body {
