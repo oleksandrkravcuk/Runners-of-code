@@ -7,6 +7,8 @@
   max-height: 220px;
   overflow-y: scroll;
   width: 335px;
+  display: flex;
+  justify-content: center;
 }
 
 .categories-list {

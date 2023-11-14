@@ -1,3 +1,7 @@
+// import giticon from './img/symbol-defs.svg#icon-github';
+// import liicon from './../img/symbol-defs.svg#icon-linkedin';
+// console.log(giticon);
+
 // масив членів команди в алфавітному порядку
 const team = [
   {
@@ -78,7 +82,7 @@ export default function markupTeam(team) {
       </a>
       <a href="${liin}" rel="noopener noreferrer">
         <svg class="in-ico" width="32" height="32">
-          <use href="./../img/symbol-defs.svg#icon-linkedin"></use>
+          <use href="./img/symbol-defs.svg#icon-linkedin"></use>
         </svg>
       </a>
       <a href="${git}" rel="noopener noreferrer" class="team-name">${name}</a>
