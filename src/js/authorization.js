@@ -92,6 +92,53 @@ function saveData(event) {
   Notiflix.Notify.success('User registered successfully!');
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const userButton = document.querySelector('.user-button');
+  const logOutButton = document.getElementById('logOutButton');
+
+  let logOutVisible = false;
+  let animationTime = 500; 
+
+  userButton.addEventListener('click', function () {
+    logOutVisible = !logOutVisible;
+    if (logOutVisible) {
+      logOutButton.style.display = 'flex';
+      setTimeout(() => {
+        logOutButton.classList.add('fadeIn');
+      }, animationTime); 
+    } else {
+      logOutButton.classList.remove('fadeIn');
+      setTimeout(() => {
+        logOutButton.style.display = 'none';
+      }, animationTime);
+    }
+  });
+
+  logOutButton.addEventListener('click', function () {
+    localStorage.removeItem('userData');
+
+    logOutButton.classList.remove('fadeIn');
+    setTimeout(() => {
+      logOutButton.style.display = 'none';
+    }, animationTime);
+
+    const signUpButton = document.getElementById('signUpLink');
+    signUpButton.closest('.sign-up-button').style.display = 'flex';
+    
+    const userButton = document.querySelector('.user-button');
+    userButton.style.display = 'none';
+    userButton.querySelector('p').textContent = '';
+
+    Notiflix.Notify.success('User logged out successfully!');
+  });
+});
+
+
+
+
+
+
+
 function login(event) {
   event.preventDefault();
   let loginEmail = document.getElementById('loginEmail').value;
