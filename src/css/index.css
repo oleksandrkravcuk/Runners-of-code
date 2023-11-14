@@ -31,6 +31,7 @@
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
   --bgc-pop-up: rgba(17, 17, 17, 0.4);
+  --cogratulation-pop-up: rgba(17, 17, 17, 0.5);
 }
 .light-theme {
   --background-color-header: #ffffff;
