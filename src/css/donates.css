@@ -11,10 +11,6 @@
   border-radius: 16px;
   padding: 24px 40px;
   height: 460px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .support-first-wrapper {
