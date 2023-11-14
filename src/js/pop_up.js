@@ -4,58 +4,64 @@ const refs = {
   popUpOpen: document.querySelector('.pop_up'),
   btnClose: document.querySelector('.pop_up__body-close'),
   imgs: document.querySelector('.section-product'),
-  popUpBody: document.querySelector('.pop_up__body'),
   btnToChangeStatusOfBook: document.querySelector('.pop_up__body-btn-status'),
   cardThumb: document.querySelector('.card__thumb'),
+  apiContent: document.querySelector('.pop_up__content'),
+  congratulation: document.querySelector('.pop_up__congratulation'),
 };
 // ---------------------------------------------------------------------------->
-refs.imgs.addEventListener('click', openModal);
-refs.btnClose.addEventListener('click', onToClose);
-refs.btnToChangeStatusOfBook.addEventListener('click', onAddBook);
-refs.popUpOpen.addEventListener('transitionend', handleTransitionEnd);
-window.addEventListener('keydown', onEscapeClose);
-
+const {
+  popUpOpen,
+  btnClose,
+  imgs,
+  btnToChangeStatusOfBook,
+  apiContent,
+  congratulation,
+} = refs;
 // ---------------------------------------------------------------------------->
-
+imgs.addEventListener('click', openModal);
+btnClose.addEventListener('click', onToClose);
+btnToChangeStatusOfBook.addEventListener('click', onAddBook);
+window.addEventListener('keydown', onEscapeClose);
+// ---------------------------------------------------------------------------->
 const OBJ_KEYS = [];
 const NAME_LCS_KEY = 'An_array_of_ID_books';
 // ---------------------------------------------------------------------------->
 function openModal(e) {
   e.preventDefault();
-  // refs.cardThumb.style.pointerEvents = 'none';
-  document.body.classList.add('modal-open');
+
   if (e.target.nodeName !== 'IMG') {
     return;
-  } else {
-    let id = e.target.dataset.id;
-    refs.popUpOpen.classList.add('hiden');
-
-    createMarkup(id);
-    OBJ_KEYS.push(id);
-    onCheckStorge();
   }
-}
 
+  const id = e.target.dataset.id;
+  popUpOpen.classList.add('hiden');
+  document.body.classList.add('modal-open');
+
+  createMarkup(id);
+  OBJ_KEYS.push(id);
+  onCheckStorge();
+}
 // ---------------------------------------------------------------------------->
 function onEscapeClose(e) {
   onToClose();
 }
 // ---------------------------------------------------------------------------->
 function onToClose() {
-  refs.popUpOpen.classList.remove('hiden');
+  popUpOpen.classList.remove('hiden');
   document.body.classList.remove('modal-open');
-  refs.popUpOpen.classList.add('pop_up-closing');
-  handleTransitionEnd();
+  popUpOpen.classList.add('pop_up-closing');
+  popUpOpen.addEventListener('transitionend', handleTransitionEnd);
   clearModalBody();
 }
 // ---------------------------------------------------------------------------->
 function handleTransitionEnd() {
-  refs.popUpOpen.removeEventListener('transitionend', handleTransitionEnd);
-  refs.popUpOpen.classList.remove('pop_up-closing');
+  popUpOpen.removeEventListener('transitionend', handleTransitionEnd);
+  popUpOpen.classList.remove('pop_up-closing');
 }
 // ---------------------------------------------------------------------------->
 function clearModalBody() {
-  refs.popUpDate.innerHTML = '';
+  apiContent.innerHTML = '';
   onCheckStorge();
 }
 // ---------------------------------------------------------------------------->
@@ -71,6 +77,7 @@ function onAddBook() {
     localStorage.setItem(NAME_LCS_KEY, JSON.stringify(storgeArray));
   }
 
+  onCheckStatusBtn();
   updateButtonState();
 }
 // ---------------------------------------------------------------------------->
@@ -79,16 +86,23 @@ function onCheckStorge() {
   const storgeArray = JSON.parse(localStorage.getItem(NAME_LCS_KEY)) || [];
   const isIdStorge = storgeArray.includes(id);
 
-  if (isIdStorge) {
-    refs.btnToChangeStatusOfBook.textContent = 'remove from the shopping list';
-  } else {
-    refs.btnToChangeStatusOfBook.textContent = 'add to shopping list';
-  }
+  btnToChangeStatusOfBook.textContent = isIdStorge
+    ? 'remove from the shopping list'
+    : 'add to shopping list';
 }
 // ---------------------------------------------------------------------------->
 function updateButtonState() {
   onCheckStorge();
 }
+// ---------------------------------------------------------------------------->
 
-onCheckStorge();
-updateButtonState();
+function onCheckStatusBtn() {
+  const checkClass =
+    btnToChangeStatusOfBook.textContent === 'remove from the shopping list';
+
+  if (checkClass) {
+    congratulation.classList.add('congratulation');
+  } else {
+    congratulation.classList.remove('congratulation');
+  }
+}
