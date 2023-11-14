@@ -1,15 +1,14 @@
 .header-container {
   display: flex;
   font-family: DM Sans, sans-serif;
-  /* margin: 0 auto; */
   padding: 13px 0px;
   position: relative;
   justify-content: center;
   align-items: flex-start;
   border-radius: 0px 0px 8px 8px;
   border: 1.5px solid var(--text-color-second);
-  /* width: 375px; */
   align-items: center;
+  width: 375px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -23,8 +22,6 @@
   .header-container {
     width: 1440px;
     margin: 0 auto;
-    /* margin-left: auto; */
-    /* margin-right: 24px; */
     align-items: center;
   }
 }
@@ -47,6 +44,7 @@
   align-items: center;
 }
 
+
 .wrapper-logo {
   display: flex;
   margin-left: 20px;
@@ -62,7 +60,6 @@
 
 @media only screen and (min-width: 1200px) {
   .wrapper-logo {
-    /* margin-left: 24px; */
     margin-right: 76px;
   }
 }
@@ -85,7 +82,6 @@
 
 @media only screen and (min-width: 1200px) {
   .nav-list {
-    /* gap: 24px; */
     margin-right: 745px;
   }
 }
@@ -102,30 +98,22 @@
   text-transform: uppercase;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-list .header-shopping:hover {
+  color: var(--third-color);
+  /* fill: var(--third-color); */
+}
+
+.nav-list .header-home:hover {
   color: var(--third-color);
 }
 
-
-
-.header-button-home {
+.header-home {
   display: flex;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.56px;
   border: none;
-  /* padding: 8px 16px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 36px;
-  background: var(--fourth-color);
-  border: none;
-  font-weight: 700; */
-
 }
-
-
 
 .header-shopping {
   font-family: DM Sans, sans-serif;
@@ -134,10 +122,13 @@
 
 @media only screen and (min-width: 768px) {
   .header-shopping {
-
     justify-content: center;
     padding: 8px 8px;
   }
+}
+
+.shopping-hover {
+  display: flex;
 }
 
 .not-active-button {
@@ -149,6 +140,19 @@
   background-color: transparent;
   line-height: 18px;
   letter-spacing: -0.56px;
+  /* width: 128px; */
+}
+
+.not-active-button-shopping {
+  display: flex;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    color: var(--text-color-second);
+    background-color: transparent;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+  width: 128px;
 }
 
 .active-button-shopping {
@@ -169,16 +173,6 @@
   }
 }
 
-
-.header-button-shopping {
-  /* display: flex;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  color: var(--text-color-second); */
-}
-
-/* .header-active {} */
 .header-svg-logo {
   margin-left: 0;
 }
@@ -186,11 +180,11 @@
 .header-svg-bag {
   display: flex;
   margin-left: 4px;
-  fill: var(--text-color-second);
+  fill: currentColor;
 }
 
 .active-svg {
-  fill: var(--static-color);
+  fill: currentColor;
 }
 
 .header-switch {
@@ -232,9 +226,7 @@
   height: 18px;
   position: absolute;
   cursor: pointer;
-  /* top: 2px; */
   left: 1px;
-  /* bottom: 2px; */
   right: 2px;
   background-color: #FFFFFF;
   border-radius: 50px;
@@ -296,25 +288,26 @@
   stroke: var(--third-color);
 }
 
+/* AUTHORIZATION STYLES */
 .sign-up-button {
-    width: 184px;
-      height: 45px;
-      flex-shrink: 0;
-      border-radius: 18px;
-      border: 1.5px solid var(--text-color-second);
-      background: var(--third-color);
-      color: var(--second-color);
-      font-family: DM Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 18px;
-    
-      letter-spacing: -0.56px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.5s, color 0.5s;
+  width: 184px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1.5px solid var(--text-color-second);
+  background: var(--third-color);
+  color: var(--second-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+
+  letter-spacing: -0.56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .sign-up-button:hover {
@@ -343,7 +336,7 @@
 
 
 
-.user-button{
+.user-button {
   background-color: #4F2EE8;
   border: none;
   border-radius: 36px;
@@ -361,12 +354,15 @@
   padding-top: 5px;
   padding-bottom: 5px;
   width: 184px;
+
 }
+
 .user-button:hover {
   background-color: rgba(17, 17, 17, 1);
   color: rgba(79, 46, 232, 1);
 }
-.ellipse{
+
+.ellipse {
   width: 37px;
   height: 37px;
   border-radius: 50%;
@@ -375,18 +371,22 @@
   justify-content: center;
   align-items: center;
 }
-.user-icon{
+
+.user-icon {
   fill: #4F2EE8;
 }
 
-.down-icon{
+.down-icon {
   fill: #FFFFFF;
 }
 
 #logOutButton {
+  position: absolute;
+  top: 80%;
+  right: 15px;
   opacity: 0;
   display: none;
-  transition: opacity 0.5s ease; 
+  transition: opacity 0.5s ease;
 }
 
 #logOutButton.fadeIn {
@@ -395,18 +395,30 @@
 }
 
 
-.log-out{
+.log-out {
+  width: 184px;
+  height: 45px;
+  flex-shrink: 0;
   border-radius: 18px;
   background-color: #FFFFFF;
   border: 1.5px solid #111111;
-  padding: 14px 14px;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  width: 184px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+
 }
 
+.signUp-link {
+  display: flex;
+  gap: 90px;
+}
+
+.log-out:hover {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: 3px solid #4F2EE8;
+}
