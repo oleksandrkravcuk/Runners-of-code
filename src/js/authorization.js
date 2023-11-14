@@ -62,6 +62,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+let users = []; 
+
+function generateRandomId() {
+  return Math.random().toString(36).substring(2, 10);
+}
+
 function saveData(event) {
   event.preventDefault();
   let name = document.getElementById('name').value;
@@ -72,14 +78,27 @@ function saveData(event) {
     Notiflix.Notify.failure('Please fill in all fields.');
     return;
   }
+  clearFormFields();
 
+  const userId = generateRandomId();
+
+
+  const storedData = localStorage.getItem('userData');
+  users = storedData ? JSON.parse(storedData) : [];
+
+  if (users.some(user => user.email === email)) {
+    Notiflix.Notify.failure('Email is already registered. Please use a different email.');
+    return;
+  }
   const dataObject = {
+    userId,
     name,
     email,
     password,
   };
+  users.push(dataObject);
   console.log(dataObject);
-  localStorage.setItem('userData', JSON.stringify(dataObject));
+  localStorage.setItem('userData', JSON.stringify(users));
 
   const signUpButton = document.getElementById('signUpLink');
   signUpButton.closest('.sign-up-button').style.display = 'none';
@@ -87,8 +106,6 @@ function saveData(event) {
   const userButton = document.querySelector('.user-button');
   userButton.style.display = 'flex';
   userButton.querySelector('p').textContent = name;
-
-  clearFormFields();
   Notiflix.Notify.success('User registered successfully!');
 }
 
@@ -147,7 +164,11 @@ function login(event) {
   if (storedData) {
     let userData = JSON.parse(storedData);
 
-    if (loginEmail === userData.email && loginPassword === userData.password) {
+    let foundUser = users.find(user => user.email === loginEmail && user.password === loginPassword);
+
+
+    if (foundUser) {
+      clearFormFields();
       const signUpButton = document.getElementById('signUpLink');
       signUpButton.closest('.sign-up-button').style.display = 'none';
 
@@ -155,6 +176,7 @@ function login(event) {
       userButton.style.display = 'flex';
       userButton.querySelector('p').textContent = userData.name;
       Notiflix.Notify.success('User logged in successfully!');
+      
     } else {
       Notiflix.Notify.info('Invalid email or password. Try again.');
     }
