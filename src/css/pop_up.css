@@ -224,7 +224,7 @@
   margin: auto;
   width: 242px;
   height: auto;
-  color: var(--cogratulation-pop-up);
+  color: var(--congratulation-pop-up);
   text-align: center;
   font-family: DM Sans;
   font-size: 10px;
@@ -240,7 +240,7 @@
     margin: auto;
     width: 324px;
     height: auto;
-    color: var(--cogratulation-pop-up);
+    color: var(--congratulation-pop-up);
     text-align: center;
     font-family: DM Sans;
     font-size: 12px;

@@ -31,7 +31,8 @@
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
-  --clr-pop-up: rgba(17, 17, 17, 0.4);
+  --congratulation-pop-up: rgba(17, 17, 17, 0.5);
+  --bgc-pop-up: rgba(17, 17, 17, 0.4);
   /* Стилі для Amazon, Apple Books */
   --state-amazon: grayscale(100%);
   --wight-state-book: grayscale(100%);
@@ -50,6 +51,7 @@
   --fourth-color: #eac645;
   --text-color-main: #b4afaf;
   --text-color-second: #111111;
+  --congratulation-pop-up: rgba(17, 17, 17, 0.5);
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --thumb-color: #e0e0e0;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
@@ -69,6 +71,7 @@
   --fifth-color: #b1a5ef;
   --text-color-main: #b4afaf;
   --text-color-second: #ffffff;
+  --congratulation-pop-up: rgba(255, 255, 255, 0.5);
   --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
   --thumb-color: #171719;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
@@ -83,14 +86,14 @@
   height: 19px;
 }
 .data-amazon:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  filter: var(--state-hover);
 }
 .data-amazon-book {
   width: 33px;
   height: 32px;
 }
 .data-amazon-book:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  filter: var(--state-hover);
 }
 
 body {
