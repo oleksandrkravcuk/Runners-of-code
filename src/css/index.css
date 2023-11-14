@@ -17,8 +17,6 @@
 @import url('./mobile-menu.css');
 @import url('./authorization.css');
 
-
-
 :root {
   --main-color: #d0d0d0;
   --second-color: #ffffff;
@@ -32,7 +30,15 @@
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
-  --bgc-pop-up: rgba(17, 17, 17, 0.4);
+  --clr-pop-up: rgba(17, 17, 17, 0.4);
+  /* Стилі для Amazon, Apple Books */
+  --state-amazon: grayscale(100%);
+  --wight-state-book: grayscale(100%);
+  --state-hover: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+  /* Dark theme */
+  --state-amazon: brightness(0) invert(1);
+  --dark-state-book: grayscale(100%);
+  --state-hover: drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
 }
 .light-theme {
   --background-color-header: #ffffff;
@@ -47,6 +53,10 @@
   --thumb-color: #e0e0e0;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  --clr-pop-up: rgba(17, 17, 17, 0.4);
+  --state-amazon: grayscale(100%);
+  --wight-state-book: grayscale(100%);
+  --state-hover: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
 }
 .dark-theme {
   --background-color-header: #111111;
@@ -62,6 +72,9 @@
   --thumb-color: #171719;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  --clr-pop-up: rgba(255, 255, 255, 0.5);
+  --state-amazon: brightness(0) invert(1);
+  --state-book: drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
 }
 
 body {
@@ -120,4 +133,22 @@ body {
   .partial-container {
     margin: 0 auto;
   }
+}
+
+/*Клас для Амазон*/
+.data-amazon {
+  width: 62px;
+  height: 19px;
+  filter: var(--state-amazon);
+}
+.data-amazon:hover {
+  filter: var(--state-hover);
+}
+.data-amazon-book {
+  width: 33px;
+  height: 32px;
+  filter: var(--wight-state-book);
+}
+.data-amazon-book:hover {
+  filter: var(--state-hover);
 }

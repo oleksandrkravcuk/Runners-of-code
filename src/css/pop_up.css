@@ -223,7 +223,7 @@
   margin: auto;
   width: 242px;
   height: auto;
-  color: var(--cogratulation-pop-up);
+  color: var(--clr-pop-up);
   text-align: center;
   font-family: DM Sans;
   font-size: 10px;
@@ -235,7 +235,7 @@
     margin: auto;
     width: 324px;
     height: auto;
-    color: var(--cogratulation-pop-up);
+    color: var(--clr-pop-up);
     text-align: center;
     font-family: DM Sans;
     font-size: 12px;
@@ -253,20 +253,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-}
-.pop_up__data-amazon {
-  width: 62px;
-  height: 19px;
-}
-.pop_up__data-amazon:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
-}
-.pop_up__data-amazon-book {
-  width: 33px;
-  height: 32px;
-}
-.pop_up__data-amazon-book:hover {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
 }
 .modal-open {
   overflow: hidden;

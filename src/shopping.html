@@ -4,91 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/shopping.css">
+    <link rel="stylesheet" href="./css/shopping.css" />
     <title>Shopping List</title>
   </head>
   <body class="shopping-body">
     <header class="content-contaiter-box">
-    <div class="header-container">
+      <div class="header-container">
         <nav class="nav">
-            <div class="wrapper-logo">
-                <div class="container-logo">
-                    <a class="logo-header-link" href="./index.html">
-                        <svg class="header-svg-logo" width="109" height="28">
-                            <use href="./img/symbol-defs.svg#icon-logo"></use>
-                        </svg>
-                    </a>
-                </div>
+          <div class="wrapper-logo">
+            <div class="container-logo">
+              <a class="logo-header-link" href="./index.html">
+                <svg class="header-svg-logo" width="109" height="28">
+                  <use href="./img/symbol-defs.svg#icon-logo"></use>
+                </svg>
+              </a>
             </div>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <button class="header-button-home not-active-button" type="button">
-                        <a href="./index.html" class="nav-link">home</a>
-                    </button>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <button
+                class="header-button-home not-active-button"
+                type="button"
+              >
+                <a href="./index.html" class="nav-link">home</a>
+              </button>
+            </li>
 
-                </li>
-
-                <li class="nav-item">
-                    <a href="./shopping.html" class="nav-link header-shopping active-button-shopping">shopping list
-                        <svg class="header-svg-bag" width="20" height="20">
-                            <use href="./img/symbol-defs.svg#icon-bag"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <label class="header-switch">
-                <input class="header-switch-input" type="checkbox">
-                <span class="header-switch-slider"></span>
-            </label>
+            <li class="nav-item">
+              <a
+                href="./shopping.html"
+                class="nav-link header-shopping active-button-shopping"
+                >shopping list
+                <svg class="header-svg-bag" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <label class="header-switch">
+            <input class="header-switch-input" type="checkbox" />
+            <span class="header-switch-slider"></span>
+          </label>
         </nav>
-        <button class="burger-menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="header-burger" width="28" height="28">
-                <use href="./img/symbol-defs.svg#icon-burger"></use>
-            </svg>
+        <button
+          class="burger-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-burger" width="28" height="28">
+            <use href="./img/symbol-defs.svg#icon-burger"></use>
+          </svg>
         </button>
 
         <div class="button-container">
-            <button class="sign-up-button" type="button">
-                <a href="./authorization.html" class="signUp-link">Sign up
-                    <svg class="sign-up-arrow" width="20" height="20">
-                        <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
-                    </svg></a>
-            </button>
+          <button class="sign-up-button" type="button">
+            <a href="./authorization.html" class="signUp-link"
+              >Sign up
+              <svg class="sign-up-arrow" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-arrow_right"></use></svg
+            ></a>
+          </button>
 
-            <button class="user-button" style="display: none;"> <!--Потім не забути забрати display:none потрібно-->
-                <div class="ellipse">
-                    <svg class="user-icon" width="19" height="19">
-                        <use href="./img/symbol-defs.svg#icon-user"></use>
-                    </svg>
-                </div>
-                <p></p>
-                <svg class="down-icon" width="23" height="26">
-                    <use href="./img/symbol-defs.svg#icon-down"></use>
-                </svg>
-            </button>
+          <button class="user-button" style="display: none">
+            <!--Потім не забути забрати display:none потрібно-->
+            <div class="ellipse">
+              <svg class="user-icon" width="19" height="19">
+                <use href="./img/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+            <p></p>
+            <svg class="down-icon" width="23" height="26">
+              <use href="./img/symbol-defs.svg#icon-down"></use>
+            </svg>
+          </button>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-       <h2 class="title__shopping">Shopping
-          <span class="title__accent">List</span>
-      </h2>
+    <h2 class="title__shopping">
+      Shopping
+      <span class="title__accent">List</span>
+    </h2>
 
     <div class="books-card">
-      <div class = "btn-container">
-            <button class = "btn"><svg class="icon-trash" width="16" height="16">
-                <use href="./img/symbol-defs.svg#icon-trash"></use>
-                </svg>
-              </button>
-            </div>   
-        
+      <div class="btn-container">
+        <button class="btn">
+          <svg class="icon-trash" width="16" height="16">
+            <use href="./img/symbol-defs.svg#icon-trash"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-   
-    
+
     <script type="module" src="./js/header.js"></script>
     <script type="module" src="./js/shopping.js"></script>
   </body>
