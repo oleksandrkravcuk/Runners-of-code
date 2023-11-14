@@ -301,7 +301,9 @@
       line-height: 18px;
     
       letter-spacing: -0.56px;
-    
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition: background-color 0.5s, color 0.5s;
 }
 
@@ -312,6 +314,7 @@
 
 .sign-up-arrow {
   stroke: rgba(234, 198, 69, 1);
+
 }
 
 .close-icon {
@@ -347,6 +350,7 @@
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 184px;
 }
 .user-button:hover {
   background-color: rgba(17, 17, 17, 1);
@@ -372,11 +376,27 @@
 #logOutButton {
   opacity: 0;
   display: none;
-  transition: opacity 0.5s ease; /* Змініть час в секундах, якщо потрібно повільніше або швидше */
+  transition: opacity 0.5s ease; 
 }
 
 #logOutButton.fadeIn {
   opacity: 1;
   display: flex;
+}
+
+
+.log-out{
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  border: 1.5px solid #111111;
+  padding: 14px 14px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 184px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
