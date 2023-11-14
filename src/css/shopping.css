@@ -1,6 +1,6 @@
 .title__shopping{
     margin: 0;
-    padding: 40px 0 40px 20px;
+    padding: 40px 0 20px 20px;
     color: var(--text-color-second);
     font-family: DM Sans;
     font-size: 32px;
@@ -21,7 +21,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .title {
+  .title__shopping {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -33,7 +33,7 @@
 }
 
 @media only screen and (min-width: 1392px) {
-  .title {
+  .title__shopping {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -44,16 +44,16 @@
 }
 
 
-
-.books-card{
-  margin: 20px;
+/* 
+.books-card{ */
+  /* margin: 20px;
   width: 335px;
   height: 170px;
   border-radius: 16px;
   border: 2px solid rgba(79, 46, 232, 0.40);
   background: var(--second-color);
-  align-items: flex-start; 
-}
+  align-items: flex-start;  */
+/* }
 
 @media only screen and (min-width: 768px) {
   .books-card{
@@ -70,13 +70,36 @@
    height: 213px;
 }
  
-}
+} */
 
 
 .wrrap{
+   margin: 20px;
+  width: 335px;
+  height: 170px;
+  border-radius: 16px;
+  border: 2px solid rgba(79, 46, 232, 0.40);
+  background: var(--second-color);
+  align-items: flex-start; 
   display: flex;
 }
 
+@media only screen and (min-width: 768px) {
+  .wrrap{
+   width: 704px;
+   height: 213px;
+}
+ 
+}
+
+@media only screen and (min-width: 1392px) {
+  .wrrap{
+  
+   width: 996px;
+   height: 213px;
+}
+ 
+}
 
 
 
@@ -142,7 +165,7 @@ height: 142px;
  @media only screen and (min-width: 768px) {
   .book-name{
   overflow: visible;
-  width: 168px;
+  width: 500px;
   margin-top: 24px;
   
 }
@@ -173,7 +196,7 @@ height: 142px;
 }
  .description-container{
   position: absolute;
-  bottom: 44px;
+  top: 50px;
   display: -webkit-box;
   height: 68px;
   max-width: 193px;
@@ -194,7 +217,7 @@ height: 142px;
  @media only screen and (min-width: 768px) {
   .description-container{
     max-width: 508px;
-    bottom: 74px;
+    top: 70px;
     
   
     
@@ -214,7 +237,7 @@ height: 142px;
 
 .author{
   position: absolute;
-  bottom: 14px;
+  top: 142px;
   color: var(--text-color-main);
   font-family: DM Sans;
   font-size: 12px;
@@ -225,7 +248,7 @@ height: 142px;
 }
  @media only screen and (min-width: 768px) {
   .author{
-     bottom: 24px;
+     top: 174px;
     
 }
   
@@ -243,7 +266,7 @@ height: 142px;
 
 .btn-container{
   position: absolute;
-  margin-left: 286px;
+  margin-left: 165px;
   margin-top: 14px;
   
 }
@@ -251,7 +274,7 @@ height: 142px;
 
  @media only screen and (min-width: 768px) {
   .btn-container{
-    margin-left: 638px;
+    margin-left: 480px;
     margin-top: 24px;
     
 }
@@ -261,13 +284,16 @@ height: 142px;
 
  @media only screen and (min-width: 1392px) {
   .btn-container{
-    margin-left: 924px;
+    margin-left: 774px;
      margin-top: 24px;
     
 }
   
 }
   .btn{
+    position: absolute;
+    display: block;
+    z-index: 2;
     width: 28px;
     height: 28px;
     border-radius: 50px;
@@ -294,13 +320,16 @@ height: 142px;
     gap: 8px;
     right:  0px;
     bottom: 0;
+    top: 142px;
     
 
   }
    @media only screen and (min-width: 768px) {
   .link-container{
-   right: -14px;
-   bottom: 7px;
+    top: 162px;
+    right: -10px;
+  
+   
 }
   
 }
@@ -317,7 +346,7 @@ height: 142px;
   
 }
 
-  .link-amazon{
+  .link-amazon {
     width: 32px;
     height: 11px;
     margin-top: 4px;
@@ -325,10 +354,11 @@ height: 142px;
   }
 
    @media only screen and (min-width: 768px) {
-  .link-amazon{
+  .link-amazon {
     width: 48px;
     height: 15px;
     margin-top: 8px;
+  
    
   }
   
