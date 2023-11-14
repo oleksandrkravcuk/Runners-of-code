@@ -1,3 +1,4 @@
+/* обгортка усієї секції//////////////////////////////////////////////////////////////////////////////////// */
 .section-product {
   font-family: DM Sans;
      color: var(--text-color-main);
@@ -32,13 +33,31 @@
       }
     }
 
-
- .title{
+/* Title Best Selers////////////////////////////////////////////////////////////////////// */
+ .title {
   font-family: DM Sans;
   text-transform: none;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px; /* 118.75% */
+  letter-spacing: -1.28px;
   color: var(--text-color-second);
+  margin-bottom: 40px;
  }
 
+ @media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+ }
+ @media screen and (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+    margin-top: 40px;
+  }
+ }
+/* title категорії в best selers/////////////////////////////////////////////////////*/
   
  .sections-title {
      margin-bottom: 18px;
@@ -50,7 +69,7 @@
          line-height: 24px;
      }
    }
- 
+ /* обгортка однієї категорії книг в BestSelers//////////////////////////////////////////// */
    .thomb-book-section {
      width: 335px;
    }
@@ -64,7 +83,7 @@
          width: 996px;
      }
    }
- 
+ /* секція однієї категорії////////////////////////////////////////////////////////// */
  .section-book {
      width: 335px;
    margin-left: auto;
@@ -84,7 +103,7 @@
          gap: 24px;
      }
    }
- /* стилізація картки...................................................... */
+ /* стилізація картки//////////////////////////////////////////////////// */
  .book-card {
      display: none;
      margin-bottom: 8px;
@@ -139,7 +158,7 @@
     height: 256px;
   }
  }
-/* стилізація заголовку картки .............................. */
+/* стилізація заголовку картки ////////////////////////////////////////////////// */
 
  .book-card-title {
      width: 335px; 
@@ -178,7 +197,7 @@
   overflow: hidden;
   height: 18px;
  } */
- /* стилізація кнопки під секцією............................. */
+ /* стилізація кнопки під секцією///////////////////////////////////////////////////*/
  .section-book-btn {
      display: block;
  
@@ -269,7 +288,7 @@
 }
 
 
-/* стилі для обраної категорії */
+/* стилі для обраної категорії /////////////////////////////////////////////////*/
 
 
 
@@ -324,20 +343,3 @@
   }
   
 } 
-
-
-/* .c-title {
-  width: 996px;
-} */
-
-/* @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .book-card {
-      margin-bottom: 40px;
-  } 
-} 
-
-@media screen and (min-width: 1200px) {
-  .book-card {
-      margin-bottom: 100px;
-  }
-} */
