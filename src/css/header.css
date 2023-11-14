@@ -2,7 +2,7 @@
   display: flex;
   font-family: DM Sans, sans-serif;
   /* margin: 0 auto; */
-  padding: 13px 0px;
+  /* padding: 13px 0px; */
   position: relative;
   justify-content: center;
   align-items: flex-start;
@@ -16,6 +16,7 @@
   .header-container {
     width: 768px;
     justify-content: flex-start;
+    padding: 13px 0px;
   }
 }
 
@@ -43,13 +44,13 @@
 
 .nav {
   display: flex;
-  margin-right: 14px;
+  /* margin-right: 14px; */
   align-items: center;
 }
 
 .wrapper-logo {
   display: flex;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-right: 144px;
 }
 
@@ -409,4 +410,3 @@
   justify-content: space-around;
   align-items: center;
 }
-
