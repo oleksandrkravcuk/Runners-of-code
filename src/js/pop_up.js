@@ -76,7 +76,6 @@ function onAddBook() {
     storgeArray.push(id);
     localStorage.setItem(NAME_LCS_KEY, JSON.stringify(storgeArray));
   }
-
   onCheckStatusBtn();
   updateButtonState();
 }
@@ -97,10 +96,11 @@ function updateButtonState() {
 // ---------------------------------------------------------------------------->
 
 function onCheckStatusBtn() {
-  const checkClass =
-    btnToChangeStatusOfBook.textContent === 'remove from the shopping list';
+  const id = OBJ_KEYS[OBJ_KEYS.length - 1];
+  const storgeArray = JSON.parse(localStorage.getItem(NAME_LCS_KEY)) || [];
+  const isIdStorge = storgeArray.includes(id);
 
-  if (checkClass) {
+  if (!isIdStorge) {
     congratulation.classList.add('congratulation');
   } else {
     congratulation.classList.remove('congratulation');
