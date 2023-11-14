@@ -15,9 +15,10 @@ let bookCard;
 
 
 
-async function markup() {
-  const savedBooks = JSON.parse(localStorage.getItem("An_array_of_ID_books"));
+async function markup() { 
 
+  const savedBooks = JSON.parse(localStorage.getItem("An_array_of_ID_books"));
+  
   if (savedBooks && savedBooks.length > 0) {
     for (const id of savedBooks) {
       try {
@@ -25,7 +26,7 @@ async function markup() {
         console.log(data);
 
         const bookCard = `
-          <div class="wrrap">
+          <div class="wrrap" data-book-id="${id}">
             <div class="img-container">
               <img class="book-img" src="${data.book_image}" alt="${data.title}">
             </div>
@@ -77,14 +78,13 @@ card.addEventListener('click', async (e) => {
   if (btn) {
     const cardToRemove = btn.closest('.wrrap');
     const idToRemove = cardToRemove.getAttribute('data-book-id');
-    
-  
+
     cardToRemove.remove();
     
     
     
     const updatedBookIds = JSON.parse(localStorage.getItem("An_array_of_ID_books")).filter(id => id !== idToRemove);
-     localStorage.setItem("An_array_of_ID_books", JSON.stringify(updatedBookIds));
+    localStorage.setItem("An_array_of_ID_books", JSON.stringify(updatedBookIds));
     
   }
 });
