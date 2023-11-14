@@ -369,3 +369,14 @@
   fill: #FFFFFF;
 }
 
+#logOutButton {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease; /* Змініть час в секундах, якщо потрібно повільніше або швидше */
+}
+
+#logOutButton.fadeIn {
+  opacity: 1;
+  display: flex;
+}
+
