@@ -101,11 +101,17 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-title {
     font-family: 'DM Sans';
-
     font-size: 22px;
     line-height: 24px;
-
     padding-bottom: 50px;
+  }
+  .team-list {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+    padding: 0 100px;
+    background-color: var(--third-color);
   }
 }
 
