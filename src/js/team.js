@@ -1,3 +1,4 @@
+import ico from './../img/symbol-defs.svg';
 
 // масив членів команди в алфавітному порядку
 const team = [
@@ -59,6 +60,8 @@ const team = [
   },
 ];
 
+// створює розмітку  tean list і додає в team.html
+
 const ulTeam = document.querySelector('.team-list');
 
 export default function markupTeam(team) {
@@ -69,18 +72,14 @@ export default function markupTeam(team) {
   }
 
   // Створює всі li в team
-   const itemsTeam = team
+  const itemsTeam = team
     .map(({ name, git, liin }) => {
       return `<li class="team-item">
-      <a href="${git}" rel="noopener noreferrer">
-        <svg class="git-ico" width="32" height="32">
-          <use href="./img/symbol-defs.svg#icon-github"></use>
-        </svg>
+      <a href="${git}" rel="noopener noreferrer" class='team-item-link-git'>
+       
       </a>
-      <a href="${liin}" rel="noopener noreferrer">
-        <svg class="in-ico" width="32" height="32">
-          <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-        </svg>
+      <a href="${liin}" rel="noopener noreferrer" class='team-item-link-liin'>
+       
       </a>
       <a href="${git}" rel="noopener noreferrer" class="team-name">${name}</a>
     </li>`;
@@ -88,5 +87,38 @@ export default function markupTeam(team) {
     .join('');
   ulTeam.innerHTML += itemsTeam;
 }
-
 markupTeam(team);
+
+// створює svg та додає в розмітку вище
+
+const gitlinks = document.querySelectorAll('.team-item-link-git');
+const lilinks = document.querySelectorAll('.team-item-link-liin');
+
+// функцiя що створює svg git
+
+function createMarkupSvgG(ico) {
+  gitlinks.forEach(gitlink => {
+    gitlink.insertAdjacentHTML(
+      'afterbegin',
+      `<svg class="git-ico" width="32" height="32">
+        <use href='${ico}#icon-github'></use>
+      </svg>`
+    );
+  });
+}
+
+// функцiя що створює svg linkidin
+
+function createMarkupSvgL(ico) {
+  lilinks.forEach(lilink => {
+    lilink.insertAdjacentHTML(
+      'afterbegin',
+      `<svg class="in-ico" width="32" height="32">
+        <use href="${ico}#icon-linkedin"></use>
+      </svg>`
+    );
+  });
+}
+
+createMarkupSvgG(ico);
+createMarkupSvgL(ico);
