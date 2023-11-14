@@ -16,6 +16,7 @@
 @import url('./pop_up.css');
 @import url('./mobile-menu.css');
 @import url('./authorization.css');
+@import url('./team.css');
 
 :root {
   --main-color: #d0d0d0;
@@ -76,9 +77,9 @@
   --state-amazon: brightness(0) invert(1);
   --state-book: drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
 }
-
 body {
   background-color: var(--background-color);
+  margin: 0;
 }
 
 .header-container {
@@ -87,33 +88,37 @@ body {
 
 @media screen and (min-width: 1200px) {
   .content-contaiter-box {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 1440px;
   }
 
   .partial-container {
-    max-width: 1392px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 40px;
+    width: 1392px;
     display: flex;
     gap: 40px;
+    padding: auto;
   }
   .partial-categori-container {
-    width: 356px;
+    margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content-contaiter-box {
-    /* max-width: 704px; */
+    width: 768px;
     margin: 0 auto;
   }
   .partial-categori-container {
     display: flex;
     gap: 32px;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
+  }
+  .partial-container{
+    width: 704px;
+    margin: 0 auto;
+  }  
+  body {
+    margin: 0 auto;
   }
 }
 
@@ -121,34 +126,26 @@ body {
   margin: 0 auto;
   background-color: var(--background-color);
 }
-
 @media screen and (max-width: 767px) {
   .partial-categori-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 40px;
     margin-bottom: 40px;
   }
-  .partial-container {
+  .partial-container{
+    min-width: 335px;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-contaiter-box {
+    min-width: 375px;
+  }
+  body {
+    width: 100%;
     margin: 0 auto;
   }
-}
 
-/*Клас для Амазон*/
-.data-amazon {
-  width: 62px;
-  height: 19px;
-  filter: var(--state-amazon);
-}
-.data-amazon:hover {
-  filter: var(--state-hover);
-}
-.data-amazon-book {
-  width: 33px;
-  height: 32px;
-  filter: var(--wight-state-book);
-}
-.data-amazon-book:hover {
-  filter: var(--state-hover);
 }
