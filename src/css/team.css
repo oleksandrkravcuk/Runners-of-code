@@ -4,6 +4,7 @@
   background-color: var(--third-color);
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 100vw;
 }
 .team-first-wrapper {
   text-align: center;

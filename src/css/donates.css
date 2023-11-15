@@ -1,8 +1,8 @@
 /*-------------- Support Ukraine --------------*/
 
 .wrapper-support {
-  width: 280px;
   max-width: 335px;
+  height: 484px;
   background: linear-gradient(
     180deg,
     var(--third-color) 0%,
@@ -10,7 +10,6 @@
   );
   border-radius: 16px;
   padding: 24px 40px;
-  height: 460px;
 }
 
 .support-first-wrapper {
@@ -117,7 +116,8 @@
 
 @media screen and (min-width: 1200px) {
   .wrapper-support {
-    max-width: 356px;
+    width: 356px;
+    margin: 40px 0;
   }
 
   .support-title {
