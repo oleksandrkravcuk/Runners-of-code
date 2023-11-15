@@ -1,4 +1,10 @@
 # Vanilla App Template
+Runners-of-code
+[![Look at Layout](https://img.shields.io/badge/Look%20at%20Layout-Click%20Here-blue)]([link-to-your-figma-layout](https://www.figma.com/file/JB3QBTgXBIHU24nMOtmVmK/Book?node-id=0-1&t=ymen1Pvvf0nSfxYC-0))
+Look at Layout (Figma)
+Install the project dependencies in the terminal with the command npm install .
+Start development mode by running the command npm start.
+
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
 додаткових можливостей [звернись до документації](https://vitejs.dev/).
