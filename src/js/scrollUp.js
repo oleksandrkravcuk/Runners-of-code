@@ -18,7 +18,7 @@ const backToTopButtonEl = document.getElementById("back-to-top-button");
 
 backToTopButtonEl.addEventListener("click", handleButtonBackToTopClick);
 
-function handleButtonBackToTopClick() {
+export function handleButtonBackToTopClick() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
