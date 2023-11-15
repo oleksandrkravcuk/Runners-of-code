@@ -1,4 +1,4 @@
-import './js/loader';
+
 import './js/fetch-api';
 import './js/header';
 import './js/home';
