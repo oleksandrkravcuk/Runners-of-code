@@ -1,17 +1,14 @@
-import { fetchIdBook } from './fetch-api'
-import Notiflix from 'notiflix';
-// import amazon from './../img/png/amazon.png';
-// import book from './../img/png/book.png';
-// import book_shadow from './../img/png/book_shadow.png';
-// import amazon_shadow from './../img/png/amazon_shadow.png';
-
+import { fetchIdBook } from './fetch-api';
 import amazon from '../img/png/amazon.png';
 import book from '../img/png/book.png';
+import ico from './../img/symbol-defs.svg';
 
 const card = document.querySelector('.books-card');
-// const btnDelete = document.querySelector('.btn');
+const noBook = document.querySelector('.book-massage');
 let id = null;
 let bookCard;
+
+
 
 
 
@@ -41,21 +38,19 @@ async function markup() {
                 <ul class="link-container">
                   <li class="amazon-item">
                     <a class="link-amazon data-amazon" href="${data.amazon_product_url}">
-                      <img class="link-amazon" src="${amazon}" alt="" width="32" height="11">
+                      <img class="link-amazon data-amazon" src="${amazon}" alt="" width="32" height="11">
                     </a>
                   </li>
                   <li class="book-item">
                     <a href="${data.buy_links[1].url}">
-                      <img class="link-book" src="${book}" alt="" width="16" height="16">
+                      <img class="link-book data-amazon-book" src="${book}" alt="" width="16" height="16">
                     </a>
                   </li>
                 </ul>
               </div>
               <div class="btn-container">
-                <button class="btn">
-                  <svg class="icon-trash" width="16" height="16">
-                    <use href="./img/symbol-defs.svg#icon-trash"></use>
-                  </svg>
+                <button class="btn-svg">
+                 ${createSvg(ico)}                 
                 </button>
               </div>
             </div>
@@ -66,15 +61,36 @@ async function markup() {
         console.error(error);
       }
     }
-  } else {
-    Notiflix.Notify.failure("This page is empty, add some books and proceed to order.");
+  } if (!savedBooks.length) {
+    console.log(savedBooks);
+    const bookMassage = `
+    <div class="book-masage">
+      <p class="text-masage">This page is empty, add some books and proceed to order.</p>
+        <img class="img-book-masage" src="./img/png/books.png" alt="">
+    </div>`;
+   noBook.innerHTML = bookMassage;
+  
   }
 }
 
 markup();
 
+const btnSvgCollection = document.querySelectorAll('.btn-svg');
+console.log(btnSvgCollection);
+
+function createSvg(ico) {
+  return `<svg class="icon-trash" width="16" height="16">
+            <use href='${ico}#icon-trash'></use>
+          </svg>`;
+}
+
+btnSvgCollection.forEach(btnSvg => {
+  btnSvg.insertAdjacentHTML('afterbegin', createSvg(ico));
+});
+createSvg(ico);
+
 card.addEventListener('click', async (e) => {
-  const btn = e.target.closest('.btn');
+  const btn = e.target.closest('.btn-svg');
   if (btn) {
     const cardToRemove = btn.closest('.wrrap');
     const idToRemove = cardToRemove.getAttribute('data-book-id');
