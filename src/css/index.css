@@ -28,6 +28,7 @@
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --fifth-color: #b1a5ef;
   --thumb-color: #e0e0e0;
+  --aside: #4f2ee8;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --static-color: #111111;
@@ -54,6 +55,7 @@
   --congratulation-pop-up: rgba(17, 17, 17, 0.5);
   --text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   --thumb-color: #e0e0e0;
+  --aside: #4f2ee8;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --clr-pop-up: rgba(17, 17, 17, 0.4);
@@ -74,6 +76,7 @@
   --congratulation-pop-up: rgba(255, 255, 255, 0.5);
   --text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.15);
   --thumb-color: #171719;
+  --aside: #eac645;
   --switch-color: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
   --switch-box-shadow-color: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
   --clr-pop-up: rgba(255, 255, 255, 0.5);
