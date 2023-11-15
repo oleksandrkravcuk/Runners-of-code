@@ -11,20 +11,19 @@
         </div>
       </div>
       <ul class="nav-list">
-        <li class="nav-item">
-          <button class="header-button-home active-button" type="button">
-            <a href="./index.html" class="nav-link">home</a>
-          </button>
 
+        <li class="header-home active-button">
+          <a href="./index.html" class="nav-link">home</a>
         </li>
 
-        <li class="nav-item">
-          <a href="./shopping.html" class="nav-link header-shopping not-active-button">shopping list
+        <li class="nav-link header-shopping not-active-button-shopping">
+          <a href="./shopping.html" class="nav-link">shopping list
             <svg class="header-svg-bag" width="20" height="20">
               <use href="./img/symbol-defs.svg#icon-bag"></use>
             </svg>
           </a>
         </li>
+
       </ul>
       <label class="header-switch">
         <input class="header-switch-input" type="checkbox">
@@ -38,31 +37,33 @@
     </button>
 
     <div class="button-container">
-    <button class="sign-up-button" type="button" id='openModalButton'>
-      <p class="signUp-link" id="signUpLink">Sign up
-      <svg class="sign-up-arrow" width="20" height="20">
-        <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
-      </svg></p>
-    </button>
-   
-    <button class="user-button" style="display: none;"> 
-      <div class="ellipse">
-      <svg class="user-icon" width="19" height="19">
-        <use href="./img/symbol-defs.svg#icon-user"></use>
-      </svg>
-    </div>
-      <p></p>
-      <svg class="down-icon" width="23" height="26">
-        <use href="./img/symbol-defs.svg#icon-down"></use>
-      </svg>
-    </button>
+      <button class="sign-up-button" type="button" id='openModalButton'>
+        <p class="signUp-link" id="signUpLink">Sign up
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
+          </svg>
+        </p>
+      </button>
 
-    <button class="log-out" type="button" id='logOutButton' style="display: none;">
-      <p class="signUp-link" id="signUpLink">Log out
-      <svg class="sign-up-arrow" width="20" height="20">
-        <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
-      </svg></p>
-    </button>
+      <button class="user-button" style="display: none;">
+        <div class="ellipse">
+          <svg class="user-icon" width="19" height="19">
+            <use href="./img/symbol-defs.svg#icon-user"></use>
+          </svg>
+        </div>
+        <p></p>
+        <svg class="down-icon" width="23" height="26">
+          <use href="./img/symbol-defs.svg#icon-down"></use>
+        </svg>
+      </button>
+
+      <button class="log-out" type="button" id='logOutButton' style="display: none;">
+        <p class="signUp-link" id="signUpLink">Log out
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
+          </svg>
+        </p>
+      </button>
     </div>
   </div>
 </header>
