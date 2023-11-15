@@ -72,7 +72,7 @@ function saveData(event) {
     Notiflix.Notify.failure('Please fill in all fields.');
     return;
   }
-
+  clearFormFields();
   const dataObject = {
     name,
     email,
@@ -87,8 +87,6 @@ function saveData(event) {
   const userButton = document.querySelector('.user-button');
   userButton.style.display = 'flex';
   userButton.querySelector('p').textContent = name;
-
-  clearFormFields();
   Notiflix.Notify.success('User registered successfully!');
 }
 
@@ -148,6 +146,7 @@ function login(event) {
     let userData = JSON.parse(storedData);
 
     if (loginEmail === userData.email && loginPassword === userData.password) {
+      clearFormFields();
       const signUpButton = document.getElementById('signUpLink');
       signUpButton.closest('.sign-up-button').style.display = 'none';
 
@@ -155,6 +154,7 @@ function login(event) {
       userButton.style.display = 'flex';
       userButton.querySelector('p').textContent = userData.name;
       Notiflix.Notify.success('User logged in successfully!');
+      
     } else {
       Notiflix.Notify.info('Invalid email or password. Try again.');
     }
