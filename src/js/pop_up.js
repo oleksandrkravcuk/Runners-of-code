@@ -21,14 +21,13 @@ const {
 imgs.addEventListener('click', openModal);
 btnClose.addEventListener('click', onToClose);
 btnToChangeStatusOfBook.addEventListener('click', onAddBook);
-window.addEventListener('keydown', onEscapeClose);
+document.addEventListener('keydown', onEscapeClose);
 // ---------------------------------------------------------------------------->
 const OBJ_KEYS = [];
 const NAME_LCS_KEY = 'An_array_of_ID_books';
 // ---------------------------------------------------------------------------->
 function openModal(e) {
   e.preventDefault();
-
   if (e.target.nodeName !== 'IMG') {
     return;
   }
@@ -43,20 +42,14 @@ function openModal(e) {
 }
 // ---------------------------------------------------------------------------->
 function onEscapeClose(e) {
-  onToClose();
+  if (e.key === 'Escape') onToClose();
 }
 // ---------------------------------------------------------------------------->
 function onToClose() {
   popUpOpen.classList.remove('hiden');
   document.body.classList.remove('modal-open');
   popUpOpen.classList.add('pop_up-closing');
-  popUpOpen.addEventListener('transitionend', handleTransitionEnd);
   clearModalBody();
-}
-// ---------------------------------------------------------------------------->
-function handleTransitionEnd() {
-  popUpOpen.removeEventListener('transitionend', handleTransitionEnd);
-  popUpOpen.classList.remove('pop_up-closing');
 }
 // ---------------------------------------------------------------------------->
 function clearModalBody() {
