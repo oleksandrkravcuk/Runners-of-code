@@ -20,6 +20,7 @@ loader, and convenient navigation.
 - Shopping List
 - Authorization
 - Shopping Modal
+- Scroll Up
 
 ## Technologies Used
 
