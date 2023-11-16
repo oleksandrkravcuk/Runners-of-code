@@ -37,23 +37,39 @@
     </button>
 
     <div class="button-container">
-      <button class="sign-up-button" type="button">
-        <a href="./authorization.html" class="signUp-link">Sign up
+      <button class="sign-up-button" type="button" id="openModalButton">
+        <span class="signUp-link" id="signUpLink">
+          Sign up
           <svg class="sign-up-arrow" width="20" height="20">
             <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
-          </svg></a>
+          </svg>
+        </span>
       </button>
 
-      <button class="user-button" style="display: none;"> <!--Потім не забути забрати display:none потрібно-->
-        <div class="ellipse">
+      <button class="user-button">
+        <i class="ellipse">
           <svg class="user-icon" width="19" height="19">
             <use href="./img/symbol-defs.svg#icon-user"></use>
           </svg>
-        </div>
-        <p></p>
+        </i>
+        <span></span>
         <svg class="down-icon" width="23" height="26">
           <use href="./img/symbol-defs.svg#icon-down"></use>
         </svg>
+      </button>
+
+      <button
+        class="log-out"
+        type="button"
+        id="logOutButton"
+        style="display: none"
+      >
+        <span class="signUp-link">
+          Log out
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
+          </svg>
+        </span>
       </button>
     </div>
   </div>
