@@ -7,9 +7,10 @@ aside {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
-  max-height: 220px;
+  max-height: 225px;
   overflow-y: scroll;
   max-width: 335px;
+  margin-top: 20px;
 }
 
 .categories-list {
@@ -56,6 +57,7 @@ aside {
     max-height: 486px;
     overflow-y: scroll;
     width: 335px;
+    margin-top: 0;
   }
 
   .categories-list {
@@ -71,5 +73,6 @@ aside {
 @media screen and (min-width: 1200px) {
   .wrapper-categories {
     margin-bottom: 40px;
+    max-height: 470px;
   }
 }
