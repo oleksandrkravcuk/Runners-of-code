@@ -36,6 +36,55 @@ document.addEventListener('DOMContentLoaded', function () {
     
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const signUp = document.getElementById('signupButton');
+  const signIn = document.getElementById('loginButton');
+  const modal = document.getElementById('modal');
+
+  modal.addEventListener('click', function (event) {
+    if (event.target === signUp) {
+      if (validateRegistrationForm()) {
+        closeModal();
+      }
+    }
+    else if(event.target === signIn){
+      if(validateLoginForm()){
+        closeModal();
+      }
+    }
+  });
+});
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  const body = document.body;
+  modal.style.display = 'none';
+  body.classList.remove('modal-open');
+}
+
+function validateRegistrationForm() {
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+
+  if (name === '' || email === '' || password === '') {
+    Notiflix.Notify.failure('Please fill in all fields.');
+    return false;
+  }
+  return true;
+}
+
+function validateLoginForm() {
+  let loginEmail = document.getElementById('loginEmail').value;
+  let loginPassword = document.getElementById('loginPassword').value;
+
+  if (loginEmail === '' || loginPassword === '') {
+    Notiflix.Notify.failure('Please fill in all fields.');
+    return false;
+  }
+  return true;
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const formContainer = document.querySelector('.form-container');
@@ -64,6 +113,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
+
 
 function saveData(event) {
   event.preventDefault();
@@ -130,9 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
     userButton.style.display = 'none';
     userButton.querySelector('span').textContent = ''; 
 
-    Notiflix.Notify.success('User logged out successfully!');
-
-    closeModal();
+    Notiflix.Notify.success('User logged out successfully!');   
   });
 });
 
@@ -156,8 +207,6 @@ function login(event) {
       userButton.style.display = 'flex';
       userButton.querySelector('span').textContent = userData.name; 
       Notiflix.Notify.success('User logged in successfully!');
-
-      closeModal();
     } 
     
     else {
@@ -257,9 +306,3 @@ function restoreUserData() {
     userButton.querySelector('span').textContent = userData.name;
   }
 }
-  function closeModal() {
-    const modal = document.getElementById('modal');
-    const body = document.body;
-    modal.style.display = 'none';
-    body.classList.remove('modal-open');
-  }
