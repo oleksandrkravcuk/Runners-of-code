@@ -2,10 +2,31 @@ const contLogo = document.querySelector('.container-logo');
 const headerSvg = document.querySelector('.header-svg-logo');
 const color = document.querySelector('.header-switch');
 const slider = document.querySelector('.header-switch-slider');
+const home = document.querySelector('.header-home');
+const shopping = document.querySelector('.header-shopping');
 
 color.addEventListener('click', onClickBtnTheme);
 
+if (window.location.pathname === '/index.html') {
+  home.classList.add('active-button');
+} else if (window.location.pathname === '/shopping.html') {
+  shopping.classList.add('active-button');
+}
 
+home.addEventListener('click', onClickHome);
+shopping.addEventListener('click', onClickShopping);
+
+function onClickHome() {
+  window.location.href = '/index.html';
+  shopping.classList.remove('active-button');
+  home.classList.add('active-button');
+}
+
+function onClickShopping() {
+  window.location.href = '/shopping.html';
+  shopping.classList.add('active-button');
+  home.classList.remove('active-button');
+}
 // console.log(localStorage.getItem('theme'));
 
 // додаємо клас теми
@@ -21,7 +42,7 @@ initialState('light-theme');
 
 function toggleTheme() {
   if (localStorage.getItem('theme') == 'dark-theme') {
-    initialState('light-theme');
+        initialState('light-theme');
   contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
             <svg class="header-svg-logo" width="109" height="28">
               <use href="./img/symbol-defs.svg#icon-logo"></use>
@@ -50,3 +71,8 @@ function onClickBtnTheme(e) {
   toggleTheme();
 }
 
+// if(toggleTheme("dark-theme")){
+//   localStorage.setItem("theme", "light-theme");
+// }else{
+//   localStorage.setItem("theme", "dark-theme");
+// }
