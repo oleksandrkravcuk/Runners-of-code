@@ -1,40 +1,40 @@
 /* обгортка усієї секції//////////////////////////////////////////////////////////////////////////////////// */
 .section-product {
   font-family: DM Sans;
-     color: var(--text-color-main);
-     font-size: 14px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 18px; 
-     letter-spacing: 0.42px;
-     text-transform: uppercase;
-    }
+  color: var(--text-color-main);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
 
-    .section-product h4 {
-        width: 335px; 
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      .section-product h4 {
-        width: 218px; 
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .section-product h4 {
-        width: 180px; 
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-      }
-    }
+.section-product h4 {
+  width: 335px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-product h4 {
+    width: 218px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-product h4 {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 
 /* Title Best Selers////////////////////////////////////////////////////////////////////// */
- .title {
+.title {
   font-family: DM Sans;
   text-transform: none;
   font-size: 32px;
@@ -43,201 +43,193 @@
   letter-spacing: -1.28px;
   color: var(--text-color-second);
   margin-bottom: 40px;
- }
+}
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .title {
     font-size: 48px;
     margin-top: 100px;
   }
- }
- @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 48px;
     margin-top: 40px;
   }
- }
+}
 /* title категорії в best selers/////////////////////////////////////////////////////*/
-  
- .sections-title {
-     margin-bottom: 18px;
-     font-size: 14px;
- }
- 
- @media screen and (min-width: 768px) and (max-width: 1199px) {
-     .sections-title {
-         line-height: 24px;
-     }
-   }
- /* обгортка однієї категорії книг в BestSelers//////////////////////////////////////////// */
-   .thomb-book-section {
-     width: 335px;
-   }
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-     .thomb-book-section {
-         width: 704px;
-     }
-   }
-   @media screen and (min-width: 1200px) {
-     .thomb-book-section {
-         width: 996px;
-     }
-   }
- /* секція однієї категорії////////////////////////////////////////////////////////// */
- .section-book {
-     width: 335px;
-   margin-left: auto;
-   margin-right: auto;
- }
- @media screen and (min-width: 768px) and (max-width: 1199px) {
-     .section-book {
-         display: flex;
-         width: 704px;
-         gap: 25px;
-     }
-   }
-   @media screen and (min-width: 1200px) {
-     .section-book {
-         display: flex;
-         width: 996px;
-         gap: 24px;
-     }
-   }
- /* стилізація картки//////////////////////////////////////////////////// */
- .book-card {
-     display: none;
-     margin-bottom: 8px;
-     transition: box-shadow 250ms linear, transform 250ms ease-in-out;
-     border-radius: 8px;
- }
 
- .book-card:nth-child(2) {
-     display: block;
-     width: 335px;
- }
+.sections-title {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
 
- @media screen and (min-width: 768px) and (max-width: 1199px) {
-     .book-card {
-         margin-bottom: 20px;
-     } 
-   } 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sections-title {
+    line-height: 24px;
+  }
+}
+/* обгортка однієї категорії книг в BestSelers//////////////////////////////////////////// */
+.thomb-book-section {
+  width: 335px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .thomb-book-section {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thomb-book-section {
+    width: 996px;
+  }
+}
+/* секція однієї категорії////////////////////////////////////////////////////////// */
+.section-book {
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-book {
+    display: flex;
+    width: 704px;
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-book {
+    display: flex;
+    width: 996px;
+    gap: 24px;
+  }
+}
+/* стилізація картки//////////////////////////////////////////////////// */
+.book-card {
+  display: none;
+  margin-bottom: 8px;
+  transition: box-shadow 250ms linear, transform 250ms ease-in-out;
+  border-radius: 8px;
+}
 
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-     .book-card:nth-child(-n+3) {
-         display: block;
-         width: 218px;
-     }  
-   } 
-   @media screen and (min-width: 1200px) {
-     .book-card {
-         margin-bottom: 32px;
-     }
-   }
-   @media screen and (min-width: 1200px) {
-     .book-card:nth-child(-n+5) {
-         display: block;
-         width: 180px;
-     }
-     
-   } 
+.book-card:nth-child(2) {
+  display: block;
+  width: 335px;
+}
 
- 
- .book-card-photo {
-     display: block;
-     width: 100%;
-     border-radius: 8px;
- }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .book-card {
+    margin-bottom: 20px;
+  }
+}
 
- @media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .book-card:nth-child(-n + 3) {
+    display: block;
+    width: 218px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .book-card {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .book-card:nth-child(-n + 5) {
+    display: block;
+    width: 180px;
+  }
+}
+
+.book-card-photo {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .book-card-photo {
     height: 316px;
   }
- }
- @media screen and (min-width: 1199px) {
+}
+@media screen and (min-width: 1199px) {
   .book-card-photo {
     height: 256px;
   }
- }
+}
 /* стилізація заголовку картки ////////////////////////////////////////////////// */
 
- .book-card-title {
-     width: 335px; 
-     white-space: nowrap; 
-     overflow: hidden; 
-     text-overflow: ellipsis;
+.book-card-title {
+  width: 335px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
+  color: var(--text-color-second);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
 
-     color: var(--text-color-second);
-     font-size: 16px;
-     font-weight: 700;
-     letter-spacing: -0.64px;
-     margin-top: 14px;
-     margin-bottom: 4px;
- 
- }
-
- @media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .book-card-title {
-    width: 218px; 
-    white-space: nowrap; 
-    overflow: hidden; 
+    width: 218px;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
 }
 @media screen and (min-width: 1200px) {
   .book-card-title {
-    width: 180px; 
-    white-space: nowrap; 
-    overflow: hidden; 
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
 }
 
- /* .author {
+/* .author {
   overflow: hidden;
   height: 18px;
  } */
- /* стилізація кнопки під секцією///////////////////////////////////////////////////*/
- .section-book-btn {
-     display: block;
- 
-     margin-left: auto;
-     margin-bottom: 40px;
- 
-     padding: 14px 28px;
-     background-color: rgba(0, 0, 0, 0);
- 
-     gap: 10px;
-     border-radius: 40px;
-     border: 2px solid var(--third-color);
-     color: var(--text-color-second);
- 
-     font-family: DM Sans;
-     font-size: 14px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: 18px; 
-     letter-spacing: -0.14px;
-     text-transform: uppercase;
-     transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
- }
+/* стилізація кнопки під секцією///////////////////////////////////////////////////*/
+.section-book-btn {
+  display: block;
 
+  margin-left: auto;
+  margin-bottom: 40px;
 
- .section-book-btn:hover {
+  padding: 14px 28px;
+  background-color: rgba(0, 0, 0, 0);
+
+  gap: 10px;
+  border-radius: 40px;
+  border: 2px solid var(--third-color);
+  color: var(--text-color-second);
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-book-btn:hover {
   color: var(--second-color);
   background-color: var(--third-color);
- }
+}
 
- .section-book-btn:focus {
+.section-book-btn:focus {
   color: var(--second-color);
   background-color: var(--third-color);
- }
- 
+}
 
 /* modal on card ////////////////////////*/
-
-
 
 .card__thumb {
   position: relative;
@@ -252,7 +244,7 @@
 @media screen and (min-width: 1200px) {
   .card__thumb::before {
     position: absolute;
-    content: "";
+    content: '';
     pointer-events: none;
     bottom: 0;
     left: 0;
@@ -261,14 +253,15 @@
     background-color: var(--fourth-color);
     opacity: 0;
     transform: translate(0, 100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .link:hover .card__thumb::before {
     opacity: 1;
     transform: translate(0, 0);
   }
-  
+
   .card-text {
     pointer-events: none;
     display: block;
@@ -278,30 +271,28 @@
     left: 25%;
     color: var(--text-color-second);
     opacity: 0;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .link:hover .card-text {
     opacity: 1;
     transform: translate(0, 0);
   }
 }
 
-
 /* стилі для обраної категорії /////////////////////////////////////////////////*/
 
-
-
-.js-choose-category .book-card{
+.js-choose-category .book-card {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .js-choose-category{
+  .js-choose-category {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-  } 
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -313,33 +304,30 @@
   }
 }
 
-
-.js-choose-category .book-card:nth-child(-n+20) {
+.js-choose-category .book-card:nth-child(-n + 20) {
   display: block;
   width: 335px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .js-choose-category .book-card {
-      margin-bottom: 40px;
-  } 
-} 
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .js-choose-category .book-card:nth-child(-n+20) {
-      display: block;
-      width: 218px;
-  }  
-} 
-@media screen and (min-width: 1200px) {
-  .js-choose-category .book-card {
-      margin-bottom: 32px;
-
+  .js-choose-category .book-card:nth-child(-n + 20) {
+    display: block;
+    width: 218px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .js-choose-category .book-card:nth-child(-n+20) {
-      display: block;
-      width: 180px;
+  .js-choose-category .book-card {
+    margin-bottom: 32px;
   }
-  
-} 
+}
+@media screen and (min-width: 1200px) {
+  .js-choose-category .book-card:nth-child(-n + 20) {
+    display: block;
+    width: 180px;
+  }
+}

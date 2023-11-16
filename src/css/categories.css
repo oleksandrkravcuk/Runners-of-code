@@ -54,7 +54,7 @@ aside {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper-categories {
     padding: 24px;
-    max-height: 486px;
+    max-height: 480px;
     overflow-y: scroll;
     width: 335px;
     margin-top: 0;
