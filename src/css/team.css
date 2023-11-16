@@ -195,6 +195,7 @@ footer {
     padding: 0 100px;
     margin-bottom: 40px;
     background-color: var(--third-color);
+    max-width: 1200px;
   }
   .team-item {
     display: flex;
