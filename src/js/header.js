@@ -5,6 +5,7 @@ const slider = document.querySelector('.header-switch-slider');
 
 color.addEventListener('click', onClickBtnTheme);
 
+
 // console.log(localStorage.getItem('theme'));
 
 // додаємо клас теми
@@ -40,6 +41,7 @@ function toggleTheme() {
     slider.classList.remove("header-switch-slider-light");
     slider.classList.add("header-switch-slider-dark");
   }
+
 }
 
 // перемикання теми при кліку
@@ -47,26 +49,4 @@ function onClickBtnTheme(e) {
     e.preventDefault();
   toggleTheme();
 }
-
-// function headerLogoMarkup() {
- 
-//   if (initialState('light-theme')) {
-//     contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-//             <svg class="header-svg-logo" width="109" height="28">
-//               <use href="./img/symbol-defs.svg#icon-logo"></use>
-//             </svg>
-//           </a>`;
- 
-//   } else {
-//      contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-//             <svg class="header-svg-logo" width="109" height="28">
-//               <use href="./img/symbol-defs.svg#icon-logoblack"></use>
-//             </svg>
-//           </a>`;
-     
-
-//   }
-  
-// }
-// headerLogoMarkup();
 

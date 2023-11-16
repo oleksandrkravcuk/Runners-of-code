@@ -1,67 +1,60 @@
 <header class="content-contaiter-box">
-  <div class="header-container">
-    <nav class="nav">
-      <div class="wrapper-logo">
-        <div class="container-logo">
-          <a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logo"></use>
+    <div class="header-container">
+        <nav class="nav">
+            <div class="wrapper-logo">
+                <div class="container-logo">
+                    <a class="logo-header-link" href="./index.html">
+                        <svg class="header-svg-logo" width="109" height="28">
+                            <use href="./img/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-link header-home not-active-button">
+                    <a class="nav-link" href="./index.html">home</a>
+                </li>
+
+                <li class="nav-link header-shopping active-button">
+                    <a class="nav-link" href="./shopping.html">shopping list
+                        <svg class="header-svg-bag active-svg" width="20" height="20">
+                            <use href="./img/symbol-defs.svg#icon-bag"></use>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+
+            <label class="header-switch">
+                <input class="header-switch-input" type="checkbox">
+                <span class="header-switch-slider"></span>
+            </label>
+        </nav>
+        <button class="burger-menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header-burger" width="28" height="28">
+                <use href="./img/symbol-defs.svg#icon-burger"></use>
             </svg>
-          </a>
+        </button>
+
+        <div class="button-container">
+            <button class="sign-up-button" type="button">
+                <a href="./authorization.html" class="signUp-link">Sign up
+                    <svg class="sign-up-arrow" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-arrow_right"></use>
+                    </svg></a>
+            </button>
+
+            <button class="user-button" style="display: none;"> <!--Потім не забути забрати display:none потрібно-->
+                <div class="ellipse">
+                    <svg class="user-icon" width="19" height="19">
+                        <use href="./img/symbol-defs.svg#icon-user"></use>
+                    </svg>
+                </div>
+                <p></p>
+                <svg class="down-icon" width="23" height="26">
+                    <use href="./img/symbol-defs.svg#icon-down"></use>
+                </svg>
+            </button>
         </div>
-      </div>
-      <ul class="nav-list">
-        <li class="header-home not-active-button">
-          <a href="./index.html" class="nav-link">home</a>
-        </li>
-
-        <li class="nav-link header-shopping active-button-shopping">
-          <a class="nav-link" href="./shopping.html"
-            >shopping list
-            <svg class="header-svg-bag active-svg" width="20" height="20">
-              <use href="./img/symbol-defs.svg#icon-bag"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <label class="header-switch">
-        <input class="header-switch-input" type="checkbox" />
-        <span class="header-switch-slider"></span>
-      </label>
-    </nav>
-    <button
-      class="burger-menu js-open-menu"
-      type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="header-burger" width="28" height="28">
-        <use href="./img/symbol-defs.svg#icon-burger"></use>
-      </svg>
-    </button>
-
-    <div class="button-container">
-      <button class="sign-up-button" type="button">
-        <a href="./authorization.html" class="signUp-link"
-          >Sign up
-          <svg class="sign-up-arrow" width="20" height="20">
-            <use href="./img/symbol-defs.svg#icon-arrow_right"></use></svg
-        ></a>
-      </button>
-
-      <button class="user-button" style="display: none">
-        <!--Потім не забути забрати display:none потрібно-->
-        <div class="ellipse">
-          <svg class="user-icon" width="19" height="19">
-            <use href="./img/symbol-defs.svg#icon-user"></use>
-          </svg>
-        </div>
-        <p></p>
-        <svg class="down-icon" width="23" height="26">
-          <use href="./img/symbol-defs.svg#icon-down"></use>
-        </svg>
-      </button>
     </div>
-  </div>
 </header>
