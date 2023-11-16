@@ -1,3 +1,5 @@
+import ico from './../img/symbol-defs.svg';
+
 const contLogo = document.querySelector('.container-logo');
 const headerSvg = document.querySelector('.header-svg-logo');
 const color = document.querySelector('.header-switch');
@@ -5,9 +7,22 @@ const slider = document.querySelector('.header-switch-slider');
 const home = document.querySelector('.header-home');
 const shopping = document.querySelector('.header-shopping');
 
+function createMarkupSvgLogo(ico) {
+
+    contLogo.insertAdjacentHTML(
+      'afterbegin',
+      `<svg class="header-svg-logo" width="109" height="28">
+        <use href='${ico}#icon-logo'></use>
+      </svg>`
+    );
+  
+};
+createMarkupSvgLogo(ico);
+
+
 contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
             <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logo"></use>
+              <use href="./../img/symbol-defs.svg#icon-logoblack"></use>
             </svg>
           </a>`;
 
