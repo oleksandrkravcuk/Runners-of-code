@@ -248,6 +248,16 @@ padding: 14px;
 
 }
 
+
+ @media only screen and (min-width: 1200px){
+ .icon-trash{
+     width: 20px;
+    height: 20px;
+
+}
+  
+}
+
 .btn-container{
   position: absolute;
  top: 0;
@@ -271,6 +281,7 @@ padding: 14px;
   .btn-container{
     top: 0;
     right: 18px;
+
     
 }
   
