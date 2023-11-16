@@ -376,3 +376,11 @@
   color: #ffffff;
   border: 3px solid #4f2ee8;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .button-container{
+    display: none;
+  }
+}

@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
   closeModalButton.addEventListener('click', function () {
     modal.style.display = 'none';
     body.classList.remove('modal-open');
+
+
+    
   });
 });
 
@@ -86,7 +89,7 @@ function saveData(event) {
 
   const userButton = document.querySelector('.user-button');
   userButton.style.display = 'flex';
-  userButton.querySelector('p').textContent = name;
+  userButton.querySelector('span').textContent = name; 
   Notiflix.Notify.success('User registered successfully!');
 }
 
@@ -125,16 +128,13 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const userButton = document.querySelector('.user-button');
     userButton.style.display = 'none';
-    userButton.querySelector('p').textContent = '';
+    userButton.querySelector('span').textContent = ''; 
 
     Notiflix.Notify.success('User logged out successfully!');
 
     closeModal();
   });
 });
-
-
-
 
 
 
@@ -154,7 +154,7 @@ function login(event) {
 
       const userButton = document.querySelector('.user-button');
       userButton.style.display = 'flex';
-      userButton.querySelector('p').textContent = userData.name;
+      userButton.querySelector('span').textContent = userData.name; 
       Notiflix.Notify.success('User logged in successfully!');
 
       closeModal();
@@ -206,7 +206,7 @@ togglePasswordButton.addEventListener('click', function () {
 const passwordLoginInput = document.getElementById('loginPassword');
 const togglePasswordButtonLogin = document.getElementById(
   'togglePasswordLogin'
-);
+);  
 
 togglePasswordButtonLogin.addEventListener('click', function () {
   if (passwordLoginInput.type === 'password') {
@@ -254,7 +254,7 @@ function restoreUserData() {
 
     const userButton = document.querySelector('.user-button');
     userButton.style.display = 'flex';
-    userButton.querySelector('p').textContent = userData.name;
+    userButton.querySelector('span').textContent = userData.name;
   }
 }
   function closeModal() {
