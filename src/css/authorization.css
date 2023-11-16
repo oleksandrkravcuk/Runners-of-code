@@ -149,7 +149,7 @@
 
         .input-icon{
             position: absolute;
-            left: 375px;
+            left: calc(87% + 10px);
             top: 14px;
             stroke: #111111;
             fill: transparent;
