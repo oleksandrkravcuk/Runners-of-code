@@ -8,13 +8,12 @@ const noBook = document.querySelector('.book-massage');
 let id = null;
 let bookCard;
 
-
+const savedBooks = JSON.parse(localStorage.getItem("An_array_of_ID_books"));
+let caunter = savedBooks.length
 
 
 
 async function markup() { 
-
-  const savedBooks = JSON.parse(localStorage.getItem("An_array_of_ID_books"));
   
   if (savedBooks && savedBooks.length > 0) {
     for (const id of savedBooks) {
@@ -69,7 +68,6 @@ async function markup() {
         <img class="img-book-masage" src="./img/png/books.png" alt="">
     </div>`;
    noBook.innerHTML = bookMassage;
-  
   }
 }
 
@@ -90,17 +88,26 @@ btnSvgCollection.forEach(btnSvg => {
 createSvg(ico);
 
 card.addEventListener('click', async (e) => {
+  caunter -= 1
   const btn = e.target.closest('.btn-svg');
   if (btn) {
     const cardToRemove = btn.closest('.wrrap');
     const idToRemove = cardToRemove.getAttribute('data-book-id');
 
     cardToRemove.remove();
-    
-    
+
+    if (caunter === 0) {
+      const bookMassage = `
+      <div class="book-masage">
+        <p class="text-masage">This page is empty, add some books and proceed to order.</p>
+          <img class="img-book-masage" src="./img/png/books.png" alt="">
+      </div>`;
+     noBook.innerHTML = bookMassage;
+    }
     
     const updatedBookIds = JSON.parse(localStorage.getItem("An_array_of_ID_books")).filter(id => id !== idToRemove);
     localStorage.setItem("An_array_of_ID_books", JSON.stringify(updatedBookIds));
+    
     
   }
 });
