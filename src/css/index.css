@@ -88,6 +88,7 @@
 .data-amazon {
   width: 62px;
   height: 19px;
+  filter: var(--state-amazon);
 }
 .data-amazon:hover {
   filter: var(--state-hover);
@@ -167,7 +168,6 @@ body {
   }
   .content-contaiter-box {
     width: 375px;
-  
   }
   body {
     width: 375px;
