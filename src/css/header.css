@@ -109,15 +109,13 @@
   letter-spacing: -0.56px;
   border: none;
   width: 72px;
-}
-
-.not-active-button {
   color: var(--text-color-second);
 }
 
 .header-shopping {
   font-family: DM Sans, sans-serif;
   width: 156px;
+  color: var(--text-color-second);
 }
 
 @media only screen and (min-width: 768px) {
