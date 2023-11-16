@@ -107,21 +107,17 @@
 }
 
 .mobile-header-svg-bag {
-  fill: var(--second-color);
+  fill: currentColor;
 }
 
-.mobile-header-button-home {
+.btn-home {
   border-radius: 36px;
-  background: var(--fourth-color);
   display: flex;
   padding: 8px 16px;
   align-items: flex-start;
   gap: 10px;
   border: none;
-}
-
-.mobile-header-button-home:hover {
-  color: var(--second-color);
+  color: #fff;
 }
 
 .mobile-header-nav {
@@ -131,7 +127,6 @@
 }
 
 .header-nav-link {
-  color: var(--text-color-second);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -180,34 +175,12 @@
   position: absolute;
   bottom: 20px;
   gap: 4px;
-  /* width: 118px;
-    height: 48px;
-    flex-shrink: 0;
-
-    margin-left: 20px;
-    position: absolute;
-    bottom: 20px; */
 }
-/* 
-.mobile-button-logOut:hover {
-    background-color: var(--third-color);
 
-} */
-/* 
-.mobile-button-logOut:hover .mobile-button-link {
-    color: var(--second-color);
-} */
 .mobile-button-link:hover {
   background-color: var(--third-color);
   color: var(--second-color);
 }
-
-/* .signUp-link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-} */
 
 .mobile-thumb-img {
   width: 100%;
@@ -269,8 +242,14 @@
   stroke: var(--fourth-color);
 }
 
-.mobile-header-shopping {
-  display: flex;
-  font-weight: 500;
+.btn-shopping {
+  border-radius: 36px;
+  padding: 8px 16px;
   text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.active-button {
+  background: var(--fourth-color);
+  color: var(--text-color-second);
 }

@@ -5,8 +5,8 @@ const refs = {
 
   buttonSignUp: document.querySelector('.mobile-button-signUp'),
   buttonLogOut: document.querySelector('.mobile-button-link'),
-  linkShopList: document.querySelector('.mobile-header-shopping'),
-  buttonHome: document.querySelector('.mobile-header-button-home'),
+  linkShopList: document.querySelector('.btn-shopping'),
+  buttonHome: document.querySelector('.btn-home'),
 };
 
 const {
@@ -20,6 +20,13 @@ const {
 } = refs;
 
 // ----------------------------------------------------------------------->
+
+openMenuBtn.addEventListener('click', toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
+buttonHome.addEventListener('click', onClickHome);
+linkShopList.addEventListener('click', onClickShopping);
+
+// ----------------------------------------------------------------------->
 function toggleMenu(e) {
   e.stopImmediatePropagation();
   console.log('Є клік!!', openMenuBtn);
@@ -28,6 +35,24 @@ function toggleMenu(e) {
   mobileMenu.classList.toggle('is-open');
 }
 // ----------------------------------------------------------------------->
+function activeBtn() {
+  if (window.location.pathname === '/index.html') {
+    buttonHome.classList.add('active-button');
+  } else if (window.location.pathname === '/shopping.html') {
+    linkShopList.classList.add('active-button');
+  }
+}
 
-openMenuBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
+function onClickHome() {
+  window.location.href = '/index.html';
+  linkShopList.classList.remove('active-button');
+  buttonHome.classList.add('active-button');
+}
+
+function onClickShopping() {
+  window.location.href = '/shopping.html';
+  linkShopList.classList.add('active-button');
+  buttonHome.classList.remove('active-button');
+}
+// ----------------------------------------------------------------------->
+activeBtn();
