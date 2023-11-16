@@ -220,6 +220,16 @@
   color: var(--static-color);
 }
 
+.active-button:focus {
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 36px;
+  background: var(--fourth-color);
+  border: none;
+  font-weight: 700;
+  color: var(--static-color);
+}
+
 .burger-menu {
   display: flex;
   background-color: transparent;
@@ -375,12 +385,4 @@
   background-color: #111111;
   color: #ffffff;
   border: 3px solid #4f2ee8;
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .button-container{
-    display: none;
-  }
 }
