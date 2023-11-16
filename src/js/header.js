@@ -1,4 +1,5 @@
-import ico from './../img/symbol-defs.svg';
+import pngB from '../img/png/logo_b.png';
+import pngW from '../img/png/logo_w.png';
 
 const contLogo = document.querySelector('.container-logo');
 const headerSvg = document.querySelector('.header-svg-logo');
@@ -7,23 +8,8 @@ const slider = document.querySelector('.header-switch-slider');
 const home = document.querySelector('.header-home');
 const shopping = document.querySelector('.header-shopping');
 
-function createMarkupSvgLogo(ico) {
-
-    contLogo.insertAdjacentHTML(
-      'afterbegin',
-      `<svg class="header-svg-logo" width="109" height="28">
-        <use href='${ico}#icon-logo'></use>
-      </svg>`
-    );
-  
-};
-createMarkupSvgLogo(ico);
-
-
 contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./../img/symbol-defs.svg#icon-logoblack"></use>
-            </svg>
+            <img src="${pngB}" alt="logo">
           </a>`;
 
 
@@ -63,9 +49,7 @@ if (!localStorage.getItem('theme')) {
     if (localStorage.getItem('theme') === 'light-theme') {
         initialState('light-theme');
         contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logo"></use>
-            </svg>
+            <img src="${pngB}" alt="logo" width="109" height="28">
           </a>`;
 
         slider.classList.add("header-switch-slider-light");
@@ -74,9 +58,7 @@ if (!localStorage.getItem('theme')) {
     } else {
         initialState('dark-theme');
         contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logoblack"></use>
-            </svg>
+            <img src="${pngW}" alt="logo" width="109" height="28">
           </a>`;
         slider.classList.remove("header-switch-slider-light");
         slider.classList.add("header-switch-slider-dark");
@@ -92,9 +74,7 @@ function toggleTheme() {
     if (localStorage.getItem('theme') === 'dark-theme') {
         initialState('light-theme');
         contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logo"></use>
-            </svg>
+            <img src="${pngB}" alt="logo" width="109" height="28">
           </a>`;
 
         slider.classList.add("header-switch-slider-light");
@@ -103,9 +83,7 @@ function toggleTheme() {
     } else {
         initialState('dark-theme');
         contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
-            <svg class="header-svg-logo" width="109" height="28">
-              <use href="./img/symbol-defs.svg#icon-logoblack"></use>
-            </svg>
+            <img src="${pngW}" alt="logo" width="109" height="28">
           </a>`;
         slider.classList.remove("header-switch-slider-light");
         slider.classList.add("header-switch-slider-dark");
