@@ -1,14 +1,17 @@
 /*--------------- Footer -----------------*/
-
-.footer {
+footer {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
   background-color: var(--third-color);
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+.team {
+  position: absolute;
 
-  border-radius: 8px 8px 0px 0px;
-
+  width: 100%;
+  bottom: -400px;
   margin: 0 auto;
-
+  margin-bottom: 50px;
 }
 .team-first-wrapper {
   text-align: center;
@@ -19,11 +22,11 @@
   margin: 0 auto;
 }
 .team-pic {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: auto;
   background-color: var(--third-color);
   padding: 5px;
-  padding-bottom: 55px;
+  padding-bottom: 62px;
 }
 .team-title {
   color: #fff;
@@ -109,13 +112,76 @@
 }
 
 /*--------------- Мedia -----------------*/
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 340px) and(max-width: 768px) {
+  footer {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    display: block;
+  }
+  .team {
+    position: absolute;
+    width: 100%;
+    bottom: -400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    z-index: 4;
+    background-color: var(--third-color);
+  }
+  .team-list {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  footer {
+    width: 100%;
+    min-height: 130px;
+    position: relative;
+    display: block;
+  }
+  .team {
+    position: absolute;
+    width: 100%;
+    bottom: -400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: var(--third-color);
+  }
+  .team-title {
+    font-family: 'DM Sans';
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 50px;
+  }
   .team-item {
     display: flex;
     justify-content: left;
     padding-bottom: 20px;
-    padding-left: 70px;
+  }
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 100px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    display: block;
+    background-color: var(--background-color);
+  }
+  .team {
+    position: absolute;
+    min-width: 1500px;
+    bottom: -100px;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+    z-index: 4;
+    background-color: var(--third-color);
   }
   .team-title {
     font-family: 'DM Sans';
@@ -127,5 +193,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 100px;
+    margin-bottom: 40px;
+    background-color: var(--third-color);
+  }
+  .team-item {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 20px;
+    padding-left: 72px;
+  }
+  .team-title {
+    padding-top: 70px;
+  }
+  .team-pic {
+    padding-top: 80px;
   }
 }
