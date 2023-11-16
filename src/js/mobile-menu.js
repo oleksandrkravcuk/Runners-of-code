@@ -7,6 +7,8 @@ const refs = {
   buttonLogOut: document.querySelector('.mobile-button-link'),
   linkShopList: document.querySelector('.btn-shopping'),
   buttonHome: document.querySelector('.btn-home'),
+  mobileOpenModalButton: document.getElementById('mobileOpenModalButton'),
+  
 };
 
 const {
@@ -17,6 +19,7 @@ const {
   buttonLogOut,
   linkShopList,
   buttonHome,
+  mobileOpenModalButton,
 } = refs;
 
 // ----------------------------------------------------------------------->
@@ -25,6 +28,7 @@ openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 buttonHome.addEventListener('click', onClickHome);
 linkShopList.addEventListener('click', onClickShopping);
+mobileOpenModalButton.addEventListener('click', openModal);
 
 // ----------------------------------------------------------------------->
 function toggleMenu(e) {
@@ -54,5 +58,12 @@ function onClickShopping() {
   linkShopList.classList.add('active-button');
   buttonHome.classList.remove('active-button');
 }
+// ----------------------------------------------------------------------->
+
+function openModal() {
+  modal.style.display = 'block';
+  body.classList.add('modal-open');
+}
+
 // ----------------------------------------------------------------------->
 activeBtn();
