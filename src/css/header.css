@@ -328,6 +328,8 @@
   transition: stroke 0.3s ease;
 }
 
+
+
 .user-button {
   background-color: #4f2ee8;
   border: none;
@@ -351,6 +353,11 @@
 .user-button:hover {
   background-color: rgba(17, 17, 17, 1);
   color: rgba(79, 46, 232, 1);
+}
+@media screen and (max-width:768px) {
+  .button-container{
+    display: none;
+  }
 }
 
 .ellipse {
@@ -411,3 +418,5 @@
   color: #ffffff;
   border: 3px solid #4f2ee8;
 }
+
+

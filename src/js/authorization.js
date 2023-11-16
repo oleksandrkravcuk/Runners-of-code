@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', function () {
     userButton.querySelector('p').textContent = '';
 
     Notiflix.Notify.success('User logged out successfully!');
+
+    closeModal();
   });
 });
 
@@ -154,8 +156,11 @@ function login(event) {
       userButton.style.display = 'flex';
       userButton.querySelector('p').textContent = userData.name;
       Notiflix.Notify.success('User logged in successfully!');
-      
-    } else {
+
+      closeModal();
+    } 
+    
+    else {
       Notiflix.Notify.info('Invalid email or password. Try again.');
     }
   }
@@ -252,3 +257,9 @@ function restoreUserData() {
     userButton.querySelector('p').textContent = userData.name;
   }
 }
+  function closeModal() {
+    const modal = document.getElementById('modal');
+    const body = document.body;
+    modal.style.display = 'none';
+    body.classList.remove('modal-open');
+  }
