@@ -379,6 +379,7 @@ padding: 14px;
 .link-book{
   width: 16px;
 height: 16px;
+filter: var(--wight-state-book);
   
 }
 @media only screen and (min-width: 768px) {
@@ -390,7 +391,7 @@ height: 27px;
   
 }
 
-.link-book{
+.link-book:hover{
    filter: var(--state-hover);
 }
   .amazon-item{
