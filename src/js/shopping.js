@@ -2,6 +2,7 @@ import { fetchIdBook } from './fetch-api';
 import amazon from '../img/png/amazon.png';
 import book from '../img/png/book.png';
 import ico from './../img/symbol-defs.svg';
+import booksIcon from './../img/png/books.png'
 
 const card = document.querySelector('.books-card');
 const noBook = document.querySelector('.book-massage');
@@ -32,17 +33,18 @@ async function markup() {
               <div class="description-container">
                 ${data.description}
               </div>
-              <div class="link-wrap">
+              
                 <p class="author">${data.author}</p>
+                <div class="link-wrap">
                 <ul class="link-container">
                   <li class="amazon-item">
-                    <a class="link-amazon data-amazon" href="${data.amazon_product_url}">
-                      <img class="link-amazon data-amazon" src="${amazon}" alt="" width="32" height="11">
+                    <a class="link-amazon" href="${data.amazon_product_url}">
+                      <img class="link-amazon" src="${amazon}" alt="" width="32" height="11">
                     </a>
                   </li>
                   <li class="book-item">
                     <a href="${data.buy_links[1].url}">
-                      <img class="link-book data-amazon-book" src="${book}" alt="" width="16" height="16">
+                      <img class="link-book" src="${book}" alt="" width="16" height="16">
                     </a>
                   </li>
                 </ul>
@@ -65,7 +67,7 @@ async function markup() {
     const bookMassage = `
     <div class="book-masage">
       <p class="text-masage">This page is empty, add some books and proceed to order.</p>
-        <img class="img-book-masage" src="./img/png/books.png" alt="">
+        <img class="img-book-masage" src="${booksIcon}" alt="">
     </div>`;
    noBook.innerHTML = bookMassage;
   }
@@ -100,7 +102,7 @@ card.addEventListener('click', async (e) => {
       const bookMassage = `
       <div class="book-masage">
         <p class="text-masage">This page is empty, add some books and proceed to order.</p>
-          <img class="img-book-masage" src="./img/png/books.png" alt="">
+          <img class="img-book-masage" src="${booksIcon}" alt="">
       </div>`;
      noBook.innerHTML = bookMassage;
     }
