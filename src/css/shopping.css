@@ -371,7 +371,10 @@ padding: 14px;
      filter: var(--state-hover);
   }
   
-
+.data-amazon-shopping {
+  
+  filter: var(--state-amazon);
+}
 
 .link-book{
   width: 16px;

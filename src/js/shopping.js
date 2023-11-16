@@ -39,7 +39,7 @@ async function markup() {
                 <ul class="link-container">
                   <li class="amazon-item">
                     <a class="link-amazon" href="${data.amazon_product_url}">
-                      <img class="link-amazon" src="${amazon}" alt="" width="32" height="11">
+                      <img class="link-amazon data-amazon-shopping" src="${amazon}" alt="" width="32" height="11">
                     </a>
                   </li>
                   <li class="book-item">
