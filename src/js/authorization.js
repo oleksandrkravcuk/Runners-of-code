@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   logOutButton.addEventListener('click', function () {
-    // localStorage.removeItem('userData');
+    localStorage.removeItem('userData');
 
     logOutButton.classList.remove('fadeIn');
     setTimeout(() => {
