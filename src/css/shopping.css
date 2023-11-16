@@ -24,7 +24,7 @@
 }
 
 .shopping-body{
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--background-color);
 }
 
@@ -250,16 +250,17 @@ padding: 14px;
 
 .btn-container{
   position: absolute;
-  margin-left: 180px;
-  margin-top: 2px;
+ top: 0;
+    right: 16px; 
   
 }
 
 
  @media only screen and (min-width: 768px)  and (max-width: 1199px){
   .btn-container{
-    margin-left: 506px;
-    margin-top: 2px;
+     top: 0;
+    right: 10px; 
+ 
     
 }
   
@@ -268,8 +269,8 @@ padding: 14px;
 
  @media only screen and (min-width: 1200px) {
   .btn-container{
-    margin-left: 790px;
-     margin-top: 0px;
+    top: 0;
+    right: 18px;
     
 }
   
@@ -297,8 +298,32 @@ padding: 14px;
 .link-wrap{
       position: absolute;
       top: 124px;
-      left: 150px;;
+      right: -10px;
+      
 }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px){
+  .link-wrap{
+      top: 140px;
+      right: -30px;
+      
+    
+}
+  
+}
+
+  @media only screen and (min-width: 1200px) {
+  .link-wrap{
+      top: 140px;
+      right: -14px;
+      
+    
+}
+  
+}
+
+
+
 
   .link-container{
     display: flex;
@@ -310,30 +335,12 @@ padding: 14px;
     
 
   }
-   /*
-   @media only screen and (min-width: 768px)  and (max-width: 1199px) {
-  .link-container{
-    top: 162px;
-    right: -10px;
-  
-   
-}
-  
-}
-
-
- @media only screen and (min-width: 1200px) {
-  .link-container{
-    /* right: 0px; */
-   /* bottom: 8px; */
-    
-/* } 
-} */ 
+ 
 
   .link-amazon  {
     width: 32px;
     height: 11px;
-    /* top:104px; */
+
     
   }
 
@@ -488,7 +495,7 @@ letter-spacing: -0.36px;
   .thumb-shopping {
     margin-top: 40px;
      display: flex;
-  gap: 40px;
+     gap: 40px;
   }
 } 
 
