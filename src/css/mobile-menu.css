@@ -219,8 +219,11 @@
 
   letter-spacing: -0.56px;
 
-  margin-top: 40px;
-  margin-left: 20px;
+  position: absolute;
+  top: 88px;
+  left: 20px;
+  /* margin-top: 40px;
+  margin-left: 20px; */
   transition: background-color 0.5s, color 0.5s;
   display: inline-flex;
   justify-content: center;

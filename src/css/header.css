@@ -9,6 +9,7 @@
   border: 1.5px solid var(--text-color-second);
   align-items: center;
   width: 375px;
+  z-index: 999;
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,7 +100,6 @@
   color: var(--third-color);
   /* fill: var(--third-color); */
 }
-
 
 .header-home {
   padding: 8px 16px;
@@ -204,7 +204,7 @@
   box-shadow: var(--switch-box-shadow-color);
 }
 
-.header-switch-input:checked+.header-switch-slider::before {
+.header-switch-input:checked + .header-switch-slider::before {
   transform: translateX(20px);
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
