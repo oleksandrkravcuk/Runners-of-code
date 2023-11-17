@@ -185,3 +185,14 @@
           .notiflix-notify {
             z-index: 10000; 
           }
+
+
+
+          @media screen and (max-width: 768px) {
+            .form-container {
+              max-width: 100%;
+            }
+            .form-container input{
+                max-width: 100%;
+            }
+          }
