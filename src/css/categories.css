@@ -14,7 +14,7 @@ aside {
 }
 
 .categories-list {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: var(--text-color-second);
   opacity: 0.6;
   font-weight: 400;
@@ -68,7 +68,7 @@ aside {
   }
 
   .categories-list {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
     color: var(--text-color-second);
     opacity: 0.6;
     font-weight: 400;
