@@ -15,9 +15,9 @@ contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
 
 color.addEventListener('click', onClickBtnTheme);
 
-if (window.location.pathname === 'https://oleksandrkravcuk.github.io/Runners-of-code/index.html') {
+if (window.location.pathname === '/index.html') {
     home.classList.add('active-button');
-} else if (window.location.pathname === 'https://oleksandrkravcuk.github.io/Runners-of-code/shopping.html') {
+} else if (window.location.pathname === '/shopping.html') {
     shopping.classList.add('active-button');
 }
 
