@@ -6,13 +6,16 @@ import booksIcon from './../img/png/books.png'
 
 const card = document.querySelector('.books-card');
 const noBook = document.querySelector('.book-massage');
+const shopping = document.querySelector('.header-shopping');
+const home = document.querySelector('.header-home');
 let id = null;
 let bookCard;
 
 const savedBooks = JSON.parse(localStorage.getItem("An_array_of_ID_books"));
 let caunter = savedBooks.length
 
-
+home.classList.remove('active-button');
+shopping.classList.add('active-button');
 
 async function markup() { 
   if (savedBooks && savedBooks.length > 0) {
