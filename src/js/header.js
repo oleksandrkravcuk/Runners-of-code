@@ -36,6 +36,23 @@ function onClickShopping() {
     shopping.classList.add('active-button');
     home.classList.remove('active-button');
 }
+
+
+// function onClickHome() {
+//     if (window.location.href = '/index.html') {
+//         shopping.classList.remove('active-button');
+//     home.classList.add('active-button');
+//     }
+// }
+
+// function onClickShopping() {
+//     if (window.location.href = '/shopping.html') {
+//         shopping.classList.add('active-button');
+//     home.classList.remove('active-button');
+//     } 
+// }
+
+
 // console.log(localStorage.getItem('theme'));
 
 // додаємо клас теми
