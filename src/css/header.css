@@ -94,11 +94,12 @@
   letter-spacing: 0.02em;
   line-height: 1.5;
   text-transform: uppercase;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-link:hover {
   color: var(--third-color);
-  /* fill: var(--third-color); */
+
 }
 
 .header-home {
@@ -204,23 +205,13 @@
   box-shadow: var(--switch-box-shadow-color);
 }
 
-.header-switch-input:checked + .header-switch-slider::before {
+.header-switch-input:checked+.header-switch-slider::before {
   transform: translateX(20px);
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
 }
 
 .active-button {
-  align-items: flex-start;
-  gap: 8px;
-  border-radius: 36px;
-  background: var(--fourth-color);
-  border: none;
-  font-weight: 700;
-  color: var(--static-color);
-}
-
-.active-button:focus {
   align-items: flex-start;
   gap: 8px;
   border-radius: 36px;

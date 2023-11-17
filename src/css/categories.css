@@ -22,8 +22,14 @@ aside {
   letter-spacing: -2%;
   line-height: 18px;
 }
+
 .categories-item:not(:first-child) {
   padding-top: 24px;
+
+}
+
+.categories-item {
+  transition: all 0.3s ease 0s;
 }
 
 /*--------------- Hovers -----------------*/
@@ -44,6 +50,7 @@ aside {
   background-color: transparent;
   border-radius: 10px;
 }
+
 #categories::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--thumb-color);
@@ -70,6 +77,7 @@ aside {
     line-height: 24px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .wrapper-categories {
     margin-bottom: 40px;
