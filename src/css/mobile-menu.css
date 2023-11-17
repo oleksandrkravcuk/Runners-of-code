@@ -86,7 +86,6 @@
   padding: 18px 20px;
   justify-content: center;
   align-items: flex-start;
-  /* gap: 144px; */
   flex-shrink: 0;
   border-radius: 0px 0px 8px 8px;
   border: 1.5px solid var(--text-color-second);
@@ -222,8 +221,6 @@
   position: absolute;
   top: 88px;
   left: 20px;
-  /* margin-top: 40px;
-  margin-left: 20px; */
   transition: background-color 0.5s, color 0.5s;
   display: inline-flex;
   justify-content: center;
@@ -255,4 +252,8 @@
 .active-button {
   background: var(--fourth-color);
   color: var(--text-color-second);
+}
+body.menu-container {
+  height: 100vh;
+  overflow-y: hidden;
 }
