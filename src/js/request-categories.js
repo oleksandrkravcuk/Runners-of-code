@@ -8,7 +8,6 @@ const placeForTitle = document.querySelector('.title-thumb')
 const topBookCategories = document.querySelector(".section-product")
 const categoriesList = document.querySelector(".categories")
 const mask = document.querySelector('.mask')
-// mask.classList.add('none')
 
 
 
@@ -24,7 +23,7 @@ placeForTitle.innerHTML = ""
 
 console.dir(e.target.parentElement.firstElementChild.textContent);
 const categoriesId = e.target.parentElement.firstElementChild.textContent
-// title(categoriesId)
+
 const response = await fetchCategory(categoriesId)
 topBookCategories.classList.add('js-choose-category')
 mask.classList.add('none')
