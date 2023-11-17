@@ -19,17 +19,17 @@ aside {
   opacity: 0.6;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: -2%;
+  letter-spacing: 1;
   line-height: 18px;
 }
 
 .categories-item:not(:first-child) {
   padding-top: 24px;
-
 }
 
 .categories-item {
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 /*--------------- Hovers -----------------*/
@@ -40,7 +40,7 @@ aside {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--aside);
-  opacity: 0.99;
+  opacity: 1;
 }
 
 /*----------- Castom scroll --------------*/
@@ -73,7 +73,7 @@ aside {
     opacity: 0.6;
     font-weight: 400;
     font-size: 18px;
-    letter-spacing: -2%;
+    letter-spacing: 1;
     line-height: 24px;
   }
 }
