@@ -15,26 +15,27 @@ contLogo.innerHTML = `<a class="logo-header-link" href="./index.html">
 
 color.addEventListener('click', onClickBtnTheme);
 
-if (window.location.pathname === '/index.html') {
+if (window.location.pathname === 'https://oleksandrkravcuk.github.io/Runners-of-code/index.html') {
     home.classList.add('active-button');
-} else if (window.location.pathname === '/shopping.html') {
+} else if (window.location.pathname === 'https://oleksandrkravcuk.github.io/Runners-of-code/shopping.html') {
     shopping.classList.add('active-button');
-
 }
 
 home.addEventListener('click', onClickHome);
 shopping.addEventListener('click', onClickShopping);
 
 function onClickHome() {
-    window.location.href = '/index.html';
-    shopping.classList.remove('active-button');
-    home.classList.add('active-button');
+    if (window.location.href = '/index.html') {
+        shopping.classList.remove('active-button');
+        home.classList.add('active-button');
+        }  
 }
 
 function onClickShopping() {
-    window.location.href = '/shopping.html';
+    if (window.location.href = '/shopping.html') {
     shopping.classList.add('active-button');
-    home.classList.remove('active-button');
+    home.classList.remove('active-button'); 
+    }
 }
 
 // console.log(localStorage.getItem('theme'));
