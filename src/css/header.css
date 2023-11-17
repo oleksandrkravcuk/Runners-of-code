@@ -1,6 +1,6 @@
 .header-container {
   display: flex;
-  font-family: DM Sans, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   height: 72px;
   position: relative;
   justify-content: center;
@@ -86,7 +86,7 @@
 
 .nav-link {
   display: flex;
-  font-family: DM Sans, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   line-height: 18px;
@@ -114,7 +114,7 @@
 }
 
 .header-shopping {
-  font-family: DM Sans, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   width: 156px;
   color: var(--text-color-second);
 }
@@ -256,7 +256,7 @@
   border: 1.5px solid var(--text-color-second);
   background: var(--third-color);
   color: var(--second-color);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -298,7 +298,7 @@
   background-color: #4f2ee8;
   border: none;
   border-radius: 36px;
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 22px;
   display: flex;
