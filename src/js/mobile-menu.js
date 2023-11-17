@@ -1,7 +1,7 @@
 const refs = {
   mobileMenu: document.querySelector('.js-menu-container'),
   openMenuBtn: document.querySelector('.js-open-menu'),
-  // closeMenuBtn: document.querySelector('.js-close-menu'),
+  closeMenuBtn: document.querySelector('.js-close-menu'),
 
   buttonSignUp: document.querySelector('.mobile-button-signUp'),
   buttonLogOut: document.querySelector('.mobile-button-link'),
@@ -24,7 +24,7 @@ const {
 // ----------------------------------------------------------------------->
 
 openMenuBtn.addEventListener('click', toggleMenu);
-// closeMenuBtn.addEventListener('click', toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
 buttonHome.addEventListener('click', onClickHome);
 linkShopList.addEventListener('click', onClickShopping);
 mobileOpenModalButton.addEventListener('click', openModal);
