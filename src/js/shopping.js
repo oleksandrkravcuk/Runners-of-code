@@ -63,7 +63,6 @@ async function markup() {
       }
     }
   } if (!savedBooks.length) {
-    console.log(savedBooks);
     const bookMassage = `
     <div class="book-masage">
       <p class="text-masage">This page is empty, add some books and proceed to order.</p>
@@ -76,7 +75,6 @@ async function markup() {
 markup();
 
 const btnSvgCollection = document.querySelectorAll('.btn-svg');
-console.log(btnSvgCollection);
 
 function createSvg(ico) {
   return `<svg class="icon-trash" width="16" height="16">
