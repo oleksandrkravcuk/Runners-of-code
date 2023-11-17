@@ -92,7 +92,7 @@
   background: var(--second-color);
 
   color: var(--text-color-second);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -112,7 +112,7 @@
     background: var(--second-color);
 
     color: var(--text-color-second);
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -156,7 +156,7 @@
 }
 .modal__data-title {
   color: var(--text-color-second);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: -0.96px;
@@ -165,7 +165,7 @@
 }
 .modal__data-author {
   color: var(--text-color-main);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-style: italic;
   line-height: 14px;
@@ -177,7 +177,7 @@
   margin-top: 18px;
   margin-bottom: 18px;
   color: var(--text-color-second);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.56px;
@@ -198,7 +198,7 @@
   }
   .modal__data-title {
     color: var(--text-color-second);
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.96px;
@@ -207,7 +207,7 @@
   .modal__data-author {
     color: var(--text-color-main);
     margin-top: 8px;
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-style: italic;
     line-height: 18px;
@@ -218,7 +218,7 @@
     max-height: 70px;
     margin-top: 20px;
     color: var(--text-color-second);
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.56px;
@@ -231,7 +231,7 @@
   height: auto;
   color: var(--congratulation-pop-up);
   text-align: center;
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 10px;
   line-height: 12px;
   letter-spacing: -0.4px;
@@ -247,7 +247,7 @@
     height: auto;
     color: var(--congratulation-pop-up);
     text-align: center;
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: -0.48px;
