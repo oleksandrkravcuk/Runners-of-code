@@ -4,6 +4,7 @@
     background-color: var(--background-color-header);
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
     transition: 0.6s;
     display: flex;

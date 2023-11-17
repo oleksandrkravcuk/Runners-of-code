@@ -15,7 +15,6 @@ let caunter = savedBooks.length
 
 
 async function markup() { 
-  
   if (savedBooks && savedBooks.length > 0) {
     for (const id of savedBooks) {
       try {

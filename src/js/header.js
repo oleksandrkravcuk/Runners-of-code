@@ -36,6 +36,7 @@ function onClickShopping() {
     shopping.classList.add('active-button');
     home.classList.remove('active-button');
 }
+
 // console.log(localStorage.getItem('theme'));
 
 // додаємо клас теми
