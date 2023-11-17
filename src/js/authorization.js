@@ -120,7 +120,7 @@ function saveData(event) {
   console.log(dataObject);
   localStorage.setItem('userData', JSON.stringify(dataObject));
 
-  const signUpButton = document.getElementById('signUpLink');
+  const signUpButton = document.querySelector('.signUp-link');
   signUpButton.closest('.sign-up-button').style.display = 'none';
 
   const userButton = document.querySelector('.user-button');
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
       logOutButton.style.display = 'none';
     }, animationTime);
 
-    const signUpButton = document.getElementById('signUpLink');
+    const signUpButton = document.querySelector('.signUp-link');
     signUpButton.closest('.sign-up-button').style.display = 'flex';
     
     const userButton = document.querySelector('.user-button');
@@ -183,7 +183,7 @@ function login(event) {
 
     if (loginEmail === userData.email && loginPassword === userData.password) {
       clearFormFields();
-      const signUpButton = document.getElementById('signUpLink');
+      const signUpButton = document.querySelector('.signUp-link');
       signUpButton.closest('.sign-up-button').style.display = 'none';
 
       const userButton = document.querySelector('.user-button');
@@ -276,7 +276,7 @@ function restoreUserData() {
   if (storedData) {
     const userData = JSON.parse(storedData);
 
-    const signUpButton = document.getElementById('signUpLink');
+    const signUpButton = document.querySelector('.signUp-link');
     signUpButton.closest('.sign-up-button').style.display = 'none';
 
     const userButton = document.querySelector('.user-button');
