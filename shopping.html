@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Shopping List</title>    
+    <meta name="description" content="The Bookstore project allows users to browse and obtain detailed information about books from various categories">
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/Runners-of-code/assets/apple-touch-icon-4b43c91c.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/Runners-of-code/assets/favicon-32x32-529129ca.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/Runners-of-code/assets/favicon-16x16-3c098743.png"
+  />
+  <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiQm9va3NoZWxmIiwKICAgICJzaG9ydF9uYW1lIjogIkJvb2tzaGVsZiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0yNTZ4MjU2LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIyNTZ4MjU2IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+  <link
+    rel="mask-icon"
+    href="/Runners-of-code/assets/safari-pinned-tab-f0346489.svg"
+    color="#73797a"
+  />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="theme-color" content="#ffffff" />
+    <script type="module" crossorigin src="/Runners-of-code/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/Runners-of-code/assets/vendor-77e6b4aa.js">
+    <link rel="modulepreload" crossorigin href="/Runners-of-code/assets/symbol-defs-90362836.js">
+    <link rel="stylesheet" href="/Runners-of-code/assets/symbol-defs-20bbbcfc.css">
+  </head>
+  <body class="shopping-body">
+    <header class="content-contaiter-box">
+      <header class="content-contaiter-box">
+  <div class="header-container">
+    <nav class="nav">
+      <div class="wrapper-logo">
+        <div class="container-logo">
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-link header-home">
+          <a class="nav-link" href="./index.html">home</a>
+        </li>
+
+        <li class="nav-link header-shopping">
+          <a class="nav-link" href="./shopping.html">shopping list
+            <svg class="header-svg-bag active-svg" width="20" height="20">
+              <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-bag"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+      <label class="header-switch">
+        <input class="header-switch-input" type="checkbox">
+        <span class="header-switch-slider"></span>
+      </label>
+    </nav>
+    <a class="burger-menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="header-burger" width="28" height="28">
+        <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-burger"></use>
+      </svg>
+    </a>
+
+    <div class="button-container">
+      <button class="sign-up-button" type="button" id="openModalButton">
+        <span class="signUp-link" id="signUpLink">
+          Sign up
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-arrow_right"></use>
+          </svg>
+        </span>
+      </button>
+
+      <button class="user-button" style="display: none;">
+        <i class="ellipse">
+          <svg class="user-icon" width="19" height="19">
+            <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-user"></use>
+          </svg>
+        </i>
+        <span></span>
+        <svg class="down-icon" width="23" height="26">
+          <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-down"></use>
+        </svg>
+      </button>
+
+      <button class="log-out" type="button" id="logOutButton" style="display: none">
+        <span class="signUp-link">
+          Log out
+          <svg class="sign-up-arrow" width="20" height="20">
+            <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-arrow_right"></use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+      <section class="form-authorization" id="modal">
+  <div class="form-container">
+    <svg class="close-icon" width="20" height="20" id='closeModalButton'>
+      <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-close"></use>
+  </svg>
+          <form id="registrationForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <div class="input-container">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <svg class="input-icon" width="20" height="20" id="emailIcon">
+              <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-mail"></use>
+            </svg>
+            </div>
+            <div class="input-container">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <svg class="input-icon" width="20" height="20" id="togglePassword">
+              <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-lock-02"></use>
+            </svg>
+          </div>
+            <button type="submit" id="signupButton">Sign up</button>
+            <div class="links" id="links">
+              <a href="#" class="active" data-form="registrationForm">Sign Up</a>
+              <a href="#" class="sign-in" data-form="loginForm">Sign In</a>
+            </div>
+          </form>
+      
+          <form id="loginForm" style="display: none;">
+            <div class="input-container">
+            <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+            <svg class="input-icon" width="20" height="20" id="loginEmailIcon">
+              <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="input-container">
+            <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+            <svg class="input-icon" width="20" height="20" id="togglePasswordLogin">
+              <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-lock-02"></use>
+            </svg>
+          </div>
+            <button type="submit" id="loginButton">Sign In</button>
+            <div class="links" id="registrationLinks">
+              <a href="#" class="sign-in" data-form="registrationForm">Sign Up</a>
+              <a href="#" class="active" data-form="loginForm">Sign In</a>
+            </div>
+          </form>
+      </div>  
+    </section>
+  
+
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////// -->
+    <main class="content-contaiter-box">
+      <div class="thumb-shopping">
+        <div class="support-none">
+        <aside class="partial-categori-container aside-shopping">
+          <div class="wrapper-support support">
+            <div class="support-first-wrapper">
+              <h3 class="support-title">Support Ukraine</h3>
+              <svg class="support-herb" width="20" height="30">
+                <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-gerb"></use>
+              </svg>
+            </div>
+            <div class="support-second-wrapper">
+              <ul class="support-list"></ul>
+            </div>
+            <div class="support-more">
+              <svg class="support-arrow" width="22" height="22">
+                <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-down"></use>
+              </svg>
+            </div>
+          </div>
+        </aside>
+        </div>
+
+        <div>
+          <h2 class="title__shopping">
+            Shopping
+            <span class="title__accent">List</span>
+          </h2>
+
+          <div class="books-card"></div>
+          <div class="book-massage"></div>
+        </div>
+      </div>
+      <section>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-header">
+      <button class="modal-button js-close-menu">
+        <svg class="modal-icon" viewBox="0 0 20 20" width="28" height="28">
+          <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-header-nav">
+        <div class="wrapper-logo">
+          <div class="mobile-container-logo">
+            <a class="logo-header-link" href="./index.html">
+              <svg class="header-svg-logo" width="109" height="28">
+                <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-switch">
+          <label class="header-switch">
+            <input class="header-switch-input" type="checkbox" />
+            <span class="header-switch-slider"></span>
+          </label>
+        </div>
+      </nav>
+    </div>
+
+    <button
+      class="mobile-button-signUp"
+      type="button"
+      id="mobileOpenModalButton"
+    >
+      <p class="signUp-link" id="signUpLink">
+        Sign up
+        <svg class="mobile-arrow-icon-signUp" width="20" height="20">
+          <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-arrow_right"></use>
+        </svg>
+      </p>
+    </button>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="./index.html" class="header-nav-link btn-home">home</a>
+      </li>
+
+      <li class="mobile-nav-item">
+        <a href="./shopping.html" class="nav-link btn-shopping"
+          >shopping list
+          <svg class="mobile-header-svg-bag" width="20" height="20">
+            <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-bag"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <a href="" class="mobile-button-link"
+      >Log out
+      <svg class="mobile-arrow-icon" width="20" height="20">
+        <use href="/Runners-of-code/assets/symbol-defs-9bf60ffc.svg#icon-arrow_right"></use>
+      </svg>
+    </a>
+
+    <div class="mobile-thumb-img">
+      <img
+        class="mobile-bckg-img"
+        srcset="/Runners-of-code/assets/mobile_background@1x-98092946.png 1x, /Runners-of-code/assets/mobile_background@2x-fd455cf7.png 2x"
+        src="/Runners-of-code/assets/mobile_background@1x-98092946.png"
+        alt="background-books"
+        width="768"
+        height="440"
+      />
+    </div>
+  </div>
+</section>
+
+    </main>
+    
+    
+    
+    
+    
+  </body>
+</html>
