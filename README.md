@@ -1,4 +1,4 @@
-# Bookstore Boohkshelf
+# Bookstore Bookshelf
 
 ![study project](./assets/prew.jpg)
 
