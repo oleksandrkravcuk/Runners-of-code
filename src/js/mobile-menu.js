@@ -8,7 +8,6 @@ const refs = {
   linkShopList: document.querySelector('.btn-shopping'),
   buttonHome: document.querySelector('.btn-home'),
   mobileOpenModalButton: document.getElementById('mobileOpenModalButton'),
-  
 };
 
 const {
@@ -67,3 +66,6 @@ function openModal() {
 
 // ----------------------------------------------------------------------->
 activeBtn();
+window.addEventListener('scroll', e => {
+  window.scrollTo(0, 0);
+});
