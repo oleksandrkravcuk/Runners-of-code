@@ -10,3 +10,4 @@ import './js/request-categories';
 import './js/mobile-menu';
 import './js/authorization';
 import './js/team';
+import './js/burger';

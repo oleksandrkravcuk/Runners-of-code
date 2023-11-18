@@ -2,8 +2,7 @@
   <div class="header-container">
     <nav class="nav">
       <div class="wrapper-logo">
-        <div class="container-logo">
-        </div>
+        <div class="container-logo"></div>
       </div>
       <ul class="nav-list">
         <li class="nav-link header-home">
@@ -11,25 +10,25 @@
         </li>
 
         <li class="nav-link header-shopping">
-          <a class="nav-link" href="./shopping.html">shopping list
+          <a class="nav-link" href="./shopping.html"
+            >shopping list
             <svg class="header-svg-bag active-svg" width="20" height="20">
               <use href="./img/symbol-defs.svg#icon-bag"></use>
             </svg>
           </a>
         </li>
-
       </ul>
 
       <label class="header-switch">
-        <input class="header-switch-input" type="checkbox">
+        <input class="header-switch-input" type="checkbox" />
         <span class="header-switch-slider"></span>
       </label>
     </nav>
-    <a class="burger-menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="header-burger" width="28" height="28">
-        <use href="./img/symbol-defs.svg#icon-burger"></use>
-      </svg>
-    </a>
+    <button class="burger" type="button">
+      <div class="burger-line"></div>
+      <div class="burger-line"></div>
+      <div class="burger-line"></div>
+    </button>
 
     <div class="button-container">
       <button class="sign-up-button" type="button" id="openModalButton">
@@ -41,7 +40,7 @@
         </span>
       </button>
 
-      <button class="user-button" style="display: none;">
+      <button class="user-button" style="display: none">
         <i class="ellipse">
           <svg class="user-icon" width="19" height="19">
             <use href="./img/symbol-defs.svg#icon-user"></use>
@@ -53,7 +52,12 @@
         </svg>
       </button>
 
-      <button class="log-out" type="button" id="logOutButton" style="display: none">
+      <button
+        class="log-out"
+        type="button"
+        id="logOutButton"
+        style="display: none"
+      >
         <span class="signUp-link">
           Log out
           <svg class="sign-up-arrow" width="20" height="20">
