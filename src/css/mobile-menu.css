@@ -1,30 +1,4 @@
-/* Mobile menu modal */
-
-.hidden {
-  display: none;
-}
-
-.modal-icon {
-  stroke: var(--text-color-second);
-}
-
-.modal-icon:hover {
-  stroke: var(--third-color);
-}
-
-.burger-menu:hover .burger-menu-icon,
-.burger-menu:focus .burger-menu-icon,
-.burger-menu:active .burger-menu-icon {
-  stroke: var(--second-color);
-}
-
-@media (min-width: 768px) {
-  .burger-menu {
-    display: none;
-  }
-}
-
-.menu-container {
+/* .menu-container {
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -48,49 +22,11 @@
   flex-direction: column;
 }
 
-.menu-container.is-open {
+.menu-container.open {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-
-.menu-container .burger-menu {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: var(--text-color-second);
-}
-
-.modal-button {
-  position: absolute;
-
-  right: 20px;
-  width: 28px;
-  height: 28px;
-  background-color: var(--second-color);
-  border-radius: 50%;
-  border: none;
-
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.mobile-header {
-  padding: 18px 20px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-radius: 0px 0px 8px 8px;
-  border: 1.5px solid var(--text-color-second);
-  background: var(--second-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .mobile-nav-item {
@@ -105,10 +41,6 @@
   text-transform: uppercase;
 }
 
-.mobile-header-svg-bag {
-  fill: currentColor;
-}
-
 .btn-home {
   border-radius: 36px;
   display: flex;
@@ -117,12 +49,6 @@
   gap: 10px;
   border: none;
   color: #fff;
-}
-
-.mobile-header-nav {
-  display: flex;
-
-  align-items: center;
 }
 
 .header-nav-link {
@@ -192,11 +118,6 @@
   gap: 14px;
 }
 
-.mobile-switch {
-  position: absolute;
-  right: 62px;
-}
-
 .mobile-bckg-img {
   position: absolute;
   bottom: 0;
@@ -256,4 +177,4 @@
 body.menu-container {
   height: 100vh;
   overflow-y: hidden;
-}
+} */
