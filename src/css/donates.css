@@ -115,7 +115,7 @@
 
 /*--------------- Мedia -----------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .wrapper-support {
     width: 356px;
     margin: 40px 0;

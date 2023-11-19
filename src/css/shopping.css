@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .title__shopping {
     margin-top: 0;
     margin-bottom: 40px;
@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .wrrap {
     padding: 26px;
     width: 996px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .text-container {
     width: 808px;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .description-container {
     max-width: 808px;
     height: 53px;
@@ -209,7 +209,7 @@
   fill: var(--third-color);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .icon-trash {
     width: 20px;
     height: 20px;
@@ -229,7 +229,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .btn-container {
     top: 0;
     right: 18px;
@@ -270,7 +270,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .link-wrap {
     top: 140px;
     right: -14px;
@@ -341,7 +341,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .book-masage {
     margin-top: 140px;
     margin-left: 355px;
@@ -390,7 +390,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .support-none {
     display: block;
   }
@@ -418,7 +418,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .thumb-shopping {
     margin-top: 40px;
     display: flex;
@@ -430,7 +430,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .aside-shopping {
     display: block;
   }
