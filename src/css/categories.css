@@ -58,7 +58,7 @@ aside {
 
 /*--------------- Мedia ------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .wrapper-categories {
     padding: 24px;
     max-height: 480px;
@@ -78,7 +78,7 @@ aside {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .wrapper-categories {
     margin-bottom: 40px;
     max-height: 470px;

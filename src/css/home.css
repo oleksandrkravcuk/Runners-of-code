@@ -19,7 +19,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .section-product h4 {
     width: 218px;
     white-space: nowrap;
@@ -27,7 +27,7 @@
     text-overflow: ellipsis;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .section-product h4 {
     width: 180px;
     white-space: nowrap;
@@ -55,7 +55,7 @@
     margin-top: 100px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .title {
     font-size: 48px;
     margin-top: 40px;
@@ -68,7 +68,7 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .sections-title {
     line-height: 24px;
   }
@@ -77,12 +77,12 @@
 .thomb-book-section {
   width: 335px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .thomb-book-section {
     width: 704px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .thomb-book-section {
     width: 996px;
   }
@@ -93,14 +93,14 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .section-book {
     display: flex;
     width: 704px;
     gap: 25px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .section-book {
     display: flex;
     width: 996px;
@@ -120,24 +120,24 @@
   width: 335px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .book-card {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .book-card:nth-child(-n + 3) {
     display: block;
     width: 218px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .book-card {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .book-card:nth-child(-n + 5) {
     display: block;
     width: 180px;
@@ -150,12 +150,12 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .book-card-photo {
     height: 316px;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1439px) {
   .book-card-photo {
     height: 256px;
   }
@@ -176,7 +176,7 @@
   margin-bottom: 4px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .book-card-title {
     width: 218px;
     white-space: nowrap;
@@ -184,7 +184,7 @@
     text-overflow: ellipsis;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .book-card-title {
     width: 180px;
     white-space: nowrap;
@@ -241,7 +241,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .card__thumb::before {
     position: absolute;
     content: '';
@@ -289,7 +289,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .js-choose-category {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -297,7 +297,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .js-choose-category {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -311,23 +311,23 @@
   width: 335px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .js-choose-category .book-card {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .js-choose-category .book-card:nth-child(-n + 20) {
     display: block;
     width: 218px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .js-choose-category .book-card {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .js-choose-category .book-card:nth-child(-n + 20) {
     display: block;
     width: 180px;
