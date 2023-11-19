@@ -175,7 +175,7 @@ footer {
   }
   .team {
     position: absolute;
-    min-width: 1500px;
+    width: 100%;
     bottom: -100px;
 
     margin: 0 auto;
