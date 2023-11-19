@@ -1,4 +1,4 @@
-import{t as B,c as E,f as C,a as D,b as $,d as b,i as L}from"./assets/symbol-defs-a8e0f046.js";import{N as M}from"./assets/vendor-77e6b4aa.js";const q=document.querySelector(".section-product"),h=document.querySelector(".mask");v();async function v(){h.classList.remove("none");const e=await B();for(let t=0;t<e.length;t+=1){const o=e.map(n=>`<div class="thomb-book-section">
+import{t as B,c as E,f as C,a as D,b as $,d as b,i as L}from"./assets/symbol-defs-f960c6ce.js";import{N as M}from"./assets/vendor-77e6b4aa.js";const q=document.querySelector(".section-product"),h=document.querySelector(".mask");v();async function v(){h.classList.remove("none");const e=await B();for(let t=0;t<e.length;t+=1){const o=e.map(n=>`<div class="thomb-book-section">
        <h2 class="sections-title">${n.list_name}</h2>
        <div class="section-book">
        
