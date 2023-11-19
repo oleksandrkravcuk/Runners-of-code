@@ -21,7 +21,7 @@
     color: rgba(17, 17, 17, 1);
     border: 2px solid rgba(17, 17, 17, 1);
     border-radius: 18px;
-    width: 500px;
+    width: 335px;
     margin: 0 auto; 
     transition: opacity 0.5s ease-in-out;
     position: absolute;
@@ -30,10 +30,49 @@
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 768px) {
+    .form-container {
+            background-color: rgba(246, 246, 246, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: rgba(17, 17, 17, 1);
+            border: 2px solid rgba(17, 17, 17, 1);
+            border-radius: 18px;
+            width: 500px;
+            margin: 0 auto;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    .form-container input {
+        margin-bottom: 28px;
+        padding: 10px;
+        width: 499px;
+        height: 64px;
+        box-sizing: border-box;
+        border: 2px solid rgba(17, 17, 17, 1);
+        border-radius: 4px;
+        font-size: 16px;
+        border-radius: 40px;
+        padding-left: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        }
+}
+
+
+
 .form-container input {
     margin-bottom: 28px; 
     padding: 10px;
-    width: 100%;
+    width: 295px;
+    height: 50px;
     box-sizing: border-box;
     border: 2px solid rgba(17, 17, 17, 1);
     border-radius: 4px;
@@ -44,6 +83,7 @@
     font-size: 18px;
     line-height: 24px;
 }
+
 
 .form-container input:focus{
     font-size: 12px;
@@ -149,12 +189,21 @@
 
         .input-icon{
             position: absolute;
-            left: calc(87% + 10px);
+            left: calc(87% - 10px);
             top: 14px;
             stroke: #111111;
             fill: transparent;
         }
 
+@media only screen and (min-width: 768px) {
+    .input-icon {
+            position: absolute;
+            left: calc(87% - 40px);
+            top: 14px;
+            stroke: #111111;
+            fill: transparent;
+        }
+}
 
         #togglePassword{
             cursor: pointer;
