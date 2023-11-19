@@ -8,7 +8,6 @@
   line-height: 18px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  padding-top: 72px;
 }
 
 .section-product h4 {
@@ -50,18 +49,19 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px){
   .title {
     font-size: 48px;
-    margin-top: 100px;
+    padding-top: 42px;
   }
 }
 @media screen and (min-width: 1440px) {
   .title {
     font-size: 48px;
-    margin-top: 40px;
+    padding-top: 112px;
   }
 }
+
 /* title категорії в best selers/////////////////////////////////////////////////////*/
 
 .sections-title {
