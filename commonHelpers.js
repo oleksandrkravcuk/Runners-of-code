@@ -1,4 +1,4 @@
-import{t as T,c as B,f as E,a as C,b as D,d as b,i as v}from"./assets/burger-303533d9.js";import{N as $}from"./assets/vendor-77e6b4aa.js";const M=document.querySelector(".section-product"),p=document.querySelector(".mask");L();async function L(){p.classList.remove("none");const e=await T();for(let t=0;t<e.length;t+=1){const o=e.map(n=>`<div class="thomb-book-section">
+import{t as T,c as B,f as E,a as C,b as D,d as b,i as v}from"./assets/burger-829dfaef.js";import{N as $}from"./assets/vendor-77e6b4aa.js";const M=document.querySelector(".section-product"),p=document.querySelector(".mask");L();async function L(){p.classList.remove("none");const e=await T();for(let t=0;t<e.length;t+=1){const o=e.map(n=>`<div class="thomb-book-section">
        <h2 class="sections-title">${n.list_name}</h2>
        <div class="section-book">
        
