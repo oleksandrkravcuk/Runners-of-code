@@ -4,6 +4,7 @@ footer {
   min-height: 300px;
   position: relative;
   background-color: var(--third-color);
+  margin-top: 100px;
 }
 .team {
   position: absolute;
