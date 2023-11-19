@@ -1,5 +1,5 @@
-import{f as b,a as k,b as h,i as n}from"./assets/symbol-defs-de9c9512.js";import"./assets/vendor-77e6b4aa.js";const i="/Runners-of-code/assets/books-102aefcf.png",r=document.querySelector(".books-card"),l=document.querySelector(".book-massage"),p=document.querySelector(".header-shopping"),u=document.querySelector(".header-home"),a=JSON.parse(localStorage.getItem("An_array_of_ID_books"));let c=a.length;u.classList.remove("active-button");p.classList.add("active-button");async function v(){if(a&&a.length>0)for(const s of a)try{const o=await b(s);console.log(o);const e=`
-          <div class="wrrap" data-book-id="${s}">
+import{f as b,a as k,b as h,i as c}from"./assets/symbol-defs-05370266.js";import"./assets/vendor-77e6b4aa.js";const i="/Runners-of-code/assets/books-102aefcf.png",r=document.querySelector(".books-card"),l=document.querySelector(".book-massage"),p=document.querySelector(".header-shopping"),u=document.querySelector(".header-home"),s=JSON.parse(localStorage.getItem("An_array_of_ID_books"));let n=s.length;u.classList.remove("active-button");p.classList.add("active-button");async function v(){if(s&&s.length>0)for(const a of s)try{const o=await b(a);console.log(o);const t=`
+          <div class="wrrap" data-book-id="${a}">
             <div class="img-container">
               <img class="book-img" src="${o.book_image}" alt="${o.title}">
             </div>
@@ -14,12 +14,12 @@ import{f as b,a as k,b as h,i as n}from"./assets/symbol-defs-de9c9512.js";import
                 <div class="link-wrap">
                 <ul class="link-container">
                   <li class="amazon-item">
-                    <a class="link-amazon" href="${o.amazon_product_url}">
+                    <a class="link-amazon" href="${o.amazon_product_url}" target = "_blank">
                       <img class="link-amazon data-amazon-shopping" src="${k}" alt="" width="32" height="11">
                     </a>
                   </li>
                   <li class="book-item">
-                    <a href="${o.buy_links[1].url}">
+                    <a href="${o.buy_links[1].url}" target = "_blank">
                       <img class="link-book" src="${h}" alt="" width="16" height="16">
                     </a>
                   </li>
@@ -27,19 +27,19 @@ import{f as b,a as k,b as h,i as n}from"./assets/symbol-defs-de9c9512.js";import
               </div>
               <div class="btn-container">
                 <button class="btn-svg">
-                 ${d(n)}                 
+                 ${d(c)}                 
                 </button>
               </div>
             </div>
-          </div>`;r.insertAdjacentHTML("beforeend",e)}catch(o){console.error(o)}if(!a.length){const s=`
+          </div>`;r.insertAdjacentHTML("beforeend",t)}catch(o){console.error(o)}if(!s.length){const a=`
     <div class="book-masage">
       <p class="text-masage">This page is empty, add some books and proceed to order.</p>
         <img class="img-book-masage" src="${i}" alt="">
-    </div>`;l.innerHTML=s}}v();const f=document.querySelectorAll(".btn-svg");function d(s){return`<svg class="icon-trash" width="16" height="16">
-            <use href='${s}#icon-trash'></use>
-          </svg>`}f.forEach(s=>{s.insertAdjacentHTML("afterbegin",d(n))});r.addEventListener("click",async s=>{c-=1;const o=s.target.closest(".btn-svg");if(o){const e=o.closest(".wrrap"),m=e.getAttribute("data-book-id");if(e.remove(),c===0){const t=`
+    </div>`;l.innerHTML=a}}v();const f=document.querySelectorAll(".btn-svg");function d(a){return`<svg class="icon-trash" width="16" height="16">
+            <use href='${a}#icon-trash'></use>
+          </svg>`}f.forEach(a=>{a.insertAdjacentHTML("afterbegin",d(c))});r.addEventListener("click",async a=>{n-=1;const o=a.target.closest(".btn-svg");if(o){const t=o.closest(".wrrap"),g=t.getAttribute("data-book-id");if(t.remove(),n===0){const e=`
       <div class="book-masage">
         <p class="text-masage">This page is empty, add some books and proceed to order.</p>
           <img class="img-book-masage" src="${i}" alt="">
-      </div>`;l.innerHTML=t}const g=JSON.parse(localStorage.getItem("An_array_of_ID_books")).filter(t=>t!==m);localStorage.setItem("An_array_of_ID_books",JSON.stringify(g))}});
+      </div>`;l.innerHTML=e}const m=JSON.parse(localStorage.getItem("An_array_of_ID_books")).filter(e=>e!==g);localStorage.setItem("An_array_of_ID_books",JSON.stringify(m))}});
 //# sourceMappingURL=commonHelpers2.js.map
