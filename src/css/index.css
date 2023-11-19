@@ -153,10 +153,11 @@ body {
     display: flex;
     gap: 40px;
     margin: 0 auto;
+    
   }
-  /* .partial-categori-container {
-    margin-top: 40px;
-  } */
+  .partial-categori-container {
+    padding-top: 112px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -167,7 +168,7 @@ body {
   .partial-categori-container {
     display: flex;
     gap: 32px;
-    /* margin-top: 40px; */
+    padding-top: 112px;
     margin-bottom: 68px;
   }
   .partial-container {
@@ -189,7 +190,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-
+padding-top: 104px;
     gap: 40px;
     margin-bottom: 40px;
   }
