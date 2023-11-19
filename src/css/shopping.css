@@ -7,7 +7,6 @@
 .title__shopping {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
   margin-bottom: 40px;
   color: var(--text-color-second);
   font-family: DM Sans;
@@ -16,6 +15,7 @@
   font-weight: 700;
   line-height: 38px;
   letter-spacing: -1.28px;
+  padding-top: 112px;
 }
 
 .title__accent {
@@ -27,7 +27,7 @@
   background-color: var(--background-color);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .title__shopping {
     margin-bottom: 40px;
     line-height: 52px;
@@ -56,7 +56,7 @@
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .wrrap {
     padding: 24px;
     width: 704px;
@@ -95,7 +95,7 @@
   flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .text-container {
     width: 508px;
   }
@@ -167,7 +167,7 @@
   -webkit-box-orient: vertical;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .description-container {
     max-width: 508px;
     top: 50px;
@@ -222,7 +222,7 @@
   right: 16px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .btn-container {
     top: 0;
     right: 10px;
@@ -263,7 +263,7 @@
   right: -10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .link-wrap {
     top: 140px;
     right: -30px;
@@ -333,7 +333,7 @@
   margin-left: 55px;
   margin-right: 55px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .book-masage {
     margin-top: 120px;
     margin-left: 209px;
@@ -383,7 +383,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .support-none {
     display: none;
     height: 0;
@@ -420,7 +420,6 @@
 
 @media screen and (min-width: 1440px) {
   .thumb-shopping {
-    margin-top: 40px;
     display: flex;
     gap: 40px;
   }
