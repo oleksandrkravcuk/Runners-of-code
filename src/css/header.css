@@ -21,22 +21,23 @@
   align-items: flex-start;
   border-radius: 0px 0px 8px 8px;
   align-items: center;
-  width: auto;
+  width: 100%;
   z-index: 999;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 480px) {
 }
 
 @media only screen and (min-width: 768px) {
   .header-container {
-    width: 768px;
+    width: 100%;
     justify-content: flex-start;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .header-container {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
   }
