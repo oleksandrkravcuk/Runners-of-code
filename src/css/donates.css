@@ -1,7 +1,7 @@
 /*-------------- Support Ukraine --------------*/
-
+/* змінив значення max-width на width */
 .wrapper-support {
-  max-width: 335px;
+  width: 335px;
   height: 484px;
   background: linear-gradient(
     180deg,
