@@ -32,6 +32,13 @@ aside {
   cursor: pointer;
 }
 
+.categories-item.checked {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--aside);
+  opacity: 1;
+}
+
 /*--------------- Hovers -----------------*/
 
 .categories-item:hover,
